@@ -1,0 +1,268 @@
+<html>
+    <head>
+        <title>
+            Mutyam ==> Operators_Assignment03
+        </title>
+        <style>
+
+
+        </style>
+    </head>
+    <body>
+         
+                  <h2>Apply Appropriate operators to get the desired results</h2>
+
+                  <p>1. Given var x = “Mutyam” and var y = “Bhargav”. Print “Mutyam Bhargav” in the console.</p>
+
+                  <p>2.Find the perimeter of a square having each side 4cm.</p>
+
+                  <p>3.Find the perimeter of a rectangle of length 50cm and breadth 35cm.</p>
+
+                  <p>4.Find the circumference of a circle of radius 20cm. (Take π = 3.14)</p>
+
+                  <p>5.Find the area of a square having each side 12cm.</p>
+
+                  <p>6.Find the area of a rectangle of length 25cm and breadth 16cm.</p>
+
+                  <p>7.Find the area of a circle of radius 3.75cm.</p>
+
+                  <p>8.Given the marks of 3 subjects as 67,48 and 74. Print the average marks of the 3 subjects.</p>
+
+                  <p>9.Given the cost of a product as ₹538.56, add 18% GST to it and print the total cost.</p>
+
+                  <p>10.Given a variable var x = 48. Decrement its value by 1.</p>
+
+                  <hr>
+
+
+
+          <script>
+
+            //1.solution :
+
+              document.write("1.Solution :");
+              document.write("<br>")
+              document.write("<br>")
+
+              var x = "Mutyam";
+              var y = "Bhargav";
+
+              console.log(x+" " +y); //Mutyam Bhargav
+              document.write("var x = " +x)
+              document.write("<br>")
+              document.write("var y = " + y)
+              document.write("<br>")
+              document.write("<br>")
+              document.write(x+" "+y);
+
+              document.write("<hr>")
+
+
+            //2. Solution :
+
+              document.write("2.Solution");
+              document.write("<br>")
+              document.write("<br>")
+
+              //Perimeter of a square is the total length covered by its boundary.
+                 
+             // Formula to calculate perimeter of square is 4 * s [i.e s + s + s + s]
+                
+                var s = 4;
+                var p;
+
+                p = 4 * s;
+                console.log("The perimeter of a square having each side 4cm is " + p +" cm");
+
+                document.write("p = 4 * s")
+                document.write("<br>")
+                document.write("<br>")
+
+                document.write("The perimeter of a square having each side 4cm is " + p + " cm");
+
+                document.write("<hr>");
+
+          // 3 .Solution :
+
+               document.write("3.Solution");
+               document.write("<br>");
+               document.write("<br>");
+
+               //perimeter of a rectangle of length 50cm and breadth 35cm
+
+                  var l = 50;
+                  var b = 35;
+
+                  var rec = 2 * (l + b); // l + l + b + b
+                  console.log("The Perimeter of a rectangle of a length " + l + " and  breadth " + b + " is " + rec + " cm");
+
+                 document.write("rec = 2 * (l + b)")
+                 document.write("<br>")
+                 document.write("<br>")
+
+                 document.write("The Perimeter of a rectangle of a length " + l + " and  breadth " + b + " is " + rec + " cm");
+                 document.write("<hr>");
+            
+          //4. Solution :
+                 
+               document.write("4.Solution");
+               document.write("<br>");
+               document.write("<br>");
+
+               // Find the circumference of a circle of radius 20cm. (Take pi value = 3.14)
+
+               var r = 20;
+            
+               //circumference of a circle = 2 * Math.PI * r ** 2
+
+               var cr = 2 * 3.14 * r **2;
+
+               console.log("The circurmference of a circle of radius " + r + "cm " + " is " + cr);
+
+               document.write("cr = 2 * 3.14 * r **2")
+               document.write("<br>")
+               document.write("<br>")
+               document.write("The circurmference of a circle of radius " + r + "cm " + " is " + cr)
+
+               document.write("<hr>")
+
+          // 5. Solution :
+
+               document.write("5. Solution :");
+               document.write("<br>")
+               document.write("<br>")
+
+               //Find the area of a square having each side 12cm.
+
+               var side = 12
+               var area = side * side;
+
+
+               console.log("The area of a square having each side " + side + "cm" + " is " + area);
+
+               document.write("area = side * side")
+               document.write("<br>");
+               document.write("<br>")
+               document.write("The area of square having each side " + side + "cm" + " is " + area);
+               document.write("<hr>");
+
+
+          // 6. Solution :
+
+               document.write("6.Solution :");
+               document.write("<br>")
+               document.write("<br>")
+
+               //Find the area of a rectangle of length 25cm and breadth 16cm.
+                   
+                 var length = 25;
+                 var breadth = 16;
+
+                 var areaOfRectangle = length * breadth;
+
+                 console.log("The area of rectangle of length " + length + " and " + breadth + " = " + areaOfRectangle);
+
+                 document.write("areaOfRectangle = length * breadth")
+                 document.write("<br>");
+                 document.write("<br>")
+                 document.write("The area of rectangle of length " + length + " and " + breadth + " = " + areaOfRectangle);
+                 document.write("<hr>");
+
+            // 7. Solution :
+
+                  document.write("7.Solution :");
+                  document.write("<br>");
+                  document.write("<br>");
+
+                  //Find the area of a circle of radius 3.75cm.
+
+                  var radius = 3.75;
+                  var areaOfCircle = Math.PI * radius ** 2;
+
+                  console.log("The area of circle of " + radius + "cm" + " is " + areaOfCircle);
+
+                  document.write("areaOfCircle = Math.PI * radius ** 2;")
+                  document.write("<br>")
+                  document.write("<br>")
+
+                  document.write("The area of circle of " + radius + "cm" + " is " + areaOfCircle);
+                  document.write("<hr>");
+
+            //8. Solution :
+
+                  document.write("8.Solution :");
+                  document.write("<br>");
+                  document.write("<br>");
+
+                  //Given the marks of 3 subjects as 67,48 and 74. Print the average marks of the 3 subjects.
+
+                  var sub1 = 67;
+                  var sub2 = 48;
+                  var sub3 = 74;
+
+                  var average = (sub1 + sub2 +sub3) /3
+
+                  console.log("The average marks of the three subjects is " + average);
+
+                  document.write("average = (sub1 + sub2 +sub3) /3")
+                  document.write("<br>")
+                  document.write("<br>")
+
+                  document.write("The average marks of the three subjects is " + average);
+                  document.write("<hr>");
+
+
+            // 9. Solution :
+
+                 document.write("9.Solution :");
+                 document.write("<br>");
+                 document.write("<br>");
+
+
+                 // Given the cost of a product as ₹538.56, add 18% GST to it and print the total cost.
+
+                   var cost = 538.56;
+                   var gst  = '18%';
+                   
+
+                   var totalCost = cost + parseInt(gst)/100;
+
+                   console.log("The total cost is " + totalCost);
+                   console.log(parseInt(gst)/100)
+
+                   document.write("totalCost = cost + parseInt(gst)/100")
+                   document.write("<br>")
+                   document.write("<br>")
+
+                   document.write("The total cost is " +  totalCost);
+                   document.write("<hr>");
+
+            // 10. Solution :
+
+                   document.write("10.Solution  :");
+                   document.write("<br>")
+                   document.write("<br>")
+
+                   //Given a variable var xx = 48. Decrement its value by 1.
+
+                     var xx = 48.
+
+                     xx--; // xx = xx - 1
+
+                     console.log("The vale of x after decrement is " + xx);
+
+                     document.write("xx--");
+                     document.write("<br>");
+                     document.write("<br>");
+
+                     document.write("The value of x after decrement is " + xx);
+                     document.write("<hr>");
+
+    
+
+
+          </script>
+
+
+    </body>
+</html>
