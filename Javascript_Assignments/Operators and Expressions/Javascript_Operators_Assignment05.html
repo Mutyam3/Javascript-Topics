@@ -1,0 +1,367 @@
+<html>
+    <head>
+        <title>
+            Mutyam ==> Operators_Assignment05
+        </title>
+    </head>
+
+    <body>
+
+
+        <h2>Apply Appropriate operators to get the desired results</h2>
+
+        <p> 1. Check a given number is even or not using ternary operator</p>
+
+        <p> 2. Check a given number is odd or not using ternary operator</p>
+
+        <p> 3. Check a given number is positive or not using ternary operator</p>
+
+        <p> 4. Check a given number is multiple of 4 or not using ternary operator</p>
+
+        <p> 5. Print the (a+b)^2 for given a and b values</p>
+
+        <p> 6. Print the (a+b)^3 for given a and b values</p>
+
+        <p> 7. Print the (a+b+c)^2 for given a,b and c values</p>
+
+        <p> 8. Ramesh’s basic salary is input through the keyboard. His dearness allowance is 40% of basic salary, and house rent allowance is 20% of basic salary. Write a program to calculate his gross salary.</p>
+
+        <p> 9. The distance between two cities (in km.) is input through the keyboard. Write a program to convert and print this distance in meters, feet, inches and centimeters.</p>
+
+        <p> 10. If the marks obtained by a student in five different subjects are input through the keyboard, find out the aggregate marks and percentage marks obtained by the student. <br>
+             Assume that the maximum marks that can be obtained by a student in each subject is 100.</p>
+
+        
+           <hr>
+
+        <script>
+
+             //1. Check a given number is even or not using ternary operator : 
+
+                 var i = 10;
+                 var y;
+
+               //  (i % 2 === 0) ? console.log("The given number "+ i + " is even") : console.log("The give number " + i + " is odd")
+                  y = (i % 2 === 0) ? ("given number " + i + " is even") : ("given number " + i + " is odd")
+
+                 document.write("1.Solution")
+                 document.write("<br>")
+                 document.write("<br>")
+
+                 document.write("(i % 2 === 0) ? console.log(the given number + i + is even) : console.log(the give number  + i + is odd)");
+                 document.write("<br>")
+                 document.write("<br>")
+
+                 document.write("(i % 2===0)  ? (given number  + i +  is even ) : (given number  + i +  is odd")
+                 document.write("<br>")
+                 document.write("<br>")
+
+                 document.write(y)
+
+                 document.write("<br>")
+                 document.write("<hr>")
+
+            // 2. Check a given number is odd or not using ternary operator.
+
+                 var i = 15;
+
+                //  (i % 2 !== 0) ? console.log("The given number " + i + " is odd") : console.log("The given number is even")
+
+                var x = (i % 2!==0)  ? ("given number " + i + " is odd" ) : ("given number " + i + " is even")
+                console.log(x);
+ 
+                  document.write("2.Solution")
+                  document.write("<br>")
+                  document.write("<br>")
+
+                  document.write("(i % 2 !== 0) ? console.log(The given number  + i +  is odd) : console.log(The given number is even)")
+                  document.write("<br>")
+                  document.write("<br>")
+
+                  document.write("(i % 2 !==0)  ? (given number  + i +  is odd ) : (given number  + i +  is odd")
+                  document.write("<br>")
+                  document.write("<br>")
+
+                  document.write(x)
+                  document.write("<hr>")
+
+
+            //  3. Check a given number is positive or not using ternary operator.
+
+                 var i = 5;
+                 
+                 var x = (i>0) ? "positive number" : "negative number"
+                 
+                console.log(x);
+
+                document.write("3.Solution")
+                document.write("<br>")
+                document.write("<br>")
+
+                document.write("(i > 0) ? positive number : negative number")
+                document.write("<br>")
+                document.write("<br>")
+
+                document.write(x);
+                document.write("<hr>")
+
+
+            // 4.  Check a given number is multiple of 4 or not using ternary operator
+
+                     var i = 40;
+
+                     var v = (i % 4 === 0) ? "The given number is mutliple of 4" : "The given number is not multiple of 4"
+
+                     console.log(v);
+
+                     document.write("4.solution")
+                     document.write("<br>")
+                     document.write("<br>")
+
+                     document.write("(i % 4 === 0) ? The given number is mutliple of 4 : The given number is not multiple of 4")
+                     document.write("<br>")
+                     document.write("<br>")
+
+                     document.write(v);
+                     document.write("<hr>")
+
+            //5.   Print the (a+b)^2 for given a and b values
+                    
+
+                         var a = 20;
+                         var b = 15;
+
+                         var c = (a+b) ** 2;
+
+                         console.log("the value of (a+b)^2  is " + c); // 1225
+
+
+                         document.write("5.Solution")
+                         document.write("<br>")
+                         document.write("<br>")
+
+                         document.write("a = 20; b= 15")
+                         document.write("<br>")
+                         document.write("<br>")
+                         document.write("c = (a+b) ** 2")
+                         document.write("<br>")
+                         document.write("<br>")
+
+                         document.write("the value of (a+b)^2  is " + c)
+
+                         document.write("<hr>")
+
+             //6.  Print the (a+b)^3 for given a and b values
+
+                          var a = 25
+                          var b = 35
+
+                          var c = (a + b) ** 3;
+
+                          console.log("the value of (a+b)^2  is " + c)
+
+                          document.write("6.Solution")
+
+                          document.write("<br>")
+                          document.write("<br>")
+
+                          document.write("a = 25, b = 35")
+                          document.write("<br>")
+                          document.write("<br>")
+
+                          document.write("c = (a + b) ** 3")
+                          document.write("<br>")
+                          document.write("<br>")
+                          document.write("the value of (a+b)^3  is " + c)
+                          document.write("<hr>")
+
+             // 7. Print the (a+b+c)^2 for given a,b and c values
+
+                          var a = 10
+                          var b = 15
+                          var c = 20
+
+                          var d = (a+b+c) ** 2;
+
+                          console.log("the value of (a+b+c)^2  is " + d)
+
+                          document.write("7.Solution")
+
+                          document.write("<br>")
+                          document.write("<br>")
+
+                          document.write("a = 10; b = 15; c = 20")
+                          document.write("<br>")
+                          document.write("<br>")
+
+                          document.write("the value of (a+b+c)^2  is " + d)
+
+                          document.write("<hr>")
+
+            //8.  Ramesh’s basic salary is input through the keyboard. His dearness allowance is 40% of basic salary, and house rent allowance is 20% of basic salary. Write a program to calculate his gross salary.
+
+                 //small logic:         var  i = "23income"  
+                                        //   i = +i //NaN
+                                        //   i = parseInt(i)
+
+                                        //  console.log(i) //23
+
+                               var basicSalary = prompt("enter your basic salary");
+                               
+                                   basicSalary = parseInt(basicSalary);
+
+                                   dearnessAllowance = '40%';
+
+                                   dearnessAllowance = (parseInt(dearnessAllowance)/100) * basicSalary;
+
+                                   rentAllowance = '20%';
+
+                                   rentAllowance = (parseInt(rentAllowance)/100) * basicSalary;
+
+                                   grossSalary =  basicSalary + dearnessAllowance + rentAllowance;
+
+                                   console.log("The gross salary is " + grossSalary + "/-");
+
+                                   document.write("8.Solution")
+                                   document.write("<br>")
+                                   document.write("<br>")
+
+                                   document.write("basicSalary = parseInt(basicSalary);")
+                                   document.write("<br>")
+                                   document.write("<br>")
+
+                                   document.write("rentAllowance = (parseInt(rentAllowance)/100) * basicSalary;")
+                                   document.write("<br>")
+                                   document.write("<br>")
+
+                                   document.write("grossSalary =  basicSalary + dearnessAllowance + rentAllowance;")
+
+                                   document.write("dearnessAllowance = (parseInt(dearnessAllowance)/100) * basicSalary")
+
+                                   document.write("<br>")
+                                   document.write("<br>")
+
+                                   document.write("The gross salary is " + grossSalary + "/-");
+
+                                  document.write("<hr>")
+
+
+
+            // 9.   The distance between two cities (in km.) is input through the keyboard.
+            // Write a program to convert and print this distance in meters, feet, inches and centimeters.
+
+                     
+
+                                   var distanceInKm = prompt("Enter Distance in km : ");
+
+                                     distanceInKm = parseInt(distanceInKm);
+
+                                     distanceInMeters = distanceInKm * 1000 ;
+
+                                     distanceInCentimeters = distanceInKm * 100000;
+
+                                     distanceInInches = distanceInKm * 39370.078740157;
+
+                                     distanceInFeet = distanceInKm * 3280.8398950131;
+
+                                    
+
+                                    console.log("distance in meters is " + distanceInMeters +" m")  
+                                    console.log("distance in inches is " +  distanceInInches)
+                                    console.log("distance in feet is " + distanceInFeet)
+                                    console.log("distance in centimeters is " + distanceInCentimeters)
+
+
+                                    document.write("9.Solution")
+                                    document.write("<br>")
+                                    document.write("<br>")
+
+                                    document.write("distanceInKm = parseInt(distanceInKm);")
+                                    document.write("<br>")
+                                    document.write("<br>")
+
+                                    document.write("distanceInMeters = distanceInKm * 1000 ;")
+                                    document.write("<br>")
+                                    document.write("<br>")
+
+                                    document.write("distanceInCentimeters = distanceInKm * 100000;")
+                                    document.write("<br>")
+                                    document.write("<br>")
+
+                                    document.write("distanceInInches = distanceInKm * 39370.078740157;")
+                                    document.write("<br>")
+                                    document.write("<br>")
+
+                                    document.write("distanceInFeet = distanceInKm * 3280.8398950131;")
+                                    document.write("<br>")
+                                    document.write("<br>")
+
+                                    document.write("distance in meters is "  + distanceInMeters + "m")
+                                    document.write("<br>")
+                                    document.write("<br>")
+
+                                    document.write("distance in centimeters is " + distanceInCentimeters);
+                                    document.write("<br>")
+                                    document.write("<br>")
+
+                                    document.write("distance in feet is " +  distanceInFeet);
+                                    document.write("<br>")
+                                    document.write("<br>")
+
+                                    document.write("distance in inches is " + distanceInInches);
+                                    document.write("<br>")
+                                    document.write("<br>")
+
+                                    document.write("<hr>")
+
+
+              //10.  If the marks obtained by a student in five different subjects are input through the keyboard, 
+                    //find out the aggregate marks and percentage marks obtained by the student.
+                    // Assume that the maximum marks that can be obtained by a student in each subject is 100.
+
+                                   var sub1 = +prompt("enter your First subject marks : ");
+                                   var sub2 = +prompt("enter your Second subject marks :  ");
+                                   var sub3 = +prompt("enter your Third subject marks : ");
+                                   var sub4 = +prompt("enter yoour Fourth subject marks : ");
+                                   var sub5 = +prompt("enter your Five subject marks : ");
+
+                                   //Each subject maximum marks is 100
+                                   //total five subjects = 5 . So, maximum 100 * 5 = 500
+
+                                   
+                                   var aggregateMarks = (sub1 + sub2 + sub3 + sub4 + sub5);
+
+                                     // sum of all subjects / total of maximum marks  * 100
+                                   var percentageMarks = (aggregateMarks * 100) / 500
+
+                                   console.log("The aggregate marks is " + aggregateMarks);
+
+                                   console.log("The percentage marks is " + percentageMarks);
+
+                                   document.write("10.Solution")
+                                   document.write("<br>")
+                                   document.write("<br>")
+
+                                   document.write("aggregateMarks = (sub1 + sub2 + sub3 + sub4 + sub5);")
+                                   document.write("<br>")
+                                   document.write("<br>")
+
+                                   document.write("percentageMarks = (aggregateMarks *100) / 500")
+                                   document.write("<br>")
+                                   document.write("<br>")
+
+                                   document.write("The aggregate Marks is " + aggregateMarks)
+                                   document.write("<br>")
+                                   document.write("<br>")
+
+                                   document.write("The percentage Marks is " + percentageMarks)
+
+                                   document.write("<hr>")
+                                   
+
+
+        </script>
+
+
+    </body>
+</html>

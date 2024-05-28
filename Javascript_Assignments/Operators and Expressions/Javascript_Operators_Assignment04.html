@@ -1,0 +1,357 @@
+<html>
+    <head>
+        <title>
+            Mutyam ==> Operators_Assignment04 
+        </title>
+        <style>
+            *{
+                font-size:large;
+                
+            }
+
+
+
+
+        </style>
+    </head>
+    <body>
+
+        <h2>Apply Appropriate operators to get the desired results</h2>
+
+
+        <p> 1.Write a script to swap two numbers;</p>
+
+        <p> 2.Write a script to swap two numbers without using 3rd variable (please use *,%,/ not + and -)</p>
+
+        <p> 3.Write a program to print the reminder of a division</p>
+
+        <p> 4.Write a program to print the simple interest rate of given P T R values</p>
+
+        <p> 5.Write a program to print the max of given two numbers using ternary operator</p>
+
+        <p> 6.Write a program to print the max of given three numbers using ternary operator</p>
+
+        <p> 7.Find the area of a square for given length of a side</p>
+
+        <p> 8.Find the area of a triangle for given base and height</p>
+
+        <p> 9.Find the area of a rectangle for given length and breadth</p>
+
+
+        <hr>
+
+         
+        <script>
+
+              //1. Solution
+
+              //write a script to swap two numbers:
+
+                var a = 20;
+                var b = 10;
+
+                var temp; //kali temp tesukuna
+
+                temp = a;  // a lo unna value ni temp lo vesa  // ippudu temp kali(empty)
+                a = b;     // b lo unna value ni a lo vesa  // ippudu b kali b lo unna value a loki vachindi
+                b = temp;  // temp lo unna value ni b lo vesa // ippudu temp kali 
+
+
+                console.log(a); // 10
+                console.log(b); // 20
+
+
+                document.write("1.Solution");
+                document.write("<br>");
+                document.write("<br>");
+
+                document.write("temp = a");
+                document.write("<br>")
+                document.write("a = b");
+                document.write("<br>")
+                document.write("b = temp");
+                document.write("<br>")
+
+                document.write("<br>")
+
+                document.write("befor a value is 20 now its value is " +  a);
+                document.write("<br>")
+                document.write("before b value is 10  now its value is " + b);
+                document.write("<hr>")
+
+                //2.Solution 
+
+                //Write a script to swap two numbers using 3rd variable (please use *, % , / not + and -):
+
+                var a = 20
+                var b = 10
+                
+                // by using + and -
+
+                a = a + b // a = 20 + 10 = 30 ==> a = 30
+                b = a - b // b = 30 - 10 = 20 ==> b = 20
+                a = a - b // a = 30 - 20 = 10 ==> a = 10
+
+                console.log(a) //10
+                console.log(b) //20
+
+
+                var a = 20;
+                var b = 10;
+
+                // by using * , / , %
+
+
+
+                 a = a * b // 20 * 10 = 200
+                 b = a / b  // 200 / 10 = 20
+                 a = a / b // 200 / 20 = 10 
+
+                 console.log(a) // 10
+                 console.log(b) // 20
+
+
+                //by using xor bitwise operator :
+
+                 var a = 20 ; //10100
+                 var b = 10;  //1010
+
+                 a = a ^ b;  // a = 10100 ^ 1010 = 11110
+                 b = a ^ b;  // b = 11110 ^ 1010 = 10100
+                 a = a ^ b;  // a = 11110 ^ 10100 = 01010
+
+                 console.log(a);//10
+                 console.log(b);//20
+
+                 document.write("2.Solution")
+                 document.write("<br>")
+                 document.write("<br>")
+
+                 document.write("a = a * b")
+                 document.write("<br>")
+                 document.write("b = a / b")
+                 document.write("<br>")
+                 document.write("a= a / b")
+                 document.write("<br>")
+                 document.write("<br>")
+
+                 document.write("befor a value is 20 now its value is " + a)
+                 document.write("<br>")
+                 document.write("before b value is 10 now its value is " + b)
+                 document.write("<hr>")
+
+                 
+                 
+                 //3.Solution :
+
+                 // write a program to print the remainder of a division
+
+                 var a = 7;
+                 var b = 2;
+
+                 var r = a % b;
+                 console.log("the remainder of a division is " + r);
+
+                 document.write("3.Solution :")
+                 document.write("<br>")
+                 document.write("<br>")
+
+                 document.write("a = 7 , b = 2")
+                 document.write("<br>")
+                 document.write("r = a % b");
+                 document.write("<br>")
+                 document.write("<br>")
+
+                 document.write("The remainder of a division is " + r);
+
+                 document.write("<hr>")
+
+                 // 4 .Solution :
+
+
+                 // Write a program to print the simple interest rate of given P T R values.
+
+                 var p = 1000;    //principal amount
+                 var t = '2years'; //tenure(in years)
+                 var r = '10%';    // interest rate.
+
+                 var t = parseInt(t);
+                 console.log(t);
+
+                 var r = parseInt(r) ;
+                 console.log(r)/100;
+
+                 var sI = (p * t * r) / 100;
+                 console.log("The total interest is " + sI);
+                 // by si u will get rate value.
+                 // Total interest = 200
+                 //total amount = 200 + 1000
+
+                 var totalAmount = sI + p;
+                 console.log(totalAmount);
+
+                 document.write("4.Solution")
+                 document.write("<br>")
+                 document.write("<br>")
+
+                 document.write("p=1000, t=2years, r =10%");
+                 document.write("<br>")
+                 document.write("<br>")
+
+                 document.write("sI = (p * t * r ) / 100");
+                 document.write("<br>")
+                 document.write("<br>")
+
+                 document.write("The total interest is " + sI);
+                 document.write("<br>")
+                 document.write("The total amount is " + totalAmount);
+
+                 document.write("<hr>")
+
+
+
+                 //5.Solution :
+
+
+                 // 5.Write a program to print the max of given two numbers using ternary operator
+
+                 var a = 252;
+                 var b = 525;
+
+
+                   (a > b) ? console.log(a +" is greater") : console.log(b + " is greater")
+
+                   document.write("5.Solution");
+                   document.write("<br>")
+                   document.write("<br>")
+
+                   document.write("a = 252, b = 525")
+                   document.write("<br>")
+                   document.write("<br>")
+
+                   document.write("(a > b) ? console.log(" + a +" is greater) : console.log(" + b + " is greater)")
+
+                   
+                   document.write("<hr>");
+
+
+                   //6.Solution :
+
+
+                   // 6. Write a program to print the max of given three numbers using ternary operator
+
+                   var a = 252;
+                   var b = 525;
+                   var c = 245;
+                   var max;
+
+                   max = ( a > b ) ? (a > c  ? a : c) : (b > c  ? b : c)
+
+                   console.log("the maximum number among three values " +a + " " + b + " " + c + " is " + max)
+                    
+
+                   document.write("6. Solution :")
+                   document.write("<br>")
+                   document.write("<br>")
+
+                   document.write("a = 252, b = 525 , c = 245")
+                   document.write("<br>")
+                   document.write("<br>")
+
+                   document.write("max = ( a > b ) ? (a > c  ? a : c) : (b > c  ? b : c)")
+                   document.write("<br>")
+                   document.write("<br>")
+                   document.write("the maximum number among three values " + a + " " + b + " " + c + " is " + max)
+                   document.write("<hr>")
+
+
+                   // 7. Solution :
+
+                     // 7. Find the area of a square for given length of a side.
+
+                     var side = '45cm'
+
+                     var areaOfSquare ;
+                     side = parseInt(side)
+                     console.log(side)
+
+                     areaOfSquare = side* side;
+
+                     console.log("The area of square for given length of a side " + areaOfSquare);
+
+                     document.write("7.Solution")
+                     document.write("<br>")
+                     document.write("<br>")
+
+                     document.write("side = 45")
+                     document.write("<br>")
+                     document.write("<br>")
+
+                     document.write("areaOfSquare = side* side;")
+                     document.write("<br>")
+                     document.write("<br>")
+                     document.write("The area of square for given length of a side " + areaOfSquare);
+                     document.write("<hr>")
+
+
+                     //8. Solution :
+
+                     // 8. Find the area of a triangle for given base and height.
+                          
+                       var base  = '25cm'
+                       var height = '20cm'
+
+                       base = parseInt(base); //25
+                       height = parseInt(height); //20
+
+                       areaOfTriangle = 1/2 * base * height
+
+                       console.log("The area of Triangle whose base " + base + "cm " + " and height " + height + "cm "  + " is " + areaOfTriangle)
+
+                       
+                        document.write("8.Solution")
+                        document.write("<br>")
+                        document.write("<br>")
+
+                        document.write("areaOfTriangle = 1/2 * base * height")
+
+                        document.write("<br>")
+                        document.write("<br>");
+
+                        document.write("The area of Triangle whose base " + base + "cm " + " and height " + height + "cm " + " is " + areaOfTriangle + "cm <sup>2</sup>")
+                        document.write("<hr>")
+
+    
+                    // 9.Solution :
+
+                    // 9. Find the area of a rectangle for given length and breadth
+
+                        var length = '3inches';
+                        var breadth = '4inches';
+
+                        length = parseInt(length);
+                        breadth = parseInt(breadth);
+
+                        areaOfRectangle = length * breadth;
+
+                        console.log("The areaOfRectangle whose length " + length + "cm " + " and breadth " + breadth + " is " + areaOfRectangle + "in^2");
+
+                        document.write("9.Solution")
+                        document.write("<br>")
+                        document.write("<br>")
+
+                        document.write(" areaOfRectangle = length * breadth")
+                        document.write("<br>")
+                        document.write("<br>")
+
+                        document.write("The area of a rectangle whose length " + length + "cm "+ " and breadth " + breadth + "cm "+ " is " + areaOfRectangle + "in <sup>2</sup>")
+                        document.write("<br>")
+                        document.write("<hr>")
+
+
+
+
+        </script>
+
+    </body>
+</html>

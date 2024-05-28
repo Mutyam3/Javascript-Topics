@@ -1,0 +1,305 @@
+<html>
+    <head>
+        <title>
+            Mutyam ==> Operators_Assignment06
+        </title>
+        <style>
+
+             *{
+                font-size: large;
+             }
+
+        </style>
+    </head>
+    <body>
+
+        <h2>Apply Appropriate operators to get the desired results</h2>
+
+       <p>1. Write a program that converts Centigrade to Fahrenheit. Expected Output : Input a temperature (in Centigrade): 45 113.000000 degrees Fahrenheit.</p>
+
+       <p>2. Write a JavaScript program that calculates the volume of a sphere. Expected Output : Input the radius of the sphere : 2.56 The volume of the sphere is 70.276237.</p>
+
+       <p>3. Write a JavaScript program that prints the perimeter of a rectangle to take its height and width as input. Expected Output : Input the height of the Rectangle : 5 Input the width of the Rectangle : 7 Perimeter of the Rectangle is : 24.000000</p>
+
+       <p>4. Write a JavaScript program that converts kilometers per hour to miles per hour. Expected Output : Input kilometers per hour: 15 9.320568 miles per hour</p>
+
+       <p>5. Write a JavaScript program that takes hours and minutes as input, and calculates the total number of minutes. Expected Output : Input hours: 5 Input minutes: 37 Total: 337 minutes.</p>
+
+       <p>6. Write a program in JavaScript that takes minutes as input, and display the total number of hours and minutes. Expected Output : Input minutes: 546 9 Hours, 6 Minutes</p>
+
+       <p>7. Write a program in JavaScript that reads a forename, surname and year of birth and display the names and the year one after another sequentially. Expected Output : Input your firstname: Tom Input your lastname: Davis Input your year of birth: 1982 Tom Davis 1982</p>
+
+       <p>8. Write a program in JavaScript to calculate the sum of three numbers with getting input in one line separated by a comma. Expected Output : Input three numbers separated by comma : 5,10,15 The sum of three numbers : 30</p>
+
+       <p>9. Write a JavaScript program to perform addition, subtraction, multiplication and division of two numbers Expected Output : Input any two numbers separated by comma : 10,5 The sum of the given numbers : 15 The difference of the given numbers : 5 The product of the given numbers : 50 The quotient of the given numbers : 2.000000</p>
+
+       <p>10. Write a JavaScript program to find the third angle of a triangle if two angles are given. Expected Output : Input two angles of triangle separated by comma : 50,70 Third angle of the triangle : 60</p>
+
+       <p>11. Write a script to display the maximum number in given two numbers using operators</p>
+
+       <p>12. Write a script to display the maximum number in given three numbers using operators</p>
+
+       <p>13. Write a script to display the given two strings in ascending order using operators</p>
+
+
+
+<hr>
+
+
+<script>
+
+
+                 //1. Solution :
+
+              //   Write a program that converts Centigrade to Fahrenheit. 
+               // Expected Output : Input a temperature (in Centigrade): 45 113.000000 degrees Fahrenheit.
+
+               var temperature = +prompt("enter temperature in celsius : ")
+
+                    temperature = (9.0 / 5.0 ) * temperature + 32.0
+
+                    console.log("The temperature in fahrenheit is : " + temperature + " degrees Fahrenheit.")
+
+
+                    document.write("1.Solution : ")
+                    document.write("<br>")
+                    document.write("<br>")
+
+                    document.write("temperature = 9 / 5 * (temperature + 32)")
+                    document.write("<br>")
+                    document.write("<br>")
+
+                    document.write("The temperature in fahrenheit is : " + temperature + " degrees Fahrenheit.")
+
+                    document.write("<hr>")
+
+
+              // 2.Solution :
+
+              // Write a JavaScript program that calculates the volume of a sphere. 
+              //Expected Output : Input the radius of the sphere : 2.56
+              // The volume of the sphere is 70.276237.
+
+              var radiusOfSphere = +prompt("enter the radius of sphere is : ")
+
+                        volumeOfSphere =  (4/3)* Math.PI * radiusOfSphere ** 3 
+
+                        console.log("The volume of sphere whose radius of the sphere  " + radiusOfSphere + " is " + volumeOfSphere)
+
+
+                 document.write("2.Solution : ")
+                 document.write("<br>")
+                 document.write("<br>")
+
+                 document.write("volumeOfSphere =  (4/3)* Math.PI * radiusOfSphere ** 3")
+                 document.write("<br>")
+                 document.write("<br>")
+
+                 document.write("The volume of sphere whose radius of the sphere  " + radiusOfSphere + " is " + volumeOfSphere)
+                 document.write("<br>")
+
+                 document.write("<hr>")
+
+
+             //3.Solution :
+
+             // Write a JavaScript program that prints the perimeter of a rectangle to take its height and width as input.
+             // Expected Output : Input the height of the Rectangle : 5 
+             //Input the width of the Rectangle : 7 
+             //Perimeter of the Rectangle is : 24.000000
+
+
+               var height = +prompt("enter height of the rectangle : ")
+               var width = +prompt("enter your width of the rectangle: ")
+
+                      perimeterOfRectangle = 2 * (height +  width);
+
+               console.log("The perimeter of the rectangle whose height is  " + height + " and width is " +  width + " is " + perimeterOfRectangle);
+
+               document.write("3.Solution")
+               document.write("<br>")
+               document.write("<br>")
+
+               document.write("perimeterOfRectangle = 2 * (height +  width);")
+               document.write("<br>")
+               document.write("<br>")
+
+               document.write("The perimeter of the rectangle whose height is  " + height + " and width is " +  width + " is " + perimeterOfRectangle);
+
+               document.write("<br>")
+               document.write("<hr>")
+
+               //4.Solution :
+               //Write a JavaScript program that converts kilometers per hour to miles per hour.
+               // Expected Output : Input kilometers per hour: 15 9.320568 miles per hour.
+
+               var kilometers = +prompt("enter kilometers :")
+
+                 // 1km = 0.6213712 mile
+
+                   miles = (kilometers * 0.6213712);
+
+                   console.log(" kilometer per hour to miles per hour is  " + miles + " miles per hour");
+
+                   document.write("4.Solution")
+                   document.write("<br>")
+                   document.write("<br>")
+
+                   document.write("miles = (kilometers * 0.6213712);")
+
+                   document.write("<br>")
+                   document.write("<br>")
+
+                   document.write(" kilometer per hour to miles per hour is  " + miles + " miles per hour");
+
+                   document.write("<br>")
+                   document.write("<br>")
+
+                   document.write("<hr>")
+
+
+                //5. Solution :
+
+                // Write a JavaScript program that takes hours and minutes as input, and calculates the total number of minutes.
+                // Expected Output : Input hours: 5 Input minutes: 37 Total: 337 minutes.
+
+                   var hours = +prompt("enter hours : ")
+                   var minutes = +prompt("enter minutes : ")
+                   var totalMinutes;
+
+                   totalMinutes = ( hours * 60 ) + minutes;
+
+                   console.log("The total minutes : " + totalMinutes + " minutes");
+
+
+                     document.write("5.Solution")
+                     document.write("<br>")
+                     document.write("<br>")
+
+                     document.write("totalMinutes = ( hours * 60 ) + minutes;")
+                     document.write("<br>")
+                     document.write("<br>")
+
+                     document.write("The total minutes : " + totalMinutes + " minutes");
+                     document.write("<br>")
+
+
+                     document.write("<hr>")
+
+                //6. Solution :
+
+                // Write a program in JavaScript that takes minutes as input, and
+                // display the total number of hours and minutes.
+                // Expected Output : Input minutes: 546 9 Hours, 6 Minutes
+
+
+                   var minutes = +prompt ("enter minutes : ");
+                   var mainMinutes = minutes ;
+
+                       var hours = parseInt(minutes / 60 );
+
+                       var minutes = (minutes % 60);
+                       
+
+                       console.log("hours : " + hours + " hrs");
+                       console.log("minutes : " + minutes + " mins");
+
+                       console.log("entered minutes :" + mainMinutes + " minutes");
+
+                       document.write("6.Solution")
+                       document.write("<br>")
+                       document.write("<br>")
+
+                       document.write("hours = (minutes / 60 )")
+                       document.write("<br>")
+                       document.write("minutes = (minutes % 60)");
+                       document.write("<br>")
+
+                       document.write("entered minutes :" + mainMinutes + " minutes")
+                       document.write("<br>")
+                       document.write("hours : " + hours + " hrs");
+                       document.write("<br>")
+                       document.write("minutes : " + minutes + " minutes");
+                       document.write("<br>")
+
+
+                       document.write("<hr>")
+
+                    // 7. Solution :
+                    //  Write a program in JavaScript that reads a forename, surname and year of birth and display the names and the year one after another sequentially.
+                    // Expected Output : Input your firstname: Tom Input your lastname: Davis Input your year of birth: 1982 Tom Davis 1982
+
+                             var firstName  = prompt("enter firstName : ");
+                             var lastName   = prompt("enter lastName : ");
+                             var yearOfBirth = prompt("enter year of birth : ");
+
+                                   
+                                 console.log("Input your firstName : " + firstName);
+                                 console.log("Input your lastName : " + lastName);
+                                 console.log("Input your year of birth : " + yearOfBirth);
+
+                                 console.log( "output : " +firstName + " " + lastName + " " + yearOfBirth);
+
+
+                                 document.write("7.Solution")
+                                 document.write("<br>")
+                                 document.write("<br>")
+
+                                 document.write("Input your firstName : " + firstName);
+                                 document.write("<br>")
+                                 document.write("Input your lastName : " + lastName);
+                                 document.write("<br>")
+                                 document.write("Input your year of birth : " + yearOfBirth);
+                                 document.write("<br>")
+
+                                 document.write("Output : "+ firstName + " " + lastName + " " + yearOfBirth)
+                                 document.write("<br>")
+
+                                 document.write("<hr>");
+
+
+                    //8. Solution :
+                    //Write a program in JavaScript to calculate the sum of three numbers with getting input in one line separated by a comma.
+                    // Expected Output : Input three numbers separated by comma : 5,10,15
+                    // The sum of three numbers : 30
+
+
+                    //9.Solution :
+
+                    //Write a JavaScript program to perform addition, subtraction, multiplication and division of two numbers Expected Output : Input any two numbers separated by comma : 10,5 The sum of the given numbers : 15 The difference of the given numbers : 5 The product of the given numbers : 50 The quotient of the given numbers : 2.000000
+
+                   // 11.solution :
+
+                   //Write a script to display the maximum number in given two numbers using operators
+
+                            var num1 = 120;
+                            var num2 = 150;
+
+                        var result =  (num1 > num2)  ? "num1 is maximum " : "num2 is maximum" 
+
+                            console.log(result); // num2 is maximum
+
+
+                    // 12. Write a script to display the maximum number in given three numbers using operators
+
+                            var num1 = 150
+                            var num2 = 140
+                            var num3 = 160
+
+                           var result =  (num1 > num2) ? ((num1>num3) ? num1  : num3) : ((num2>num3) ? num2 : num3)
+
+                             console.log("maximum number among three numbers :" +  result);
+
+                    //13.Write a script to display the given two strings in ascending order using operators.
+
+                            var string1 = "Mutyam";
+                            var string2 = "Bhargav";
+
+                             (string1 > string2) ? console.log("Bhargav , Mutyam") : console.log("Mutyam , Bhargav");
+
+  
+</script>
+
+
+    </body>
+</html>

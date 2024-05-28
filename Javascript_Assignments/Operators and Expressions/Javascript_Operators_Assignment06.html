@@ -1,0 +1,581 @@
+<html>
+    <head>
+        <title>
+            Mutyam ==> Operators_Assignment06
+        </title>
+        <style>
+                 *{
+                    font-size : large
+                 }
+        </style>
+    </head>
+
+
+    <body>
+             
+
+          <h2>Apply Appropriate operators to get the desired results</h2>
+
+          <p>1.Temperature of a city in Fahrenheit degrees is input through the keyboard. Write a program to convert this temperature into Centigrade degrees.</p>
+
+          <p>2.The length & breadth of a rectangle and radius of a circle are input through the keyboard. Write a program to calculate the area & perimeter of the rectangle, and the area & circumference of the circle.</p>
+
+          <p>3.Two numbers are input through the keyboard into two locations C and D. Write a program to interchange the contents of C and D.</p>
+
+          <p>4.If a five-digit number is input through the keyboard, write a program to calculate the sum of its digits. (Hint: Use the modulus operator ‘%’)</p>
+
+          <p>5.If a five-digit number is input through the keyboard, write a program to reverse the number.</p>
+                 
+          <p>6.If a four-digit number is input through the keyboard, write a program to obtain the sum of the first and last digit of this number.</p>
+
+          <p>7.In a town, the percentage of men is 52. The percentage of total literacy is 48. If total percentage of literate men is 35 of the total population, write a program to find the total number 48 Let Us C of illiterate men and women if the population of the town is 80,000.</p>
+
+          <p>8.A cashier has currency notes of denominations 10, 50 and 100. If the amount to be withdrawn is input through the keyboard in hundreds, find the total number of currency notes of each denomination the cashier will have to give to the withdrawer.</p>
+
+          <p>9.If the total selling price of 15 items and the total profit earned on them is input through the keyboard, write a program to find the cost price of one item.</p>
+
+          <p>10.If a five-digit number is input through the keyboard, write a program to print a new number by adding one to each of its digits. For example if the number that is input is 12391 then the output should be displayed as 23402.</p>
+
+        <hr>
+         
+
+          <script>
+
+
+           //1.Temperature of a city in Fahrenheit degrees is input through the keyboard.
+           //Write a program to convert this temperature into Centigrade degrees.
+
+                    
+
+
+                          
+                          
+                        //    var temperature = +prompt("Enter temperature in fahrenheit :")
+
+                            //if user not given anything its taking 0 as input so I have eritten this condition to check
+                            if(!(temperature === 0))
+                            {
+                            console.log(temperature + " °F")
+                            temperature =  [(temperature - 32) * 5 ] / 9
+
+                            console.log("The temperature in centigrades is : " + temperature + "°C " ) 
+
+                            }
+                           
+                           else
+                           {
+                              console.log("don't keep empty :")
+                              var temperature = +prompt(" Please Don't keep empty => Enter temperature in fahrenheit :")
+                           }
+
+                            document.write("1.Solution")
+                            document.write("<br>")
+                            document.write("<br>")
+
+                            document.write("temperature =  [(temperature - 32) * 5 ] / 9")
+                            document.write("<br>")
+                            document.write("<br>")
+                            document.write("The temperature in centigrades is :" + temperature + "°C ")
+                            document.write("<hr>")
+
+
+
+
+
+            // 2.    The length & breadth of a rectangle and radius of a circle are input through the keyboard.
+            // Write a program to calculate the area & perimeter of the rectangle, and the area & circumference of the circle.  
+            
+                        var length = prompt("enter length of a rectangle in cm:")
+                        var breadth = prompt("enter breadth of a rectangle in cm:")
+                        var radius = +prompt("enter radius of a circle in cm :")
+
+                        length = parseInt(length);
+                        breadth = parseInt(breadth); //breadth represents width
+
+                        var perimeterOfRectangle =  2 * (length + breadth) //   length + breadth + length + breadth 
+                        console.log("The area of perimeter of rectangle  is " + perimeterOfRectangle + "cm")
+
+                        var areaOfRectangle =  length * breadth;
+                        console.log("The area of Rectangle is " + areaOfRectangle + "cm^2")
+
+                        var circumferenceOfCircle = 2 * Math.PI * radius 
+                        console.log("The circumference of circle is " + circumferenceOfCircle + "cm")
+                        var areaOfCircle =  Math.PI * (radius**2)
+                        console.log("The areaOfCircle is " + areaOfCircle + "cm")
+
+
+
+                        document.write("2.Solution")
+                        document.write("<br>")
+                        document.write("<br>")
+
+                        document.write("perimeterOfRectangle =  2 * (length + breadth)")
+                        document.write("<br>")
+                        document.write("<br>")
+                        document.write("areaOfRectangle =  length * breadth;")
+                        document.write("<br>")
+                        document.write("<br>")
+
+                        document.write("The area of perimeter of rectangle is " + perimeterOfRectangle + "cm")
+                        document.write("<br>")
+                        document.write("<br>")
+
+                        document.write("The area of Rectangle is " + areaOfRectangle + "cm<sup>2</sup>")
+                        document.write("<br>")
+                        document.write("<br>")
+
+                        document.write("circumferenceOfCircle = 2 * Math.PI * radius ")
+                        document.write("<br>")
+                        document.write("<br>")
+                        
+                        document.write("areaOfCircle =  Math.PI * (radius**2)")
+                        document.write("<br>")
+                        document.write("<br>")
+                        document.write("The circumference of circle is " + circumferenceOfCircle + "cm")
+                        document.write("<br>")
+                        document.write("<br>")
+                        document.write("The area of circle is " + areaOfCircle + "cm")
+                        document.write("<br>")
+                        
+
+                        document.write("<hr>")
+
+
+            //3. Solution :
+
+            //    Two numbers are input through the keyboard into two locations C and D. Write a program to interchange the contents of C and D.
+
+                         var c = +prompt("enter First number : ")
+                         var d = +prompt("enter Second number : ")
+
+                         var a = c
+                         var b = d
+
+                         c = c * d;
+                         d = c / d;
+                         c = c / d ;
+
+                         console.log(c) 
+                         console.log(d)
+
+                         document.write("3.Solution :")
+                         document.write("<br>")
+                         document.write("<br>")
+
+                         document.write("c = c * d;")
+                         document.write("<br>")
+                         document.write("d = c / d;")
+                         document.write("<br>")
+                         document.write("c = c / d;")
+
+                         document.write("<br>")
+                         document.write("<br>")   
+
+                         document.write("befor the value is " + a + " and the value of c after interchange is" + c)
+                         document.write("<br>")
+                         document.write("<br>")
+
+                         document.write("before the value is " + b + " and the value of d after interchange is " + d)
+                         document.write("<br>")
+                         document.write("<br>")
+
+                         document.write("<hr>")
+
+
+              // 4. Solution :
+
+               // If a five-digit number is input through the keyboard, write a program to calculate the sum of its digits. (Hint: Use the modulus operator ‘%’)
+
+
+                          var num = +prompt("enter your five digit number :")
+                          var number = num
+
+                               var sum = 0;
+
+                           var i = num % 10 ; //45687 ==> 7
+                               sum = sum + i; // sum = 0 + 7  ==> sum = 7 // 45687
+                               num = parseInt(num / 10); // 4568.7 ==>parseInt ==> 4568
+
+                               i = num % 10; //4568 ==> 8
+                               sum = sum + i; // sum = 7 + 8 = 15
+                               num = parseInt(num / 10); // 456.8 ==> parseInt ==> 456
+
+                               i = num % 10; //456 ==> 6
+                               sum = sum + i; //sum = 15 + 6 = 21
+                               num = parseInt(num / 10); // 45.6 ==> 45
+
+                               i = num % 10; // 45 ==> 4
+                               sum = sum + i; //sum = 21 + 5 = 26
+                               num = parseInt(num / 10) // 4.5 ==> 4
+
+                               i = num % 10; //4 
+                               sum = sum + i; // sum = 26+ 4 = 30
+                               num = parseInt(num / 10) //0.4 ==> 0
+
+                               console.log( "the sum of digits (" + number + " ) is " + sum);
+                               console.log(num);
+
+                               document.write("4.Solution")
+                               document.write("<br>")
+                               document.write("<br>")
+
+                               document.write("The sum of digits (" + number + ") is " + sum)
+                               document.write("<hr>")
+                               
+                //5.Solution : 
+
+               // If a five-digit number is input through the keyboard, write a program to reverse the number.
+
+
+                      var numb = +prompt("enter your number :")
+                      number = numb
+
+                         var reverseNumber = 0;
+
+                         var i = numb % 10; //12345 ==> 5
+                         reverseNumber = (reverseNumber *10) + i // ==>0 * 10 = 0+5 =5
+                         numb = parseInt(numb /10)  //12345 /10 ==> 1234
+
+                         i = numb % 10; //1234 ==> 4
+                         reverseNumber = (reverseNumber * 10) + i// ==>5 * 10 = 50 + 4  =54
+                         numb = parseInt(numb /10) // 1234==>123
+
+                         i = numb % 10; //123==> 3
+                         reverseNumber = (reverseNumber * 10)  + i // ==>54 * 10 = 540 + 3 =543
+                         numb = parseInt(numb /10) // 123==>12
+
+                         i = numb % 10; // 12 ==>2
+                         reverseNumber = (reverseNumber * 10)  + i // 5430 + 2 = 5432
+                         numb = parseInt(numb /10)  // 12 => 1
+
+                         i = numb % 10; // 1
+                         reverseNumber = (reverseNumber * 10)  + i // 5432 * 10 = 54320 + 1 = 54321
+                         numb = parseInt(numb /10) //0
+
+                         
+
+                         console.log("The reverse number of " + number + " is " + reverseNumber);
+                         console.log(num);
+
+
+                        document.write("5.solution")
+
+                        document.write("<br>")
+                        document.write("<br>")
+
+                        document.write("The reverse number of " + number + " is " + reverseNumber)
+
+                        document.write("<br>")
+                        document.write("<hr>")
+                    
+
+
+            //6. Solution :
+
+            //If a four-digit number is input through the keyboard,
+            // write a program to obtain the sum of the first and last digit of this number.
+
+
+                 var number  = +prompt("enter four digit number :")
+                 var givenNumber = number;
+
+                 var i;
+                 var lastSum = 0;
+
+                          i = number % 10; // 1234
+                          lastSum = lastSum + i; // 0 + 4
+                          number =  parseInt(number /10) // 123
+                          
+                          i = number % 10;  // 123
+                          lastSum = lastSum + i; // 4 + 3  = 7  
+                          number = parseInt(number /10) //12
+
+                  var firstSum = 0;
+
+                          i = number % 10; // 12
+                          firstSum = firstSum + i // 0 + 2
+                          number = parseInt(number /10); //1
+
+                          i = number % 10; //1 
+                          firstSum = firstSum + i; // 2 + 1 =3
+                          number = parseInt(number /10); //0
+
+                console.log("The sum of first two digits is "+ firstSum);
+                console.log("The sum of first two digits is "+ lastSum);
+
+
+                  document.write("6.Solution")
+                  document.write("<br>")
+                  document.write("<br>")
+
+                  document.write("The given number is " + givenNumber);
+                  document.write("<br>")
+                  document.write("<br>")
+
+                  document.write("The sum of first two digits is " + firstSum);
+                  document.write("<br>")
+                  document.write("<br>")
+                  document.write("The sum of last two digits is " + lastSum);
+
+                  document.write("<br>")
+                  document.write("<hr>")
+
+            //7. Solution :
+
+                   //In a town, the percentage of men is 52. 
+                   //The percentage of total literacy is 48.
+                   // If total percentage of literate men is 35 of the total population, write a program to find the total number  
+                   // of illiterate men and women if the population of the town is 80,000.
+
+                  var percentageOfMen = '52%';
+                  var percentageOfTotalLiteracy = '48%';
+                  var totalPopulation = 80000;
+                  var percentageOfLiterateMen = '35%'
+
+                  percentageOfMen = parseInt(percentageOfMen)
+                  console.log(percentageOfMen)
+                  percentageOfLiterateMen = parseInt(percentageOfLiterateMen)
+                  console.log(percentageOfLiterateMen)
+                  percentageOfTotalLiteracy = parseInt(percentageOfTotalLiteracy)
+
+
+
+                   var percentageOfIlliteracy = 100 - percentageOfTotalLiteracy ;
+                   console.log(percentageOfIlliteracy)
+                   
+                    
+                       
+                       
+                   var totalIlliterateMandW = (percentageOfIlliteracy * totalPopulation )/ 100
+
+                          console.log("The total illiterate of men and women is :" + totalIlliterateMandW);
+
+                    var totalIllerateOfMen = (percentageOfLiterateMen  * totalIlliterateMandW ) /100
+
+                        console.log("The total illerate of men is " + totalIllerateOfMen)
+
+
+                    var totalIlliterateOfWomen = totalIlliterateMandW - totalIllerateOfMen;
+
+                         console.log("The total illterate of women is " + totalIlliterateOfWomen);
+
+
+                    document.write("7.Solution")
+                    document.write("<br>")
+                    document.write("<br>")
+
+                    document.write("The total illiterate of men and women is :" + totalIlliterateMandW)
+                    document.write("<br>")
+                    document.write("<br>")
+
+                    document.write("The total illerate of men is " + totalIllerateOfMen)
+                    document.write("<br>")
+                    document.write("<br>")
+
+                    document.write("The total illterate of women is " + totalIlliterateOfWomen)
+                    document.write("<br>")
+                    document.write("<br>")
+
+                    document.write("<hr>")
+
+
+            //8. Solution :
+                     
+                 //A cashier has currency notes of denominations 10, 50 and 100.
+                 // If the amount to be withdrawn is input through the keyboard in hundreds, 
+                 //find the total number of currency notes of each denomination the cashier will have to give to the withdrawer.
+
+
+                      var userAmount = +prompt("enter your amount in hundreds :")
+
+                              var amount = userAmount;
+                        console.log("User Enter Amount is " + amount)
+
+                             hundredInNotes = parseInt(userAmount / 100 ) 
+                           //  Eg : if user enter 950 then if u want hundred notes we will divide by 100
+                           // if we divide by hundred we get 9.50 when we parseint we have 9 so 9 notes of hundred rupees
+                           // user can get
+
+                        console.log("Required notes of Rs.100 : " + hundredInNotes)  
+                        
+                              fiftyInNotes = userAmount % 100 // 950 ==> 50
+                              // eg : if user enter 950 ==> 9 notes of hundreds and remaining 50 notes we should do remainder 
+                              //division to get 50 from 950 after that we should divide fiftyInNotes /50 
+
+                              fiftyInNotes = parseInt(fiftyInNotes / 50 ) //==> 1 note of 50 rupees
+
+                        console.log("Requires notes of Rs.50 : " + fiftyInNotes)
+
+                             tenInNotes = ((userAmount % 100) % 50) /10;
+                             tenInNotes = parseInt(tenInNotes)
+                             //eg : if user enter 965 == > 965 % 100 = 65 % 50 ==> 15 / 10 = 1.5
+
+                        console.log("Required notes of Rs.10 : " + tenInNotes)
+
+                              remainingNotes = ((userAmount % 100 ) % 50) % 10 //956 ==> 56 ==> 6 ==> 6 % 10 = 6
+
+                        console.log('Required coins of remaining rupees : ' + remainingNotes);
+
+                        
+
+
+
+                        document.write("8.Solution")
+                        document.write("<br>")
+                        document.write("<br>")
+
+                        document.write("User Enter Amount is " + amount)
+                        document.write("<br>")
+                        document.write("<br>")
+
+                        document.write("Required notes of Rs.100 : " + hundredInNotes)
+                        document.write("<br>")
+                        document.write("<br>")
+
+                        document.write("Requires notes of Rs.50 : " + fiftyInNotes)
+                        document.write("<br>")
+                        document.write("<br>")
+
+                         document.write("Required notes of Rs.10 : " + tenInNotes)
+                         document.write("<br>")
+                         document.write("<br>")
+
+                         document.write("Required coins of remaining rupees : " + remainingNotes)
+                         document.write("<br>")
+                         document.write("<br>")
+
+                         
+                         document.write("<hr>")
+
+
+                //9.Solution :
+
+                 //  If the total selling price of 15 items and the total profit earned on them is input through the keyboard,
+                 //  write a program to find the cost price of one item.
+
+                         
+                          var sellingPrice = +prompt("enter selling price of 15 items : ")
+                          var totalProfit =  +prompt("enter total profit : ")
+
+                                // when selling price and profit is given then we should subtract profit form selling price
+                                // when selling price and loss is given then we should add selling price and loss
+
+                                 costPrice = (sellingPrice - totalProfit) / 15;
+
+                                 console.log("the cost price of one item  is : " + costPrice )
+
+
+                             document.write("9.Solution")
+                             document.write("<br>")
+                             document.write("<br>")
+
+                             document.write("selling price : " + sellingPrice)
+                             document.write("<br>")
+                             document.write("totalProfit : " + totalProfit)
+                             document.write("<br>")
+                             document.write("<br>")
+
+                             document.write("costPrice = (sellingPrice - totalProfit) / 15;")
+                             document.write("<br>")
+                             document.write("<br>")
+
+                             document.write("the cost price of one item  is : " + costPrice )
+                             document.write("<br>")
+
+                             document.write("<hr>")
+
+                // 10. Solution :
+
+                // If a five-digit number is input through the keyboard, 
+                //write a program to print a new number by adding one to each of its digits. 
+                //For example if the number that is input is 12391 then the output should be displayed as 23402.
+
+
+                                    var number = +prompt("enter your five-digit number :")
+
+                                      originalNumber = number;
+
+                                            var i;
+                                            var sum = 0;
+
+                                            num = parseInt(number / 10000) // 1.2345 == >1
+                                            //console.log(num)
+
+                                            i = num + 1; // (1 + 1) * 10 = 20
+                                           // console.log(i)
+
+                                            sum = (sum * 10) + i
+                                            
+                                           var newNumber = number % 10000  //
+                                          // console.log(newNumber)
+                                            
+                          
+
+                                            num = parseInt(newNumber / 1000) // 12.345
+                                           // console.log(num)
+
+                                            i = num + 1;  // 
+                                           // console.log(i)
+                                            sum = (sum * 10) + i
+
+                                            newNumber = number % 1000 //
+                                           // console.log(newNumber)
+
+
+                                            num = parseInt(newNumber / 100)
+                                           // console.log(num)
+
+                                            i = num + 1;
+                                           // console.log(i)
+                                            sum = (sum * 10) + i
+
+                                            newNumber = number % 100
+                                          //  console.log(newNumber)// 45
+
+                                            
+                                            num = parseInt(newNumber / 10)
+                                          //  console.log(num)
+
+                                            i = num + 1;
+                                         //   console.log(i)
+                                            sum = (sum * 10) + i
+
+                                            newNumber = number % 10
+                                         //   console.log(newNumber)
+                                            
+
+                                            num = parseInt(newNumber / 1)
+                                          //  console.log(num)
+
+                                            i = num + 1;
+                                         //   console.log(i)
+                                            sum = (sum * 10) + i
+
+                                            newNumber = number % 1
+                                         //   console.log(newNumber) // when newnumber becomes 0 stop the iteration
+
+                                            console.log("user number given is : " + originalNumber)
+                                            console.log("The new number after adding one to each of its digit is " + sum ) // 23456
+
+
+
+                             document.write("10.Solution")
+                             document.write("<br>")
+                             document.write("<br>")
+
+                             document.write("user number is " + originalNumber)
+                             document.write("<br>")
+                             document.write("<br>")
+
+                             document.write("The new number after adding one to each of its digit is " + sum)
+                             document.write("<br>")
+                             document.write("<hr>")
+
+                             
+   
+
+          </script>
+
+
+    </body>
+</html>
