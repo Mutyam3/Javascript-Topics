@@ -1,0 +1,480 @@
+<html>
+    <head>
+        <title>
+            Mutyam ==> Statement_Assignment02
+        </title>
+
+        <style>
+
+            *{
+                font-size: large;
+            }
+
+        </style>
+    </head>
+    <body>
+
+
+          <h2>use if...else statements to solve the following problems</h2>
+
+              <p>1. Write a program to print the least number in given two numbers</p>
+
+              <p>2. Write a program to print the given two numbers in ascending order</p>
+
+              <p>3. Write a program to print the given two numbers in descending order</p>
+
+              <p>4. Write a program to print the greatest number in given three numbers</p>
+
+              <p>5. Write a program to print the least number in given three numbers</p>
+
+              <p>6. Write a program to print the given three numbers in ascending order</p>
+
+              <p>7. Write a program to print the given three numbers in descending order</p>
+
+              <p>8. Write a program to take marks of three subjects and print the grade of student</p>
+
+              <p>9. Character Is Vowel or Consonant</p>
+
+              <p>10.A Character Is an Alphabet or Not</p>
+
+
+<hr>
+
+         <script>
+
+
+
+            //    //1.Solution :
+
+               //  Write a program to print the least number in given two numbers
+                     
+                        
+                    var number1 = +prompt("Enter your first number for to get least number  : ")
+                    var number2 = +prompt("Enter your second number for to get least number : ")
+
+                     if(number1 > number2)
+                     {
+                        console.log(number2 + " is least number between two numbers")
+                     }
+
+                     else
+                     {
+                         console.log(number1 + " is least number between two numbers")
+                     }
+
+
+            //2.Solution :
+
+            //  Write a program to print the given two numbers in ascending order
+
+                    var number1 = +prompt("Enter your first number for to get numbers in ascending order : ")
+
+                    var number2 = +prompt("Enter your second number for to get numbers in ascending order : ")
+
+                    if(number1 >= number2) // here if this condition is true then swap 
+                    {
+
+                        number1 = number1 * number2;
+                        number2 = number1 / number2;
+                        number1 = number1 / number2;
+
+                        
+                    }
+
+                    console.log(number1,number2);
+                    
+
+                    // // if(number1 >= number2) 
+                    // {
+                    //     console.log(number2 + " " + number1)
+                    // }
+                    // else 
+                    // {
+                    //     console.log(number1 + " " + number2)
+                    // }
+                    
+
+            //3.Solution :
+
+            //  Write a program to print the given two numbers in descending order
+                      
+
+            var number1 = +prompt("enter your first number for to get numbers in descending order : ")
+            var number2 = +prompt("enter your second number for to get number in descending order : ")
+
+                  if(number1 <= number2)
+                  {
+                    number1 = number1 * number2;
+                    number2 = number1 / number2;
+                    number1 = number1 / number2;
+
+                  }
+
+                  console.log(number1,number2);
+
+
+            // 4.Solution :
+
+            //Write a program to print the greatest number in given three numbers
+
+               
+                var num1 = +prompt("Enter your first number : ")
+                var num2 = +prompt("Enter your second number : ")
+                var num3 = +prompt("Enteryour third number : ")
+
+                if(num1 > num2)
+                {
+                    if(num1 > num3)
+                    {
+                        console.log(num1 + " is the greatest number among three numbers")
+                    }
+                    else
+                    {
+                        console.log(num3 + " is the greatest number among three numbers")
+                    }
+                }
+                else
+                {
+                    if(num2 > num3)
+                    {
+                        console.log(num2 + " is greatest number among three numbers")
+                    }
+                    else
+                    {
+                        console.log(num3 + " is greatest number among three numbers")
+                        
+                    }
+                }
+
+
+            // 5. Solution :
+            // Write a program to print the least number in given three numbers
+
+                   var num1 = +prompt("Enter your first number : ")
+                   var num2 = +prompt("Enter your second number : ")
+                   var num3 = +prompt("Enter your Third number : ")
+
+                 if(num1 < num2)
+                 {
+                        if(num1 < num3)
+                        {
+                            console.log(num1 + " is least number among three numbers")
+                        }
+                        else
+                        {
+                            console.log(num3 + " is least number among three numbers")
+                        }
+                 }
+                 else
+                 {
+                       if(num2 < num3)
+                       {
+                              console.log(num2 + " is least number among three numbers")
+                       }
+                       else
+                       {
+                             console.log(num3 + " is least number among three numbers")
+                       }
+                 }
+
+
+             // 6. Solution :
+
+              //    Write a program to print the given three numbers in descending order.
+
+                   
+                      var num1 = +prompt("Enter your first Number : ")
+                      var num2 = +prompt("Enter your second Number : ")
+                      var num3 = +prompt("Enter your Third Number : ")
+
+
+                      console.log("Given numbers : " + num1, num2, num3)
+                      console.log("descending order : ")
+
+
+
+                      if(num1 > num2)
+                      {
+                        if(num1 > num3)
+                           {
+                              console.log(num1)
+                              if(num2 >num3)
+                              {
+                                console.log(num2)
+                                console.log(num3)
+                              }
+                              else
+                              {
+                                console.log(num3)
+                                console.log(num2)
+                              }
+     
+                           }
+                           else
+                           {
+                            console.log(num3)
+                            console.log(num1)
+                            console.log(num2)
+                           }
+                        
+                      }
+                      else //num2 > num1
+                      {
+                        if(num2 > num3)
+                        {
+                               console.log(num2)
+                               if(num3>num1)
+                               {
+                                console.log(num3)
+                                console.log(num1)
+                               }
+                               else 
+                               {
+                                console.log(num1)
+                                console.log(num3)
+                               }
+                        }
+                        else
+                        {
+                               console.log(num3)
+                               console.log(num2)
+                               console.log(num1)
+                        }
+                      }
+
+           // 7.Solution:   
+
+           //  Write a program to print the given three numbers in ascending order
+
+               var num1 = +prompt("Enter your First number : ");
+               var num2 = +prompt("Enter your Second number : ");
+               var num3 = +prompt("Enter your Third Number : ");
+
+            console.log("Given numbers : " + num1, num2, num3)
+            console.log("ascending order : ")
+
+
+               if(num1 < num2)
+               {
+                 if(num1 < num3) 
+                 {
+                    console.log(num1)
+                    if(num2 < num3)
+                    {
+                       console.log(num2)
+                       console.log(num3)
+                    }
+                    else
+                    {
+                         console.log(num3)
+                         console.log(num2)
+                    }
+                 }
+                 else // num3 < num1
+                 {
+                   
+                    console.log(num3)
+                    console.log(num1)
+                    console.log(num2)
+
+                 }
+               }
+               else //num2 < num1
+               {
+                if(num2 < num3)
+                {
+                    console.log(num2)
+                    if(num3 < num1)
+                    {
+                        console.log(num3)
+                        console.log(num1)
+                    }
+                    else
+                    {
+                        console.log(num1)
+                        console.log(num3)
+                    }
+                }
+                else
+                {
+                    console.log(num3)
+                    console.log(num2)
+                    console.log(num1)
+                }
+               }
+                          
+                     
+
+      // 8. Solution :
+
+      // Write a program to take marks of three subjects and print the grade of student
+
+                var sub1 = +prompt("Enter your first subject marks : ")
+                var sub2 = +prompt("Enter your second subject marks : ")
+                var sub3 = +prompt("Enter your third subject marks:  ")
+
+                p = (sub1 + sub2 + sub3)/3 
+                console.log(" You got : " + p)
+
+                if(p >= 70 )
+                {
+                    console.log("you got A grade !")
+                }
+                else
+                {
+                    if(p >= 50)
+                    {
+                        console.log("You got B grade !")
+                    }
+                    else
+                     {
+                           if(p >= 40)
+                           {
+                            console.log("You got C grade !")
+                           }
+                           else
+                           {
+                            if(p >= 35)
+                            {
+                                console.log("You got D grade")
+                            }
+                            
+                            else
+                           {
+                                 console.log("You got F grade")
+                           }
+                             
+                           } 
+                     }
+                }
+
+
+            // 9.Solution :
+
+            //Character Is Vowel or Consonant:
+
+                 var character = prompt("Enter Character to know whether it is vowel or not : ")
+
+                   if(character === "a" || "e" || "i" || "o" || "u")// || ==> checks for truth if thruth it get stop there and it prints.
+                   {
+                    console.log("Yes , it is vowel")
+                   }
+                   else
+                   {
+                    console.log("Yes , it is consonant")
+                   }
+
+
+             // 10.Solution : 
+
+             // A Character Is an Alphabet or Not:
+
+                    var character = prompt("Enter character to know whether it is Alphabet or not : ")
+
+                    //A to Z a to z
+                    if(character >= 'A' && character <= 'z'  )
+                    {
+                        console.log("Yes, it is Alphabet ")
+                    }
+                    else
+                    {
+                        console.log("No, it is not Alphabet ")
+                    }
+
+             
+                   // or 
+
+
+                   var character = prompt("Enter character to know whether it is vowel or not:")
+
+                   if(character >='A' && character <= 'z')
+                        {
+                            if(character === 'a' || 'A' || 'e' || 'E' || 'i' || 'I' || 'o' || 'O' || 'u' || 'U')
+                            {
+                                console.log("The given character is vowel")
+                            }
+                            else
+                            {
+                                console.log("The given character is consonant")
+                            }
+                        }  
+                        
+                        else
+                        {
+                            consoel.log("u have entered wrong. please, enter alphabets either wise u will be kicked out!")
+                        }
+
+                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         </script>
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+</html>

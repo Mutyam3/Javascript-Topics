@@ -1,0 +1,524 @@
+<html>
+    <head>
+        <title>
+            Mutyam ==> Statement_Assignment03
+        </title>
+        <style>
+
+            * {
+                font-size :large;
+            }
+
+
+
+        </style>
+    </head>
+    <body>
+
+           <h2>use if...else statements to solve the following problems</h2>
+
+           <p>1. Uppercase, Lowercase, Special Character, or Digit</p>
+
+           <p>2. Leap Year</p>
+
+           <p>3. The Date Is Correct or Not</p>
+
+           <p>4. Voting Eligibility Checker</p>
+
+           <p>5. Check whether a number is negative, positive or zero.</p>
+
+           <p>6. Check whether a number is divisible by 5 and 11 or not.</p>
+
+           <p>7. Input any alphabet and check whether it is vowel or consonant.</p>
+
+           <p>8. Input any character and check whether it is the alphabet, digit or special character.</p>
+
+           <p>9. Check whether a character is an uppercase or lowercase alphabet.</p>
+
+           <p>10. Input week number and print weekday.</p>
+
+           <p>11. Input month number and print number of days in that month.</p>
+
+           <p>12. Count the total number of notes in a given amount.</p>
+
+           <p>13. Input angles of a triangle and check whether the triangle is valid or not.</p>
+
+           <p>14. Check whether the triangle is an equilateral, isosceles or scalene triangle.</p>
+
+
+
+        <hr>
+
+
+      
+        <script>
+
+          //  1.Solution  :
+          // Uppercase, Lowercase, Special Character, or Digit
+
+
+                  var character = prompt("enter your string :")
+
+                    if(character >='A' && character <= 'Z') //A toZ
+                    {
+                        console.log("Given character  " + character + " is uppercase")
+                    }
+
+                    else
+                    {
+                        if(character >= 'a' && character <= 'z') // a to z
+                        {
+                            console.log("Given character  " + character  + " is lowercase" )
+                        }
+                        else 
+                        {
+                            if(character >= '0' && character <= '9') //0 to 9
+                            {
+                                console.log("Given character  " + character + " is digit" )
+                            }
+                            else
+                            {
+                                console.log("Given character " + character + " is special character")
+                            }
+                        }
+                    }
+
+
+            //2.Solution :
+            //Leap Year :
+
+                          var year = prompt("Enter your year : ")
+
+                          if(year % 4 === 0)
+                          {
+                            console.log("Yes,it's a leap year")
+                          }
+                          else
+                          {
+                            console.log("No, it's not a leap year")
+                          }
+
+            //3.Solution : 
+
+            //Date correct or not :
+
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            //4.Solution :
+            // voting eligibility :
+
+           // [if your age is above or equal to  18 , you are eligible for voting, if ur age is below 18 , obviously, you are not eligibile for voting ]
+
+                       var age = +prompt("Enter your age : ");
+
+                       if(age >= 18)
+                       {
+                        console.log("Yes, you are eligibile for voting ")
+                       }
+                       else
+                       {
+                        console.log("No, you are not eligible for voting")
+                       }
+
+
+
+
+
+            // 5. Solution :
+
+            //Check whether a number is negative, positive or zero
+
+                           var number = +prompt("Enter your number for to check whether its positive , negative or zero : ")
+
+                           if(number > 0)
+                           {
+                            console.log("Yes, it's positie number")
+                           }
+                           else
+                           {
+                              if(number < 0) 
+                              {
+                                console.log("Yes, it's  negative number")
+                              }
+                              else
+                              {
+                                console.log("yes, it's  zero")
+                              }
+                           }
+
+
+
+
+               // 6.Solution :
+
+               //Check whether a number is divisible by 5 and 11 or not.
+
+                          var number = +prompt("Enter your number for to check it is divisible by 5 and 11 or not :")
+
+                          if(number % 5 === 0  && number % 11 === 0)
+                          {
+                            console.log("Yes, the given number " + number + " is divisible by 5 and 11")
+                            
+                          }
+                          else
+                          {
+                            console.log("No, the given number " + number + " is divisible by 5 and 11")
+                          }
+
+
+
+
+                 // 9.Solution :
+
+                 //Check whether a character is an uppercase or lowercase alphabet.
+
+                 var character = prompt("Enter your character :")
+
+                 if(character >= 'A' && character <= 'Z')
+                 {
+                     console.log("the given character is uppercase")
+                 }
+                 else
+                 {
+                    if(character >= 'a' && character <= 'z')
+                    {
+                        console.log("the given character is lowercase")
+                    }
+                 }
+
+
+
+                   // 10.Solution :
+
+                   // Input week number and print weekday.
+
+                   var weekNumber = +prompt("Enter your weekNumber : ")
+
+                if(weekNumber >=0 && weekNumber <= 7)
+                {
+
+                   if(weekNumber === 0 || weekNumber === 7)
+                   {
+                    console.log(weekNumber + " it's Sunday")
+                   }
+                   else 
+                   {
+                      if(weekNumber === 1)
+                      {
+                        console.log(weekNumber + " it's Monday")
+                      }
+                      else
+                      {
+                        if(weekNumber === 2)
+                        {
+                            console.log(weekNumber + " it's Tuesday")
+                        }
+                        else 
+                        {
+                            if(weekNumber === 3)
+                            {
+                                console.log(weekNumber + " it's Wednesday")
+                            }
+                            else
+                            {
+                                if(weekNumber === 4)
+                                {
+                                    console.log(weekNumber + " it's Thursday")
+                                }
+                                else 
+                                {
+                                    if(weekNumber === 5)
+                                    {
+                                        console.log(weekNumber + " it's Friday")
+                                    }
+                                    else 
+                                    {
+                                        if(weekNumber === 6)
+                                        {
+                                            console.log(weekNumber + " it's Saturday")
+                                        }
+                                        
+                                    }
+                                }
+                            }
+                        }
+                       
+                      }
+                   }
+
+                }
+
+
+                //11.Solution :
+
+                //Input month number and print number of days in that month.
+
+
+                   var month = +prompt("Enter  month number : ")
+                   var year = +prompt("Enter year :")
+
+
+                   if(month >= 1 && month <= 12)
+                   {
+                      if(month === 1)
+                      {
+                        console.log(month + " it's January month having 31 days")
+                      }
+                      else
+                      {
+                        if(month === 2)
+                        {
+                            if (year % 4 ===0)
+                            {
+                                console.log(month + " it's February month having 29 days because it's a leap year")
+                            }
+                            else
+                            {
+                                console.log(month + " it's February month having 28 days")
+
+                            }
+  
+                        }
+                        else
+                        {
+                            if(month === 3)
+                            {
+                                console.log(month + " it's March month having 31 days")
+                            }
+                            else
+                            {
+                                if(month === 4)
+                                {
+                                    console.log(month + " it's April month having 30 days")
+                                }
+                                else
+                                {
+                                    if(month=== 5)
+                                    {
+                                        console.log(month + " it's May month having 31 days")
+                                    }
+                                    else
+                                    {
+                                        if(month === 6)
+                                        {
+                                            console.log(month + "it's June month having 30 days")
+                                        }
+                                        else
+                                        {
+                                            if(month === 7)
+                                            {
+                                                console.log(month +" it's July month having 31 days")
+                                            }
+                                            else 
+                                            {
+                                                if(month === 8)
+                                                {
+                                                    console.log(month + " it's August month having 31 days")
+                                                }
+                                                else
+                                                {
+                                                    if(month === 9)
+                                                    {
+                                                        console.log(month + " it's September month having 30 days")
+                                                    }
+                                                    else
+                                                    {
+                                                        if(month === 10)
+                                                        {
+                                                            console.log(month + " it's October month having 31 days")
+                                                        }
+                                                        else
+                                                        {
+                                                            if(month === 11)
+                                                            {
+                                                                console.log(month + " it's November month having 30 days")
+                                                            }
+                                                            else
+                                                            {
+                                                                console.log(month + " it's Decmeber month having 31 days")
+                                                            }
+                                                        }
+                                                    }
+                                                    
+                                                }
+                                            }
+                                            
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                      }
+                   }
+
+
+
+                // 12.Solution :
+               //Count the total number of notes in a given amount.</p>
+
+
+
+                   var amount = +prompt("Enter amount :")
+                    
+                         
+                        // 100 , 500 , 50 , 10
+
+                            
+                            var fiveHundred;
+                            var hundred;
+                            var fifty;
+                            var tens;
+                            var coins;
+
+                           console.log(amount) 
+
+                            fivehundred = parseInt (amount  / 500) // 23517 / 500
+                            console.log("the fivehundred notes required are : " + fivehundred);
+                            hundred     =  ( amount % 500 )  // 23517 % 2000 = 357
+                            hundred     =  parseInt( hundred / 100 ) // 350 / 100 
+                            console.log("The hundred notes required are : " + hundred);
+                            fifty =   ((amount % 500) % 100 ) // 23517 % 500 = 3517 % 100 
+                            fifty =    parseInt (fifty / 50) // ==>  517 / 50 
+                            console.log("The fifty notes required are : " + fifty);
+                            tens = (((amount % 500) % 100 ) ) % 50 
+                            tens =     parseInt(tens / 10)
+                            console.log("The tens notes required are : " + tens);
+                            coins = ((((amount % 500) % 100 )) % 50 ) % 10
+                            
+                            console.log("The coins required are : " + coins);
+
+
+
+                  //13.Solution :
+                  //Input angles of a triangle and check whether the triangle is valid or not.
+
+                  //to check whether a triangle is valid or not when  sum of their angles should be equal to 180.
+                  //but all angles should not be equal to 0
+
+                  var angle01 = +prompt("Enter the first angle : ");
+                  var angle02 = +prompt("Enter the second angle : ");
+                  var angle03 = +prompt("Enter the third angle : ");
+
+
+                      if(angle01 !== 0 && angle02 !== 0 && angle03 !== 0)
+                      {
+                        if(angle01 + angle02 + angle03 === 180)
+                        {
+                                console.log("Triangle is valid")
+                        }
+                        else
+                        {
+                               console.log("Triangle is not valid")
+                        }
+                      }
+
+
+
+
+
+
+
+                      
+                    // 14.Solution :
+                    //Check whether the triangle is an equilateral, isosceles or scalene triangle.
+
+                    var side1 = +prompt("enter first side of a triangle : ")
+                    var side2 = +prompt("enter second side of a triangle : ")
+                    var side3 = +prompt("Enter  third side of a triangle :  ")
+
+                    // the triangle is said to be an equilateral when three sides are equal i.e x = y = z
+                    // the triangle is said to be an isosceles  when any two sides are equal i.e x = y or y = z or z =a
+                    // the triangle is said to be a  scalene when none of the sides are equal.i.e x!= y!=z or !(x = y= z)
+
+
+                      if((side1 === side2) && (side2 === side3))  
+                      {
+                        console.log("the triangle is equilateral triangle")
+                      }
+                      else
+                      {
+                        if(side1 === side2 || side2 === side3 || side3 === side1 )
+                        {
+                            console.log("The triangle is isosceles triangle")
+                        }
+                        else
+                        {
+                            console.log("The triangle is scalene triangle")
+                        }
+                      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+</html>
