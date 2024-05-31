@@ -1,0 +1,408 @@
+<html>
+    <head>
+        <title>Mutyam ==> Iteration Assignment01</title>
+    </head>
+
+
+
+
+    <body>
+
+        <h2>Use Loops to get the output for the following programming questions </h2>
+        <h3>iteration</h3>
+
+        <p>1. Write a program to print 1 to 10 numbers using a while loop</p>
+
+        <p>2. Write a program to print 10 to 1 numbers using a while loop</p>
+
+        <p>3. Write a program to print 5 to 15 numbers using a while loop</p>
+
+        <p>4. Write a program to print 15 to 10 numbers using a while loop</p>
+
+        <p>5. Write a program to print 1 to 10 even numbers using a while loop</p>
+
+        <p>6. Write a program to print 1 to 10 odd numbers using a while loop</p>
+
+        <p>7. Write a program to print first ten multiples of 4 using a while loop (multiples of 4 are 4,8,12,16,20,.....)</p>
+
+        <p>8. Write a program to print multiplication table of 6 using while loop</p>
+
+        <p>9. Print the squares of all numbers from 1 to 10.</p>
+
+        <p>10. Print the cubes of all numbers from 1 to 10.</p>
+
+        <p>11. Write a program to print factors of 24 using while loop (factors of 24 are 1,2,3,4,6,8,12,24)</p>
+
+        <p>12. Write a program to print 1 to 10 numbers using a for loop</p>
+
+        <p>13. Write a program to print 10 to 1 numbers using a for loop</p>
+
+        <p>14. Write a program to print all numbers from 1 to a given number</p>
+
+        <p>15. Write a program to print 1 to 10 even numbers using a for loop</p>
+
+        <p>16. Write a program to print 1 to 10 odd numbers using a for loop</p>
+
+
+
+
+
+<hr>
+
+
+        <script>
+
+            //1. Solution :
+            console.log("1.Solution : ")
+
+           // Write a program to print 1 to 10 numbers using a while loop.
+
+                         var i = 1;
+
+                         while(i <= 10)
+                         {
+                            console.log(i);
+                            i = i + 1; // i++ 
+                         }
+
+
+            //2.Solution: 
+            console.log("2.Solution : ")
+
+            // Write a program to print 10 to 1 numbers using a while loop.
+
+
+                           var i = 10;
+
+                           while(i>=1)
+                           {
+                            console.log(i);
+                            i = i - 1; // i--
+                           }
+
+            //3. Solution :
+            console.log("3.Solution : ")
+
+            //  Write a program to print 5 to 15 numbers using a while loop.
+
+                             var i = 5;
+                             
+                             while(i <= 15)
+                             {
+                                console.log(i)
+                                i = i + 1
+                             }
+
+            //4.Solution: 
+              console.log("4.Solution : ")
+
+              // Write a program to print 15 to 10 numbers using a while loop
+
+                            var i = 15;
+
+                            while(i >= 10)
+                            {
+                                console.log(i)
+                                i = i - 1
+                            }
+
+
+            //5.Solution : 
+            console.log("5.Solution :")
+ 
+            //Write a program to print 1 to 10 even numbers using a while loop.
+
+                                var i = 1;
+
+                                while(i<=10)
+                                {
+                                    if(i % 2 === 0)
+                                    {
+                                        console.log(i)
+                                        
+                                    }
+                                    i = i + 1
+                                }
+
+                   // or
+
+                                //   var i = 2;
+                                //   while(i<=10)
+                                //   {
+                                //     console.log(i)
+                                //     i = i + 2
+                                //   }
+           //  6.Solution :
+           console.log("6.Solution : ")
+
+           // write a program to print 1 to 10 odd number using a while loop.
+
+                                  var i = 1;
+
+                                  while(i <= 10)
+                                  {
+                                    if(i % 2 !== 0)
+                                    {
+                                        console.log(i)
+                                    }
+                                    i = i + 1
+                                  }
+            // or
+                                
+                                //  var i = 1;
+
+                                //  while(i<=10)
+                                //  {
+                                //     console.log(i)
+                                //     i = i+ 2
+                                //   }
+
+
+
+            // 7.Solution :
+            console.log("7.Solution : ")
+
+            // Write a program to print first ten multiples of 4 using a while loop (multiples of 4 are 4,8,12,16,20,.....)
+
+                               var i = 1;
+                               var n = 4
+                               while(i<=10)
+                               {
+                                   
+                                    console.log( i * n)
+                                    i = i + 1;
+                               }
+
+            //8.Solution :
+            console.log("8.Solution : ")
+
+            //Write a program to print multiplication table of 6 using while loop.
+
+
+                                var i = 1;
+                                var n = 6
+                                while(i<=10)
+                                {
+                                    console.log(n + " * " + i + " = " + (n * i));
+                                    i = i + 1;
+                                }
+
+            //9.Solution :
+            console.log("9.Solution : ")
+
+            //Print the squares of all numbers from 1 to 10.
+
+                                  var i = 1;
+                                  while(i<= 10)
+                                  {
+                                    console.log(i ** 2)
+                                    i = i + 1;
+                                  }
+
+            //10.Solution :
+            console.log("10.Solution : ")
+
+            //Print the cubes of all numbers from 1 to 10.
+
+                                 var i = 1;
+                                 while(i <= 10)
+                                 {
+                                    console.log(i ** 3)
+                                    i = i + 1;
+                                 }
+
+            // 11.Solution :
+            console.log("11.Solution : ")
+
+            //Write a program to print factors of 24 using while loop (factors of 24 are 1,2,3,4,6,8,12,24)
+
+                                var i = 1;
+                                var n = 24
+                                while(i <= n)
+                                {
+                                    if(n % i === 0)
+                                    {
+                                        console.log(i)
+                                    }
+                                    i = i + 1;
+                                }
+             // 12 .Solution :
+             console.log("12.Solution : ")
+
+             //Write a program to print 1 to 10 numbers using a for loop
+
+
+             //For loop :
+
+                               for(var i = 1 ; i <= 10 ; i = i +1)
+                               {
+                                console.log(i)
+                               }
+                
+            // 13.Solution :
+            console.log("13.Solution : ")
+
+             // Write a program to print 10 to 1 numbers using a for loop
+
+                               for(var i = 10; i >= 1; i = i -1 )
+                               {
+                                console.log(i)
+                               }
+
+             // 14.Solution :
+             console.log("14.Solution :")
+
+             //   Write a program to print all numbers from 1 to a given number
+
+                              var number = +prompt("enter the number ")
+                             for(var i = 1; i<=number; i = i + 1)
+                             {
+                                console.log(i)
+                             }
+
+
+              // 15.Solution :
+              console.log("15.Solution : ")
+
+              //  Write a program to print 1 to 10 even numbers using a for loop
+
+                               for(var i = 1; i <= 10; i = i + 1)
+                               {
+                                       if(i % 2 === 0)
+                                       {
+                                        console.log(i)
+                                       }
+                               }
+
+                             //  or 
+
+                            //    for(var i = 2 ; i <=10; i =i+2)
+                            //    {
+                            //            console.log(i)
+                            //    }
+
+
+                //16.Solution :
+                console.log("16.Solution :")
+
+                // Write a program to print 1 to 10 odd numbers using a for loop
+
+                                  for(var i = 1; i <= 10 ; i = i+ 1)
+                                  {
+                                    if(i%2 !== 0)
+                                    {
+                                        console.log(i)
+                                    }
+                                  }
+
+                               //or 
+
+                            //    for(var i = 1; i <= 10; i = i + 2 )
+                            //    {
+                            //     console.log(i)
+                            //    }
+                           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+</html>

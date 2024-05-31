@@ -1,0 +1,486 @@
+<html>
+    <head>
+        <title>
+            Mutyam  ==> Iteration_Assignment02
+        </title>
+    </head>
+
+    <body>
+
+
+        <h2>Use Loops to get the output for the following programming questions </h2>
+
+        <h3>iteration</h3>
+
+       <p> 1. Write a program to print first 10 multiples of 3 using a for loop  </p>      
+
+       <p> 2. Write a program to print multiplication table of 6 using a for loop</p>
+
+       <p> 3. Write a program to print all the factors of a given number</p>
+
+       <p> 4. a program to read 5 numbers and print the maximum and minimum number</p>
+
+       <p> 5. a program to read 5 numbers and print only the even numbers</p>
+
+       <p> 6. Print all the digits of a given number</p>
+
+       <p> 7. Write a program to print only even digits of a given number The output should be 4,2,6 Ex. Let us take 154256</p>
+
+       <p> 8. Write a program to print only odd digits of a given number Ex. Let us take 1542763 The output should be 1,5,7,3</p>
+
+       <p> 9. Write a program to print the number at 10’s place</p>
+
+       <p> 10. Write a program to print the number at 100’s place</p>
+
+       <p> 11. Write a program to print the number at 1000’s place</p>
+
+       <p> 12. Write a program to print the number at 10000’s place</p>
+
+       <p> 13. Write a program to find the LCM of given two numbers</p>
+
+       <p> 14. Write a program to convert an octal number to a decimal</p>
+
+
+
+     <hr>
+
+       
+       
+
+
+        <script>
+
+
+           // 1.Solution :
+           console.log("1.Solution : ")
+
+           // Write a program to print first 10 multiples of 3 using a for loop.
+
+                     for(var i = 1 ; i <=10 ; i =i + 1)
+                     {
+                        console.log(i * 3)
+                     }
+
+
+            //2.Solution :
+            console.log("2.Solution : ")
+
+            //Write a program to print multiplication table of 6 using a for loop
+
+                      for(var i = 1; i <= 10 ; i =i +1)
+                      {
+                        console.log(6 + " * " + " = " + (6 * i))
+                      }
+
+             //3.solution :
+             console.log("3.Solution : ")
+
+             //Write a program to print all the factors of a given number
+
+
+                         var number = +prompt("Enter your number for factorial : ")
+                            
+                          for(var i = 1; i <= number ; i = i + 1)
+                          {
+                                 if(number % i === 0)
+                                 {
+                                    console.log(i)
+                                 }
+                          }
+
+
+                // suppose if need even factors of a number then 
+
+                // console.log("or")
+
+                //            var number = +prompt("Enter your number for even factorial : ")
+
+                //            for(var i = 1; i <= number ; i = i + 1)
+                //            {
+                                    
+                                    
+                //                         if(number % i ===0)  // or (number % i === 0 &&  i % 2 === 0)
+                //                         {
+                //                             if(i%2 === 0)
+                //                             {
+                //                                 console.log(i)
+                //                             }
+                                            
+                //                         }
+                                    
+                //            }
+
+              // 4.Solution :
+              console.log("4.Solution :")
+
+              //a program to read 5 numbers and print the maximum and minimum number</p>
+                                  
+                            var min;
+                                
+                            for(var i = 1; i <= 5; i = i + 1)
+                            {
+                                var n = +prompt("enter the number : ")
+                                // 5 4 8 2 3
+                                 
+                                if(i === 1)
+                                {
+                                    min = n; //5
+                                }
+                                else
+                                {
+                                    if(min > n) //5>4  // 4 > 8 ignores //4 > 2 //2 >3
+                                    {
+                                        min = n  //4 //2
+                                    }
+                                }
+                               
+                                
+                              
+                              
+                            }
+
+                            console.log( "min : " + min);//2
+
+                            var max ;
+                            for(var i = 1; i <= 5; i = i +1)
+                            {
+                                var number = +prompt("Enter the number : ")
+                                // 5 4 8 2 3
+
+                                if( i === 1)
+                                {
+                                    max = number // 5
+                                }
+                                else
+                                {
+                                    if(max < number) // 5 < 4 false // 5 < 8 //8 < 2 false // 2 < 3 false.
+                                    {
+                                        max = number // 8  
+                                    }
+                                }
+                            }
+
+                            console.log("max : " + max); //8
+
+               //NOTE : to control the iteration we need three things those are 
+                   //initilization
+                   //condition
+                   //updation : increment / decrement.
+
+                            
+                    //5.Solution :
+                    console.log("5.solution : ")
+                    
+                    //a program to read 5 numbers and print only the even numbers.
+
+
+                  //6.Solution :
+                     console.log("6.Solution : ")
+
+                  // Print all the digits of a given number
+
+                       var number = +prompt("Enter your number for to print all digits of a number : ")
+
+                       var r;
+
+                       while(number >0)
+                       {
+                                  r = number % 10
+                                  console.log(r)
+                                  number = parseInt(number/10);
+                       }
+
+                     //  or
+
+                    //  var number = +prompt("Enter your number for to print all digits of a number : ")
+
+                    //       var r;
+
+                    //       for(;number > 0;)
+                    //       {
+                    //              r = number % 10;
+                    //              console.log(r);
+                    //              number = parseInt(number/10);
+                    //       }
+            
+
+
+
+                   //7.Solution :
+                     console.log("7.Solution : ")
+
+
+                
+                //Write a program to print only even digits of a given number The output should be 4,2,6 Ex. Let us take 154256
+
+                     
+
+
+                        var number = +prompt("Enter number for to get even digits from a number : ")
+
+                        var n = number ;
+                        console.log(n);
+                        var e;
+
+                        while(number>0)
+                        {
+                            e = number % 10;
+                            if(e % 2 === 0)
+                            {
+                                console.log(e)
+                            }
+
+                            number = parseInt(number / 10);
+
+                        }
+
+                // 8.Solution :
+                console.log("8.Solution : ")
+
+                //   Write a program to print only odd digits of a given number Ex. Let us take 1542763 The output should be 1,5,7,3
+
+
+                            var number = +prompt("Enter number for to get odd digit from a number :")
+
+
+                               var n = number ;
+                               console.log(n);
+
+                               var e;
+
+                               while(number > 0)
+                               {
+                                     e = number % 10;
+                                     if(e % 2 !== 0)
+                                     {
+                                        console.log(e);
+                                     }
+                                     number = parseInt(number / 10)
+                               }
+
+
+
+
+                    // 9.Solution :
+                    console.log("9.Solution : ")
+
+                    //Write a program to print the number at 10’s place.
+
+                              var number = +prompt("Enter number for 10's place : ")
+                              console.log(number)
+
+                                      var i = 1;
+                                      var e;
+                                      var a = 2
+
+                                      while(i <= a)
+                                      {
+                                           e = number % 10;
+                                           if(i === a)
+                                           {
+                                            console.log(e)
+                                           }
+                                          
+                                           number = parseInt(number /10)
+                                           i = i + 1;
+                                      }
+
+
+                    //10.Solution :
+                    console.log("10.Solution : ")
+
+                    //Write a program to print the number at 100’s place
+
+                    var number = +prompt("Enter number for 100's place : ")
+                              console.log(number)
+
+                                      var i = 1;
+                                      var e;
+                                      var a = 3
+
+                                      while(i <= a)
+                                      {
+                                           e = number % 10;
+                                           if(i === a)
+                                           {
+                                            console.log(e)
+                                           }
+                                          
+                                           number = parseInt(number /10)
+                                           i = i + 1;
+                                      }    
+
+
+
+                     //11.Solution :
+                     //Write a program to print the number at 1000’s place.
+
+                     var number = +prompt("Enter number for 1000's place : ")
+                              console.log(number)
+
+                                      var i = 1;
+                                      var e;
+                                      var a = 4
+
+                                      while(i <= a)
+                                      {
+                                           e = number % 10;
+                                           if(i === a)
+                                           {
+                                            console.log(e)
+                                           }
+                                          
+                                           number = parseInt(number /10)
+                                           i = i + 1;
+                                      }
+
+
+                     //12. Solution :
+                     //Write a program to print the number at 10000’s place.
+
+                     var number = +prompt("Enter number for 10000's place : ")
+                              console.log(number)
+
+                                      var i = 1;
+                                      var e;
+                                      var a = 5
+
+                                      while(i <= a)
+                                      {
+                                           e = number % 10;
+                                           if(i === a)
+                                           {
+                                            console.log(e)
+                                           }
+                                          
+                                           number = parseInt(number /10)
+                                           i = i + 1;
+                                      }
+
+                       //13.Solution :
+
+                       console.log("13.Solution : ")
+                       //Write a program to find the LCM of given two numbers
+
+
+                       var number1 = +prompt("Enter first number to calculate lcm : ")
+                       var number2 = +prompt("Enter second number to calculate lcm : ")
+
+                       
+
+                        var max = (number1 > number2) ? number1 : number2
+                        
+                        while(true)
+                        {
+                            if(max % number1 === 0 && max % number2 === 0)
+                            {
+                                break;
+                            }
+                            max = max + 1
+                        }
+
+                        console.log(" lcm of " + number1 + " and " + number2 + " = " + max)
+                        
+
+
+                     //14.Solution :
+
+                     console.log("14.Solution : ")
+
+                     //   Write a program to convert an octal number to a decimal
+
+
+                       var number = +prompt("Enter your number : ")
+
+                       var r ;
+                       var sum = 0;
+                       var i = 0;
+
+                      while(number > 0) // 140 > 0// 14 > 0 //1 > 0
+                       {
+                              r = number % 10; // 140 ==> 0 //14 ==> 4 // 1
+                              sum  = sum  + ( r * (8 ** i))
+                              number = parseInt(number / 10); //14 //1
+                              i = i + 1;
+                      }
+
+                       console.log(sum);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+</html>
