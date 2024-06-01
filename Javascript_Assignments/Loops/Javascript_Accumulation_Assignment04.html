@@ -1,0 +1,433 @@
+<html>
+    <head>
+        <title>Mutyam ==> Accumulation_Assignment04</title>
+    </head>
+
+    <body>
+
+        <h2>Use Loops to get the output for the following programming questions</h2>
+
+        <h3>Accumulation</h3>
+
+        <p>1. Write a program to count the number of ‘1’s in a given number.</p>
+
+        <p>2. Write a program to eliminate all 0’s from a given number.</p>
+
+        <p>3. Write a program to print all the digits that are less than 5 in a given number.</p>
+
+        <p>4. Print the greatest digit of a given number(n=1237456 then greatest digit is 7)</p>
+
+        <p>5. sum of all digits of a given number Ex: let us take 19345 is the given number The output should be 22 (1+9+3+4+5)=22</p>
+
+        <p>6. a program to print reverse of digits of a number</p>
+
+        <p>7. print the binary value of 8.</p>
+
+        <p>8. Write a program to convert a binary number into a decimal number</p>
+
+        <p>9. Write a program to check a given number is palindrome number or not</p>
+
+        <p>10. Write a program to check a given number is armstrong number or not Ex:153 is an armstrong number</p>
+
+        <p>11. Write a program to print the fibonacci number series up to a given number Expected output:0 1 1 2 3 5 8 13</p>
+
+        <p>12. Print A Calendar Taking Input From User Using Loop</p>
+
+
+
+<hr>
+
+
+         <script>
+
+
+         //1.Solution :
+
+         console.log("1.Solution :")
+         //Write a program to count the number of ‘1’s in a given number.
+
+                   
+                     var n = 211716111
+                     var r;
+                     var count = 0;
+                     while(n>0)
+                     {
+                            r = n %10
+                            if(r === 1)
+                            {
+                                count = count + 1
+                            }
+                            n = parseInt(n /10)
+                     }
+
+                     console.log("count of 1s in given number : " + count)
+
+         
+          // 2.Solution :
+          console.log("2.Solution :")
+
+          //Write a program to eliminate all 0’s from a given number.
+
+                     var n = 25000054
+
+                     var r ;
+                     var sum = 0
+                     
+
+                     while(n > 0)
+                     {
+                            r = n % 10;
+                            if(r !== 0)
+                            {
+                               sum = (sum * 10) + r
+                            }
+                            n = parseInt(n / 10)
+                     }
+
+                     console.log("after eliminated all o's fromgiven number u will get an output be like :" + sum);
+
+
+           //3.Solution :
+           console.log("3.Solution :")
+
+           //Write a program to print all the digits that are less than 5 in a given number.
+
+                             var n = 52457896897123
+
+                             var sum = 0;
+
+                             var r;
+
+                             while(n > 0)
+                             {
+                                r = n % 10;
+                                if(r < 5)
+                                {
+                                    sum = (sum  * 10 ) + r
+
+                                }
+                                n = parseInt(n / 10)
+
+                             }
+
+                             console.log("all the digits that are less than 5 : " + sum)
+
+
+             //4.Solution :
+
+             console.log("4.Solution :")
+
+             //Print the greatest digit of a given number(n=1237456 then greatest digit is 7)
+
+                                  var n = 254578
+                                  number = n
+
+                                  var max;
+                                  var r;
+
+                                  while(n > 0)
+                                  {
+                                       r = n % 10;
+                                       if(n === number)
+                                       {
+                                            max = r; // 5
+                                       }
+                                       else
+                                       {
+                                           if(max < r) // 5 < 4 false // 5 < 8
+                                           {
+                                              max = n
+                                           }
+                                       }
+                                       n = parseInt(n / 10);
+
+                                  }
+
+                                  console.log("greatest digit from given number : " + max)
+
+
+
+             // 5.Solution :
+
+             console.log("5.Solution : ")
+
+             //sum of all digits of a given number Ex: let us take 19345 is the given number The output should be 22 (1+9+3+4+5)=22
+
+
+                           var number = +prompt("Enter a given number for sum of the digits : ")
+
+                           sum = 0;
+                           var r;
+
+                           while(number > 0)
+                           {
+                                  r = number % 10;
+                                  sum = sum + r;
+                                  number = parseInt(number / 10 );
+     
+                           }
+
+             //6.Solution :
+
+             console.log("6.Solution : ")
+
+             //a program to print reverse of digits of a number.
+
+
+                          var number = +prompt("Enter a  number for to reverse digits of a number:  ")
+
+                          var r;
+                          sum = 0;
+
+                          while(n > 0) // n !== 0
+                          {
+                                 r = number % 10;
+                                 sum = (sum  * 10 ) + r;
+                                 number = parseInt(number / 10)
+
+                          }
+
+                          console.log("reverse of digits of a number is :" + sum)
+
+             // 7.Solution :
+
+                 console.log("7.Solution : ")
+
+             //  print the binary value of 8.
+
+                       
+                      var r = 8;
+                         sum = 0;
+                         var n;
+
+                         while(r > 0)
+                         {
+                              n = r % 2; // 8 / 2  == > 0 // 4 / 2 == 0
+                              
+                              sum = ( sum * 10 ) + n; // 0 * 10 + 0 == 0  // 
+                            
+                              r = parseInt(r / 2); // 8 / 2 = 4  // 4/2 = 2 
+                              
+                         }
+
+                         console.log(sum);
+
+             // 8.Solution :
+
+                  console.log("8.Solution :")
+
+                //Write a program to convert a binary number into a decimal number
+
+
+                        var b = 101010
+                        sum = 0;
+                        var n ;
+                        var p = 0 ;
+
+                        while(b > 0)
+                        {
+                                n = b % 10 ;
+                                sum = sum + (n * (2 ** p)) //0 
+                                b = parseInt(b / 10);
+                                p = p + 1;
+
+                        }
+                        console.log(sum)
+
+
+               // 9.Solution : 
+                
+                      console.log("9.Solution:")
+
+              //Write a program to check a given number is palindrome number or not
+
+                     
+                         var number = 132231;
+                         var n = number
+
+                         var rem;
+                         var sum = 0;
+                         while(number !==0)
+                         {
+                                   rem = number % 10;
+                                   sum = (sum * 10)+ rem;
+                                   number = parseInt(number/10);
+                         }
+
+                         console.log(sum);
+
+                    if(n === sum)
+                    {
+                        console.log("it's a palindrome")
+                    }
+                    else
+                    {
+                         console.log("it's not a palindrome")
+                    }
+
+                          
+                //10.Solution :
+
+                        console.log("10.Solution : ")
+
+                //Write a program to check a given number is armstrong number or not Ex:153 is an armstrong number
+
+
+                       //153 = (1*1*1)+(5*5*5)+(3*3*3)  
+                        //    where:  
+                        //    (1*1*1)=1  
+                        //    (5*5*5)=125  
+                        //    (3*3*3)=27  
+                        //     So:  
+                        //    1+125+27=153  
+                     
+
+                         var num = 153
+                         var number = num
+                          var sum =0
+                          var rem;
+
+                          while(num !== 0) // num > 0
+                          {
+                                  rem = num % 10;
+                                  sum = sum + (rem ** 3)
+                                  num = parseInt(num / 10)
+
+                          }
+
+                          console.log(sum)
+
+                          if(n = number)
+                          {
+                            console.log("it's an armstrong number")
+                          }
+                          else
+                          {
+                            console.log("it's not an armstrong number")
+                          }
+
+                
+
+
+
+
+
+
+
+                //11 .Solution :
+
+                          console.log("11.Solution :")
+
+                // Write a program to print the fibonacci number series up to a given number Expected output:0 1 1 2 3 5 8 13
+
+                         //0  1  1  2 3 5 8 13 21 34
+                         // a b  c 
+                         //   a  b 
+
+                            var i = 0;
+                            var a = 0;
+                            var b = 1;
+                            var c;
+                            console.log(a);
+                            console.log(b);
+
+                            while(i <= 10)
+                            {
+                                   c = a + b // 0 + 1 = 1
+                                   console.log(c); // 1
+                                   a = b 
+                                   b = c
+
+                                   i = i + 1;
+
+                            }
+
+
+                // 12.Solution :
+
+                        console.log("12.Solution :")
+
+                //  Print A Calendar Taking Input From User Using Loop.
+
+
+
+ 
+
+                         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+</html>

@@ -1,0 +1,413 @@
+<html>
+    <head>
+        <title>Mutyam ==> Accumulation_Assignment03</title>
+    </head>
+    <body>
+
+
+
+        <h2>Use Loops to get the output for the following programming questions </h2>
+        <h3>Accumulation</h3>
+
+        <p>1. Write a program to print the sum of 1 to 10 ( initialisation of sum variable with 0 )</p>
+
+        <p>2. Write a program to print the average of 1 to 10</p>
+
+        <p>3. Write a program to print the sum of the numbers between the given two numbers</p>
+
+        <p>4. Write a program to print the sum of even numbers between the given two numbers</p>
+
+        <p>5. Write a program to print the sum of odd numbers between the given two numbers</p>
+
+        <p>6. Write a program to print the product of the numbers between 1 to 10 ( initialisation of product variable with 1 )</p>
+
+        <p>7. Write a program to find the product of all odd numbers between 1 and 10.</p>
+
+        <p>8. Write a program to print the nth power of a given number. n can be any positive number. (n=3 r =4 then answer must be 3*3*3*3 )</p>
+
+        <p>9. Write a program to print factorial of a given number</p>
+
+        <p>10. Write a program to print the nCr of given ‘n’ and ‘r’</p>
+
+        <p>11. Write a program to print the number of factors of 24 using while loop (number of factors for 24 is 8)</p>
+
+        <p>12. Write a program to print the count of factors of a given number using for loop</p>
+
+        <p>13. Write a program to check a given number is a prime number or not</p>
+
+        <p>14. a program to read 5 numbers and print the sum of all entered numbers</p>
+
+        <p>15. a program to read 5 numbers and print average of n numbers</p>
+
+        <p>16. print Number of Digits in given number.</p>
+
+        <hr>
+
+        
+
+
+
+
+        <script>
+
+
+           //1.Solution :
+
+            console.log("1.Solution : ")
+
+           //Write a program to print the sum of 1 to 10 ( initialisation of sum variable with 0 )
+
+              var i = 1
+              var sum = 0;
+              while(i <= 10)
+              {
+                sum = sum + i
+                i = i + 1
+              }
+              console.log("sum of 1 to 10 numbers : " + sum) // n(n+1) /2 == 55
+
+
+           //2 .Solution :
+
+             console.log("2.Solution : ")
+
+             //Write a program to print the average of 1 to 10
+
+                var i = 1;
+                sum = 0;
+
+                while(i <= 10)
+                {
+                    sum = sum + i;
+                    i = i + 1;
+                }
+                console.log(sum)
+
+                var average = (sum / 10);
+                console.log("average of 1 to 10 numbers : " + average)
+
+            
+           // 3.Solution :
+
+             console.log("3.Solution : ")
+
+             //Write a program to print the sum of the numbers between the given two numbers
+
+                    var num1 = +prompt("Enter first number for addition b/w number : ")
+                    var num2 = +prompt("Enter second number for addition b/w number : ")
+                     
+                    var sum = 0;
+                    num = num1;
+
+                    while(num1 <= num2)
+                    {
+                         sum = sum + num1
+                         num1 = num1 + 1
+                    }
+
+                    console.log("sum of number between "+ num + " and " + num2 + " = " + (sum))
+
+
+             //4.Solution :
+
+             console.log("4.Solution : ")
+
+             //Write a program to print the sum of even numbers between the given two numbers
+
+
+
+                    var number1 = +prompt("Enter first number for even numbers addition b/w numbers : ")
+                    var number2 = +prompt("Enter second number for even numbers addition b/w numbers : ")
+                     
+                    var  sum = 0
+                    number  = number1;
+
+                    while(number1 <= number2) 
+                    {
+                        if(number1 % 2 === 0) 
+                        {
+                            sum = sum + number1
+                        }
+                        
+                         number1 = number1 + 1 
+                    }
+
+                    console.log("sum of even number between "+ number + " and " + number2 + " = " + (sum))
+
+
+                //5.Solution :
+
+                console.log("5.Solution : ")
+
+                //  Write a program to print the sum of odd numbers between the given two numbers.
+
+                var number1 = +prompt("enter first number for odd numbers addition between numbers : ")
+                var number2 = +prompt("enter second number for odd numbers addition between numbers ")
+
+                     var sum = 0
+                     number = number1;
+
+                    while(number1 <= number2)
+                    {
+                        if(number1 % 2 !== 0)
+                        {
+                            sum = sum + number1
+                        }
+                        
+                         number1 = number1 + 1
+                    }
+
+                    console.log("sum of odd number between "+ number + " and " + number2 + " = " + (sum))
+
+
+                // 6.Solution :
+
+                console.log("5.Solution : ")
+
+                //  Write a program to print the product of the numbers between 1 to 10 ( initialisation of product variable with 1 )
+
+                  var i = 1;
+                  var product = 1;
+                   while(i <= 10)
+                   {
+                      
+                      product = product * i;
+                      i = i + 1;
+                   }
+
+                   console.log("the product of 1 to 10 numbers :" + product)
+
+
+                //7.Solution :
+
+                console.log("6.Solution : ")
+
+                //Write a program to find the product of all odd numbers between 1 and 10
+
+                var i = 1
+                var product = 1
+                while(i <= 10)
+                {
+
+                    if(i % 2 !== 0)
+                    {
+                        product = product * i
+                    }
+                     
+                    i = i + 1
+                }
+
+                console.log("the product of odd numbers : " + product)
+       
+               //8.Solution :
+
+               console.log("8.Solution : ")
+
+               //Write a program to print the nth power of a given number. n can be any positive number. (n=3 r =4 then answer must be 3*3*3*3 )
+
+
+                  n = 3 
+                  r = 4
+                  power = 1
+
+                  while( r >= 1)
+                  {
+
+                       power = power * n // 3 * 3
+                       r = r - 1
+
+                  }
+               
+
+
+
+
+
+              
+                 
+                //9.Solution :
+
+                console.log("9.Solution : ")
+
+
+               //Write a program to print factorial of a given number
+
+
+                 
+                 n = 5
+
+                 factorial = 1
+
+                 while(n >= 1) 
+                 {
+                    factorial = factorial * n 
+                    n = n - 1; 
+                 }
+
+                 console.log(factorial);
+
+
+                 //10.Solution :
+
+                 console.log("10.Solution : ")
+
+                 //Write a program to print the nCr of given ‘n’ and ‘r’
+                  
+
+                  var n;
+                  var r;
+
+
+
+
+
+
+
+
+
+
+
+
+                  //11.Solution :
+
+                  console.log("11.Solution : ")
+
+                  //Write a program to print the number of factors of 24 using while loop (number of factors for 24 is 8)
+
+
+                   var n = 24
+                   
+                   count = 0;
+                   var i = 1;
+
+                   while(i <= n)
+                   {
+                       
+                       if(n % i === 0)
+                       {
+                        count = count + 1
+                       }
+                       i = i + 1
+                   }
+
+                   console.log(count); //8
+
+
+                   //12.Solution :
+
+                   console.log("12.Solution : ")
+
+                   //Write a program to print the count of factors of a given number using for loop.
+
+                      var n = 24
+                      count = 0
+
+                       for (var i = 1; i <= n; i++)
+                       {
+                             
+                               if(n % i === 0)
+                               {
+                                count = count + 1;
+                               }
+ 
+                       }
+
+                       console.log(count);
+
+
+                       //13.Solution :
+
+                       console.log("13.Solution :")
+
+                       //Write a program to check a given number is a prime number or not
+
+
+                       var n = 2;
+                       count = 0;
+
+                       for(var i = 1; i <= n ; i++)
+                       {
+
+                               if(n % i === 0)
+                               {
+                                count = count + 1;
+                               }
+
+                       }
+
+    
+                         if(count === 2)
+                          {
+                            console.log("prime number ")
+                          }
+                         else
+                          {
+                             console.log("not a prime number")
+                          }
+
+
+                         // 14. Solution :
+
+                         console.log("14. Solution :")
+
+                         //a program to read 5 numbers and print the sum of all entered numbers
+
+                           
+                          i = 1;
+                          var sum = 0;
+                
+                         while(i <= 5)
+                         {
+                          var number = +prompt("enter 5 number for sum : ")
+                              sum = sum + number;
+                              i = i + 1;
+                         }
+                         console.log(sum);
+
+                         
+
+
+                         //15.Solution :
+
+                         console.log(" 15. Solution :")
+                       //  a program to read 5 numbers and print average of n numbers
+
+                          i = 1;
+                          var sum = 0;
+
+                          while(i<=5)
+                          {
+                            var number = +prompt("enter 5 number for average : ")
+                            sum = sum + number;
+                            i = i + 1;
+                          }
+                           var average = sum / 5
+                          console.log(" average : " +  average)
+
+
+                          // 16. Solution :
+
+                          console.log("16.Solution : ")
+
+                       //   print Number of Digits in given number.
+
+                          
+                          var sum = 0;
+                          var r;
+                          var number = 52478
+
+                          while(number > 0)
+                          {
+                               r = number % 10;
+                               sum = sum + r;
+                               number = parseInt(number /10)
+                          }
+                          console.log("sum of digits :" + sum);
+
+
+        </script>
+
+
+
+    </body>
+</html>
