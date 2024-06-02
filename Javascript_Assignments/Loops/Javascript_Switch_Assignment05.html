@@ -1,0 +1,468 @@
+<html>
+
+<head>
+    <title>
+        Mutyam ==>Switch_Assignment05
+    </title>
+    
+</head>
+<body>
+
+
+    <h2>Switch-case</h2>
+
+    <p>1. Temperature Conversion Celsius To Fahrenheit And Vice Versa</p>
+
+    <p>2. Calculator</p>
+
+    <p>3. Find A Grade Of Given Marks or (Find a Grade of Given Marks Using Switch Case)</p>
+
+    <p>4. Find Radius, Circumference and Volume of Cylinder</p>
+
+    <p>5. Remove All Vowels From A String</p>
+
+    <p>6. Print day of week name using switch case.</p>
+
+    <p>7. Print total number of days in a month using switch case.</p>
+
+    <p>8. Check whether an alphabet is a vowel or consonant using a switch case.</p>
+
+    <p>9. Find the maximum between two numbers using the switch case.</p>
+
+    <p>10. Check whether a number is even or odd using a switch case.</p>
+
+    <p>11. Check whether a number is positive, negative or zero using a switch case.</p>
+
+    <p>12. Find roots of a quadratic equation using switch case.</p>
+
+    <p>13. Create a Simple Calculator using a switch case.</p>
+
+
+    <hr>
+    
+
+
+
+
+
+
+
+
+      <script>
+
+           
+           // 1. Temperature Conversion Celsius To Fahrenheit And Vice Versa
+
+           console.log("1.Solution : ")
+              
+
+               var temperature = prompt("Enter what temperature do u need in either : Fahrenheit or Celsius : ");
+
+               switch(temperature)
+               {
+                   
+ 
+                    case 'F' :
+                    case 'f' :
+                    {
+                       var F = +prompt("enter the temperature in Fahrenheit to get in Celsius : ")
+
+                       c =  (F - 32) * 5 / 9
+                       console.log("temperature in celsius : " + c + " celsius degrees");
+                       break;
+                    }
+
+                    case 'C' :
+                    case 'c' :
+                    {
+                        var C = +prompt("Enter the temperture in Celsius to get in Fahrenheit : ")
+
+                        f = (C * 9 / 5) + 32
+                        console.log("Temperature in Fahrenheit : " + f + " fahrenheit degrees")
+                        break;
+                    }
+
+               }
+
+
+
+
+               //2. Solution :
+
+               console.log("2.Solution : ")
+
+               // Calculator :
+
+               var sign = prompt("enter sign to do operation : ")
+              var  number1 = +prompt("Enter your number1  : ");
+              var  number2 = +prompt("Enter your number2  : ");
+
+               switch(sign)
+               {
+                   case "+" :
+                        
+                            console.log("The Addition of " + number1 + " and " + number2 + " = "  + (number1 + number2));
+                            break;
+
+                   case "-" :
+                            
+                            console.log("The Subtraction of " + number1 + " and " + number2 + " = " + (number1 - number2));
+                            break;
+
+                   case "*" :
+                            
+                            console.log("The Multiplication of " + number1 + " and " + number2 + " = " + (number1 * number2));
+                            break;
+
+                  case "/" : 
+                            
+                            console.log("The Division of " + number1 + " and " + number2 + " = " + (number1 / number2));
+                            break;
+
+                  case "%" : 
+                           
+                            console.log("The Remainder Division of " + number1 + " and " + number2 + " = " + (number1 % number2));
+                            break;
+
+                 default:
+                           console.log("Thank you for using this calculator.")
+               }
+
+
+              // or 
+
+              
+//               var sign = prompt("enter sign to do operation : ")
+
+// switch(sign)
+// {
+//     case "+" :
+//              number1 = +prompt("Enter your number1  : ");
+//              number2 = +prompt("Enter your number2  : ");
+//              console.log("The Addition of " + number1 + " and " + number2 + " = "  + (Number1 + number2));
+//              break;
+
+//     case "-" :
+//              number1 = +prompt("Enter your number1  : ");
+//              number2 = +prompt("Enter your number2  : ");
+//              console.log("The Subtraction of " + number1 + " and " + number2 + " = " + (Number1 - Number2));
+//              break;
+
+//     case "*" :
+//              number1 = +prompt("Enter your number1  : ");
+//              number2 = +prompt("Enter your number2  : ");
+//              console.log("The Multiplication of " + number1 + " and " + number2 + " = " + (Number1 * Number2));
+//              break;
+
+//    case "/ " : 
+//              number1 = +prompt("Enter your number1  : ");
+//              number2 = +prompt("Enter your number2  : ");
+//              console.log("The Division of " + number1 + " and " + number2 + " = " + (Number1 / Number2));
+//              break;
+
+//    case " % " : 
+//              number1 = +prompt("Enter your number1  : ");
+//              number2 = +prompt("Enter your number2  : ");
+//              console.log("The Remainder Division of " + number1 + " and " + number2 + " = " + (Number1 % Number2));
+//              break;
+
+//   default:
+//             console.log("Thank you for using this calculator.")
+// }
+
+
+
+
+               //3.Solution :
+
+               console.log("3.Solution : ")
+
+               // Find A Grade Of Given Marks or (Find a Grade of Given Marks Using Switch Case).
+
+
+
+                    var marks = +prompt("Enter student marks out of 100 to get grade : ")
+
+                    switch(true)
+                    {
+                        case (marks >= 80) :
+                                    
+                                       console.log("You got A grade!")
+                                       break;
+
+                        case (marks >= 65) : 
+                                        
+                                       console.log("You got B grade!")
+                                       break;
+
+                        case (marks >= 50) :
+
+                                         console.log("You got C grade!")
+                                         break;
+
+                        case (marks >= 40) :
+
+                                         console.log("You got D grade!")
+                                         break;
+
+                        case (marks >= 35) :
+                              
+                                        console.log("You got E grade!")
+                                        break;
+
+                        case (marks < 35) : 
+
+                                        console.log("You got F grade!")
+                                        break;
+
+                    }
+
+
+
+
+                //4.Solution :
+
+                console.log("4.Solution : ")
+
+                //Find Radius, Circumference and Volume of Cylinder
+               
+
+
+                      
+                //5.Solution :
+
+                console.log("5.Solution : ")
+
+                //Print day of week name using switch case.
+
+                var day = +prompt("Enter day number to get it's week name : ")
+
+                switch(day)
+                {
+                    case 0 :
+                    case 7 :
+                             console.log("it's Sunday!")
+                             break;
+                    
+                    case 1 :
+                             console.log("it's Monday!")
+                             break;
+
+                    case 2 :
+                            
+                             console.log("it's Tuesday!")
+                             break;
+
+                    case 3 :
+                            
+                            console.log("it's Wednesday!")
+                            break;
+
+                    case 4 :
+                            
+                           console.log("it's Thursday!")
+                           break;
+
+                    case 5 :
+                         
+                          console.log("it's Friday!")
+                          break;
+
+                    case 6 :
+
+                          console.log("It's Saturday!")
+                          break;
+
+                }
+
+
+            //4.Solution :
+
+            console.log("4.Solution : ")
+
+            //Print total number of days in a month using switch case.
+
+            var month = +prompt("Enter your month to get days : ")
+            
+            switch(month)
+            {
+                case 1 : 
+                         console.log("it's january!")
+                         break;
+
+                case 2 :
+                         var year = +prompt("enter year : ")
+                         if((year % 4) === 0)
+                         {
+                            console.log("it's February  and having 29 days")
+                         }
+                         else
+                         {
+                            console.log("it's February and having 28 days")
+                         }
+                         
+                         break;
+
+                case 3 : 
+                         console.log("it's March and having 31 days")
+                         break;
+
+                case 4 : 
+                        
+                         console.log("It's April and having 30 days")
+                         break;
+
+                case 5 :
+
+                         console.log("It's May and having 31 days")
+                         break;
+
+                case 6 : 
+
+                         console.log("It's June and having 30 days")
+                         break;
+
+                case 7 :
+                         
+                         console.log("It's July and having 31 days")
+                         break;
+
+                case 8 :
+                         console.log("It's August and having 31 days")
+                         break;
+
+                case 9 :
+                        console.log("It's September and having 30 days")
+                        break;
+
+                case 10 :
+                        console.log("It's October and having 31 days")
+                        break;
+
+                case 11 :
+                        console.log("It's November and having 30 days")
+                        break;
+
+                 case 12 :
+                        console.log("It's December and having 31 days")
+                        break;
+
+            }
+
+
+            //5.Solution :
+
+            console.log("4.Solution :")
+
+            //Check whether an alphabet is a vowel or consonant using a switch case.
+
+
+                   var alphabet = prompt("Enter your alphabet to check whether its vowel or consonant : ")
+
+                       switch(alphabet)
+                       {
+                          case 'a' :
+                                  
+                                     console.log("it's vowel");
+                                     break;
+
+                          case 'e'  :
+
+                                     console.log("it's vowel");
+                                     break;
+
+                           case 'i'  : 
+
+                                     console.log("it's vowel");
+                                     break;
+
+                            case 'o' :
+                                     
+                                     console.log("it's vowel");
+                                     break;
+
+                            case 'u' : 
+
+                                     console.log("it's vowel");
+                                     break;
+
+                            default : 
+                                    
+                                      console.log("it's consonant")
+                                      break;
+                       }
+
+
+              // 6.Solution :
+
+              console.log("6.Solution :")
+
+              //Find the maximum between two numbers using the switch case.
+
+              var number1 = +prompt("enter your first number : ")
+              var number2 = +prompt("enter your second number : ")
+
+                   
+                    switch(true)
+                    {
+                        case number1 > number2 :
+
+                                console.log(number1 + " is maximum ");
+                                break;
+
+                        case number2 > number1 :
+
+                                 console.log(number2 + " is maximum ");
+                                 break;
+                    }
+
+
+              //7.Solution :
+
+              console.log("10.Solution :")
+
+              //Check whether a number is even or odd using a switch case.
+
+
+                var number = +prompt("Enter a number  to find whether its an even or odd : ")
+
+                switch(number % 2)
+                {
+                    case 0 :
+                        console.log("it's even number")
+                        break;
+
+                    case 1 : 
+                         console.log("it's odd number")
+                }
+
+              // 11.Solution :
+
+              console.log("11.Solution : ")
+
+              // Check whether a number is positive, negative or zero using a switch case.
+
+                    var number = +prompt("Enter a number : ");
+
+                     switch(true)
+                     {
+                        case number > 0 :
+                              
+                               console.log("it's a positive number")
+                               break;
+
+                        case number < 0 :
+                               
+                               console.log("it's a negative number")
+                               break;
+
+                        case number === 0 :
+                            console.log("it's a zero ")
+
+                     }
+
+
+      </script>
+
+</body>
+</html>
