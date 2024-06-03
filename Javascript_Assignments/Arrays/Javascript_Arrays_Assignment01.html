@@ -1,0 +1,342 @@
+<html>
+    <head>
+        <title>
+            Mutyam==>Arrays_Assignment01
+        </title>
+    </head>
+
+    <body>
+
+
+        <h2>Working with Linear Data Structures Arrays</h2>
+
+        <p>1. write a script to print all array values in the console.</p>
+
+        <p>2. For the Given array: [23,34,54,0,4,7] print all the Array values using a for loop. Expected output: 23 34 54 0 4 7</p>
+
+        <p>3. print all numbers in an array except the first element. Expected output: 34 54 0 4 7</p>
+
+        <p>4. Print all elements in an array except the last element Expected output: 23 34 54 0 4</p>
+
+        <p>5. Print all the numbers from last index to first index Expected output: 7 4 0 54 34 23</p>
+
+        <p>6. Print all the numbers from last index to first index except the first element Expected output: 4 0 54 34 23</p>
+
+        <p>7. Print all the numbers from last index to first index except the last element Expected output: 7 4 0 54 34</p>
+
+        <p>8. Print only the last 4 elements of an array. Expected output: 54 0 4 7</p>
+
+        <p>9. For the Given array: [23,34,54,10,4,7] print the minimum number in an Array. Expected output: 4</p>
+
+        <p>10. For the Given array: [23,34,54,10,4,7] print the Maximum number in an array. Expected output: 54</p>
+
+
+        <hr>
+
+
+
+         <script>
+
+
+              //  1. write a script to print all array values in the console.
+
+              
+            document.write("1.Solution : ")
+            document.write("<br>")
+
+
+                      var arr = [1,2,3,'Mutyam','Bhargav','Reddy']
+                   
+ 
+
+                     document.write("<br>")
+
+                     document.write("var arr = [1,2,3,'Mutyam','Bhargav','Reddy']")
+
+                     document.write("<br>")
+                      
+                     document.write("<br>")
+
+                     document.write(arr[0]) //1
+
+                     document.write("<br>")
+
+                     document.write(arr[1]) //2
+
+                     document.write("<br>")
+
+                     document.write(arr[2]) //3
+
+                     document.write("<br>")
+
+                     document.write(arr[3]) //'Mutyam'
+
+                     document.write("<br>")
+
+                     document.write(arr[4]) //'Bhargav'
+
+                     document.write("<br>")
+
+                     document.write(arr[5])//'Reddy'
+
+                     document.write("<hr>")
+
+            // 2. For the Given array: [23,34,54,0,4,7] print all the Array values using a for loop. Expected output: 23 34 54 0 4 7
+
+            document.write("2.Solution : ")
+            document.write("<br>")
+
+                      var arr = [23,34,54,0,4,7]
+                       
+                     document.write("<br>")
+
+                      document.write("var arr = [23,34,54,0,4,7]")
+
+                      document.write("<br>")
+
+                      for(var i = 0;  i <= arr.length-1; i++)
+                      {
+                             document.write("<br>")
+                             document.write(arr[i]);
+                      }
+
+             document.write("<hr>")
+                   
+             //3. print all numbers in an array except the first element. Expected output: 34 54 0 4 7
+
+              
+             
+             document.write("3.Solution : ")
+             document.write("<br>")
+             document.write("<br>")
+
+
+
+                          var arr = [23,34,54,0,4,7]
+
+                          document.write("var arr = [23,34,54,0,4,7]")
+
+                          document.write("<br>")
+
+
+                          for(var i = arr.length - (arr.length-1); i <= arr.length-1; i++) 
+                          {
+                               document.write("<br>") 
+                               document.write(arr[i]);
+
+                          }
+
+                          // above I use this arr.length - (arr.length-1) this gives me index 1 as result so i eleminate 0 index
+                          // arr.length = 6
+                          //arr.length-1 = 5
+                          //arr.length - (arr.length-1) = 6 - (6-1) = 6 - 5 = 1
+                          //or i can use this : 0 + 1
+
+                          document.write("<hr>")
+
+
+               //4. Print all elements in an array except the last element Expected output: 23 34 54 0 4
+
+               document.write("4.Solution : ")
+               document.write("<br>")
+               document.write("<br>")
+
+                      
+  
+                                var arr = [23,34,54,0,4,7]
+
+                                document.write("var arr = [23,34,54,0,4,7]")
+                                document.write("<br>")
+
+                                for(var i = 0; i <= arr.length-2; i++)
+                                {
+                                    document.write("<br>");
+                                    document.write(arr[i]);
+                                }
+
+                                document.write("<hr>")
+
+                     //length-2 means we have 6 elements in an array so length-1 means 5 index only but we don't need last element so i use length-2 (index-1) 
+
+
+                //5. Print all the numbers from last index to first index Expected output: 7 4 0 54 34 23
+
+                     
+                document.write("5.Solution : ")
+                document.write("<br>")
+                document.write("<br>")
+
+                                 
+                                   var arr =  [23,34,54,0,4,7]
+
+                                   document.write("var arr =[23,34,54,0,4,7]")
+                                   document.write("<br>")
+
+                                   for(var i = arr.length-1; i >= 0; i-- )
+                                   {
+                                            document.write("<br>")
+                                            document.write(arr[i])
+                                   }
+
+
+                                   document.write("<hr>")
+
+
+                //6.Solution :
+
+                //6.Print all the numbers from last index to first index except the first element Expected output: 4 0 54 34 23
+
+                document.write("6.Solution : ")
+                document.write("<br>")
+                document.write("<br>")
+
+
+                                             var arr = [23,34,54,0,4,7]
+
+                                             document.write(" var arr = [23,34,54,0,4,7]")
+                                             document.write("<br>")
+
+                                             for(var i = arr.length-2; i>=0; i--)
+                                             {
+                                                document.write("<br>")
+                                                document.write(arr[i])
+                                             }
+
+                                             document.write("<hr>")
+
+
+                //7.Solution :
+
+                //7. Print all the numbers from last index to first index except the last element Expected output: 7 4 0 54 34
+
+                document.write("7.Solution : ")
+                document.write("<br>")
+                document.write("<br>")
+
+
+                                                   var arr = [23,34,54,0,4,7]
+
+                                                   document.write("var arr = [23,34,54,0,4,7]")
+                                                   document.write("<br>")
+
+                                                   for(var i = arr.length-1; i >= arr.length- (arr.length-1);i--)
+                                                   {
+
+                                                               document.write("<br>")
+                                                               document.write(arr[i ])
+
+                                                   }
+
+                                                   document.write("<hr>")
+
+                //8.Solution :
+
+                //8. Print only the last 4 elements of an array. Expected output: 54 0 4 7
+
+
+                document.write("8.Solution : ")
+                document.write("<br>")
+                document.write("<br>")
+
+                                                
+                                                var arr = [23,34,54,0,4,7]
+
+                                                document.write("var arr = [23,34,54,0,4,7]")
+                                                document.write("<br>")
+
+                                                for(var i = arr.length - 4 ; i<= arr.length-1; i++ )
+                                                {
+                                                     document.write("<br>")
+                                                     document.write(arr[i])
+                                                }
+
+                                                document.write("<hr>")
+
+
+                                                  
+
+                 //9.Solution :
+
+                 //9. For the Given array: [23,34,54,10,4,7] print the minimum number in an Array. Expected output: 4
+
+                 document.write("9.Solution : ")
+                 document.write("<br>")
+                 document.write("<br>")
+
+                                            var arr = [23,34,54,10,4,7]
+                                            var max;
+
+                                            document.write("var arr = [23,34,54,0,4,7]")
+                                            document.write("<br>")
+
+                                            for(var i = 0; i <= arr.length-1 ; i++)
+                                            {
+                                                
+                                                if(i===0)
+                                                {
+                                                    max = arr[0]
+                                                    console.log(max)
+                                                }
+                                                else
+                                                {
+                                                    if(max <= arr[i])  //23 < 34 
+                                                    {
+                                                       
+                                                        max = arr[i]
+                                                        
+                                                    }
+                                                }
+                                            }
+                                            document.write("<br>")
+
+                                            document.write("maximum :" + max);
+
+                                             document.write("<hr>")
+
+
+                 //10.Solution :
+
+                 //10. For the Given array: [23,34,54,10,4,7] print the Maximum number in an array. Expected output: 54
+
+
+                 document.write("10.Solution : ")
+                 document.write("<br>")
+                 document.write("<br>")
+
+
+                                               
+                                            var arr = [23,34,54,0,4,7]
+                                            var min;
+
+                                            document.write("var arr = [23,34,54,0,4,7]")
+                                            document.write("<br>")
+
+                                            for(var i = 0; i <= arr.length-1; i++)
+                                            {
+                                                      if(i===0)
+                                                      {
+                                                         min = arr[0];
+
+                                                      }
+                                                      else
+                                                      {
+                                                          if(min >= arr[i] ) // 0 >= 4
+                                                          {
+                                                             min = arr[i];
+                                                          }
+                                                      }
+
+                                                    
+                                            }
+                                            document.write("<br>")
+
+                                            document.write("minimum : " + min);
+                                            document.write("<hr>");
+
+
+
+         </script>
+
+
+    </body>
+</html>

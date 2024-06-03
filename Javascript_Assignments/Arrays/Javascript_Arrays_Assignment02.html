@@ -1,0 +1,388 @@
+<html>
+    <head>
+        <title>
+            Mutyam==>Arrays_Assignment02
+        </title>
+        
+    </head>
+
+    <body>
+
+        <h2>Working with Linear Data Structures Arrays</h2>
+
+        <p>1. For the Given array: [23,34,54,10,4,7] sum of all the numbers in an Array. Expected output: 132</p>
+
+        <p>2. For the Given array: [23,34,54,10,4,7] Average of all the numbers in an Array. Expected output: 22</p>
+
+        <p>3. For the Given array: [23,34,54,10,4,7] print values that are greater than the given number. Given number: 20, Expected output: 23,34,54</p>
+
+        <p>4. For the Given array: [23,34,54,10,4,7] print all the even numbers in an Array. Expected output: 34,54,10,4</p>
+
+        <p>5. For the Given array: [23,34,54,10,4,7] print all the odd numbers in an Array. Expected output: 23,7</p>
+
+        <p>6. For the Given array: [23,-34,-54,10,-4,7] print all the positive numbers in an array. Expected output: 23,10,7</p>
+
+        <p>7. For the Given array: [23,34,54,10,4,7] search if the given number is there in an array or not. Given number: 34, Expected output: true Given number: 26, Expected output: false</p>
+
+        <p>8. For the Given array: [23,34,54,10,34,7,23,10,34] print the total number of times an element found in the array. Given number: 23, Expected output: 2 Given number: 34, Expected output: 3 Given number: 10, Expected output: 2 Given number: 54, Expected output: 1</p>
+
+        <p>9. For the Given array: [23,34,54,10,4,7] print index of a given element in an Array. Given number: 23, Expected output: 0 Given number: 34, Expected output: 1 Given number: 10, Expected output: 3 Given number: 54, Expected output: 2</p>
+
+        <p>10. For the Given array: [23,34,54,10,34,7,23,10,34] eliminate duplicates in a given array Expected output: 23,34,54,10,7</p>
+
+
+ <hr>
+
+
+           <script>
+
+
+                //1.Solution : 
+
+                // For the Given array: [23,34,54,10,4,7] sum of all the numbers in an Array. Expected output: 132.
+
+                   document.write("1.solution : ")
+                   document.write("<br>")
+
+
+                  var arr = [23,34,54,10,4,7]
+                  var sum = 0;
+
+                  document.write("var arr = [23,34,54,10,4,7]")
+                  document.write("<br>")
+
+                  for(var i = 0; i<=arr.length-1; i++)
+                  {
+
+                        
+                         sum = sum + arr[i];      
+
+                  }
+                  document.write("<br>")
+
+                  document.write("sum : " + sum);
+                  document.write("<hr>")
+
+                  //2.Solution :
+
+                  // For the Given array: [23,34,54,10,4,7] Average of all the numbers in an Array. Expected output: 22.
+
+                        document.write("2.Solution: ")
+                        document.write("<br>")
+
+
+                        var arr = [23,34,54,10,4,7]
+                        var sum = 0;
+
+                        document.write("var arr = [23,34,54,10,4,7]")
+                        document.write("<br>")
+
+                        for(var i = 0; i<=arr.length-1; i++)
+                        {
+                                
+                                 
+                                 sum = sum + arr[i];
+
+                        }
+
+                        var average = sum / arr.length;
+                        document.write("<br>")
+
+                        document.write("average : " + average);
+
+                        document.write("<hr>")
+
+
+                    //3.Solution :
+
+                    //For the Given array: [23,34,54,10,4,7] print values that are greater than the given number. Given number: 20, Expected output: 23,34,54
+
+                        
+                        document.write("3.Solution: ")
+                        document.write("<br>")
+
+                           var n = +prompt("Enter a number : ")
+                            var arr = [23,34,54,10,4,7]
+                            
+
+                            document.write(" var arr = [23,34,54,10,4,7]")
+                            document.write("<br>")
+                            document.write("<br>")
+
+                            for(var i = 0; i<=arr.length-1; i++)
+                            {
+
+                                        
+                                        if(arr[i] > n) //23 > 20 true
+                                        {
+                                              document.write(arr[i]);
+                                              document.write("<br>")
+
+                                        }
+                            }
+
+                            
+                            document.write("<hr>")
+
+                      //4.Solution : 
+
+                      //  For the Given array: [23,34,54,10,4,7] print all the even numbers in an Array. Expected output: 34,54,10,4.
+
+                        document.write("4.Solution: ")
+                        document.write("<br>") 
+
+                                     
+                                      var arr = [23,34,54,10,4,7]
+
+
+                                    document.write("var arr = [23,34,54,10,4,7]")
+                                    document.write("<br>")
+                                    document.write("<br>")
+
+                              for(var i = 0; i<= arr.length-1; i++)
+                              {
+
+                                          
+                                          if(arr[i] % 2 === 0)
+                                          {
+                                               
+                                               document.write(arr[i])
+                                               document.write("<br>")
+                                          }
+
+                              }
+
+                              document.write("<hr>")
+
+                    //5.Solution :
+
+                    //  For the Given array: [23,34,54,10,4,7] print all the odd numbers in an Array. Expected output: 23,7
+
+                        document.write("5.Solution: ")
+                        document.write("<br>") 
+
+
+                                             var arr = [23,34,54,10,4,7]
+                                        
+                                    document.write("var arr = [23,34,54,10,4,7]")
+                                    document.write("<br>")
+                                    document.write("<br>")
+
+
+                            for(var i = 0; i<= arr.length-1; i++)
+                            {
+
+                                if(arr[i] % 2 !== 0)
+                                {
+                                      document.write(arr[i])
+                                      document.write("<br>")
+                                }
+                            }
+
+                            document.write("<hr>")
+
+
+                    //6.Solution :
+
+                    //For the Given array: [23,-34,-54,10,-4,7] print all the positive numbers in an array. Expected output: 23,10,7
+
+                    
+                          document.write("6.Solution :")   
+                          document.write("<br>") 
+                          document.write("<br>") 
+
+                                            var arr = [23,-34,-54,10,-4,7]
+
+                                            for(var i = 0; i<=arr.length-1; i++)
+                                            {
+                                                
+                                                if(arr[i] > 0)
+                                                {
+                                                    document.write(arr[i])
+                                                    document.write("<br>")
+                                                }
+                                            }
+
+                            
+                          document.write("<hr>")
+
+                          //7.Solution :
+
+                          //For the Given array: [23,34,54,10,4,7] search if the given number is there in an array or not. Given number: 34, Expected output: true Given number: 26, Expected output: false
+
+                          document.write("7.Solution :")   
+                          document.write("<br>") 
+                          document.write("<br>")
+
+                                                  var arr = [23,34,54,10,4,7]
+                                                  var  n = +prompt("enter the number to search whether it is in array or not : ")
+                                                  var count = 0;
+ 
+                                                  document.write(" var arr = [23,34,54,10,4,7]")
+                                                  document.write("<br>") 
+                                                  document.write("given number :" + n)
+                                                  document.write("<br>")
+                                                  document.write("<br>")
+
+
+                                                  for(var i = 0; i<=arr.length-1;i++)
+                                                  {
+                                                            if(n == arr[i])
+                                                            {
+                                                               count = count + 1
+                                                               
+                                                            }
+                                                  
+                                                  }
+
+                                                  if(count===1)
+                                                  {
+                                                       document.write("Output :  true")
+                                                  }
+                                                  else
+                                                  {
+                                                       document.write("Output : false")
+                                                  }
+
+                                                 
+                                                  document.write("<hr>")
+
+                                                //  or//
+
+
+
+                                                // var arr = [23,34,54,10,4,7]
+                                                // var n = 100
+                                                // var present=0;
+
+                                                // for(var i =0; i<=arr.length-1; i++)
+                                                // {
+                                                //            if(n === arr[i])
+                                                //            {
+                                                //                present = present + 1
+                                                //            }
+                                                // }
+
+                                                // if(present === 1)
+                                                // {
+                                                //     console.log("true");
+                                                // }
+                                                // else
+                                                // {
+                                                //     console.log("false")
+                                                // }
+
+
+
+
+                            //8.Solution :
+
+                            //   For the Given array: [23,34,54,10,34,7,23,10,34] print the total number of times an element found in the array. Given number: 23, Expected output: 2 Given number: 34, Expected output: 3 Given number: 10, Expected output: 2 Given number: 54, Expected output: 1
+
+                                 
+                            document.write("8.Solution :")   
+                            document.write("<br>") 
+                            document.write("<br>")
+
+
+                                                  var arr =  [23,34,54,10,34,7,23,10,34]
+
+                                                  document.write("var arr =  [23,34,54,10,34,7,23,10,34]")
+                                                  document.write("<br>")
+                                                  document.write("<br>")
+
+                                                  var count = 0;
+                                                  var n = +prompt("enter a number to find  how many times the element gets repeated : ")
+
+                                                  for(var i= 0; i<=arr.length-1 ; i++)
+                                                  {
+
+                                                          if(n === arr[i])
+                                                          {
+                                                            count = count + 1;
+                                                          }
+                                                  }
+                                                  document.write("the number of times the Given number " + n + " is repeated in an array is :  " + count);
+
+
+                                                 document.write("<hr>")
+
+
+                             //9.Solution :
+
+                             //  For the Given array: [23,34,54,10,4,7] print index of a given element in an Array. Given number: 23, Expected output: 0 Given number: 34, Expected output: 1 Given number: 10, Expected output: 3 Given number: 54, Expected output: 2
+
+                                document.write(("9.Solution : "))
+                                document.write("<br>")
+                                document.write("<br>")
+
+                                                   
+
+                                                  var arr = [23,34,54,10,4,7]
+
+                                                  document.write("var arr = [23,34,54,10,4,7]")
+                                                  document.write("<br>")
+                                                  document.write("<br>")
+                                                  var n = 7
+
+                                                  for(var i = 0; i<=arr.length-1; i++)
+                                                  {
+                                                                if(n === arr[i])
+                                                                {
+                                                                    document.write("The index of given number " + n +  " is : " + i)
+                                                                }
+                                                  }
+
+
+                                                  document.write("<hr>")
+ 
+                              //10.Solution :
+
+                              //  For the Given array: [23,34,54,10,34,7,23,10,34] eliminate duplicates in a given array Expected output: 23,34,54,10,7
+
+                                document.write("10.Solution : ")
+                                document.write("<br>")
+                                document.write("<br>")
+
+                                                     
+                                                          var arr = [23,34,54,10,34,7,23,10,34]
+
+                                                          document.write("var arr = [23,34,54,10,34,7,23,10,34]")
+                                                          document.write("<br>")
+                                                          document.write("<br>")
+                                                          var present;
+                                                          
+                                                          
+
+                                                     for(var i =0 ; i<=arr.length-1; i++)
+
+                                                     {
+                                                            present = false // i have taken all elements by saying there is no duplicates here false.
+                                                           for(var j = i+1; j<=arr.length; j++)
+                                                           {
+                                                                   if(arr[j] === arr[i])
+                                                                   {
+                                                                      present = true //i have placed here true ...because if duplicate present
+                                                                      break; //break the loop
+                                                                   }
+
+                                                                   if(present)
+                                                                   {
+                                                                       continue;
+                                                                   }
+
+                                                                     
+                                                                      
+                                                           }
+
+                                                     }
+                        
+                                                     
+                                                    
+
+           </script>
+
+
+
+    </body>
+</html>
