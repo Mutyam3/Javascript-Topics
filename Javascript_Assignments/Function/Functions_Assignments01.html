@@ -1,0 +1,594 @@
+<html>
+    <head>
+        <title>Mutyam ==> Functions_Assignments</title>
+        <style>
+
+             *{
+                 font-size: large;
+              }
+
+
+        </style>
+    </head>
+
+    <body>
+
+
+              <h2>Functions Assignments01</h2>
+
+              <p>1. Write a function which can add two numbers</p>
+
+              <p>2. Write a function which can display the greatest of the three numbers passed in arguments.</p>
+
+              <p>3. Write a function which can display the given arguments in ascending order</p>
+
+              <p>4. Write a function which can display the factorial of a number</p>
+
+              <p>5. Write a function which can to display the reverse of a given number</p>
+
+              <p>6. Write a function which can check a given number is palindrome or not</p>
+
+              <p>7. Write a function which can check a given number is prime number or not</p>
+
+              <p>8. Write a function which can check a given number is Armstrong number or not</p>
+
+              <p>9. Write a function which can return the factorial of a number to another variable</p>
+
+              <p>10. Write a function to display the number of digits in the given number</p>
+
+              <p>11. Write a function that returns an array of all even numbers between 1 and 20.</p>
+
+
+<hr>
+
+             
+             <script>
+
+                    //1. 
+                    document.write("1.Solution : ")
+                    document.write("<br>" + "<br>")
+
+                    function add(a,b)
+                    {
+                         c = a + b;
+                         document.write(c);
+                    }
+
+                      document.write("add(10,20)")
+                      document.write("<br>")
+
+                      add(10,20); //30
+
+                        
+                       // document.write(add(10,20)) // here document.write taking add() as a variable , gives as output undefined.
+
+                       document.write("<br>" + "<br>")
+
+                       //2.
+                        
+                       document.write("2.Solution : ")
+                       document.write("<br>" + "<br>")
+
+                        function greatest(a,b,c)
+                        {
+                                if(a>b)
+                                {
+                                    if(a>c)
+                                    {
+                                        document.write(a , " is greatest number")
+                                    }
+                                    else
+                                    {
+                                        document.write(c, " is greatest number")
+                                    }
+                                }
+                                else
+                                {
+                                     if(b>c)
+                                     {
+                                          document.write(b , " is greatest number")
+                                     }
+                                     else
+                                     {
+                                          document.write(c , " is greatest number")
+                                     }
+                                }
+                        }
+
+                        document.write("greatest(10,50,60)")
+                        document.write("<br>" + "<br>")
+
+                        greatest(10,50,60)
+                        // 60 is greatest number 
+
+
+                        document.write("<br>" + "<br>")
+
+                        //3. 
+
+
+                        document.write("3.Solution : ")
+                        document.write("<br>" + "<br>")
+
+                         //rest parameter :
+
+                       //  The rest parameter(...) allows a function to treat an indefinite number of arguments.
+
+                     //  or
+
+                     // the arguments object :
+                     // js functions have a built-in object called the arguments object.
+                     // The arguments object contains an array of the objects when th function was called(invoked)
+
+
+
+
+                        function ascendingOrder()
+                        {
+                              var temp;
+
+                          for(var j= 0; j <= arguments.length-2; j++)
+                          {
+
+                          
+
+                              for( var i = 0; i <= arguments.length-2; i++)
+                              {
+                                    if(arguments[i] > arguments[i+1])
+                                    {
+                                           temp = arguments[i] 
+                                           arguments[i]  = arguments[i+1]
+                                           arguments[i+1] = temp;
+                                    }
+                              }
+                            }
+
+                            var arr = []
+
+                            for(var i = 0; i<=arguments.length-1; i++)
+                            {
+                                     arr[i] = arguments[i];
+                            }
+
+                            return arr 
+                        }
+
+                            document.write("var asc =  ascendingOrder(15,10,2,6,7,50,64)")
+                            document.write("<br>" + "<br>");
+
+                          var asc =  ascendingOrder(15,10,2,6,7,50,64)
+                          document.write(asc);
+
+                          document.write("<br>" + "<br>");
+
+
+                       //4.  
+ 
+                        document.write("4.Solution : ")
+                        document.write("<br>" + "<br>")
+
+
+                        //Write a function which can display the factorial of a number
+
+                          // 5 = 5 * 4 * 3 * 2 * 1
+
+                          var n = 5  // global variable
+                      
+
+                          function fac(n)
+                          {
+                                var fac = 1;
+                                for(var i = 1; i<=n ;i++)
+                                {    
+                                    fac = fac * i;  //1 * 1 | 1 * 2 | 2 * 3 | 6* 4 |24 * 5 | = 120 
+                                     
+                                }
+
+                              document.write(fac);
+                              
+
+                          }
+
+                           document.write("fac(5)");
+                           document.write("<br>" + "<br>")
+                           
+                           
+                           fac(5);
+                           document.write("<br>" + "<br>")
+
+                           //5.
+
+
+                           document.write("5.Solution : ")
+                           document.write("<br>" + "<br>")
+
+
+                           //Write a function which can to display the reverse of a given number.
+
+                           function reverse(number)
+                           {
+                                      
+                                      var r ;  
+                                      sum = 0;
+
+                                      while(number > 0)
+                                      {
+                                           r = number % 10; 
+                                           sum = (sum * 10 ) + r; 
+                                           number = parseInt(number / 10);
+                                      }
+
+                                      document.write(sum);
+
+                           }
+
+                           document.write("reverse(4520136)")
+                           document.write("<br>" + "<br>")
+
+                           reverse(4520136);
+                           document.write("<br>" + "<br>")
+
+
+                           // 6.
+
+                           document.write("6.Solution : ")
+                           document.write("<br>" + "<br>")
+
+
+                           // Write a function which can check a given number is palindrome or not.
+
+
+                           function palindrome(number)
+                           {
+                                  
+                                  var r;
+                                  sum = 0
+                                  n = number 
+
+                                  while(number > 0)
+                                  {
+                                         r = number % 10;
+                                         sum = (sum * 10 ) + r;
+                                         number = parseInt(number / 10);
+
+                                  }
+
+                                  if(n === sum)
+                                  {
+                                      document.write("Yes, the given number is palindrome");
+                                  }
+                                  else
+                                  {
+                                      document.write("No, the given number is not palindrome");
+
+                                  }
+                           }
+
+                             document.write("palindrome(123321)")
+                             document.write("<br>" + "<br>")
+
+                             palindrome(123321);
+
+                             document.write("<br>" + "<br>")
+
+
+                             //7.
+
+                             document.write("7.Solution : ")
+                             document.write("<br>" + "<br>")
+
+                             // Write a function which can check a given number is prime number or not.
+
+                              function prime_or_not(number)
+                              {
+                                      // need to find factors of a number.
+
+                                      var  count = 0;
+                                      var i = 1
+
+                                      while(i <= number)
+                                      {
+                                          if(number % i === 0)
+                                          {
+                                             count = count + 1;
+                                             
+                                          }
+                                          i = i + 1;
+
+                                      }
+                                      if(count === 2)
+                                      {
+                                           document.write("The given number is prime number.")
+                                      }
+                                      else
+                                      {
+                                          document.write("The given number is not prime number")
+                                      }
+                              }
+
+                              //document.write("prime_or_not(" + number + ")"); // throws error we cannot access variables that are declared inside function from outside. 
+                              document.write("prime_or_not(5);")
+                              document.write("<br>" + "<br>");
+
+                              prime_or_not(5);
+
+                              document.write("<br>" + "<br>")
+
+
+                              //8. 
+
+
+                              document.write("8.Solution : ")
+                              document.write("<br>" + "<br>")
+
+                              //  Write a function which can check a given number is Armstrong number or not.
+                                   
+                                   // sum of the cubes of a number ==> Armstrong number
+                               
+                                   
+              
+
+                                     function armstrong(number)
+                                     {
+                                             
+                                           var r ;
+                                           cube = 0;
+                                           var n = number;
+
+                                           while(number > 0)
+                                           {
+                                                 r = number % 10;
+                                                 cube =  cube + r ** 3;
+                                                 number = parseInt(number / 10);
+                                           }
+                                               
+                                           if(n === cube)
+                                           {
+                                                  document.write(" the given number is armstrong number.")
+                                           }
+                                           else
+                                           { 
+                                                 document.write(" the given number is not an armstrong number.")
+                                           }
+                                         
+                                     }
+
+                                     document.write("armstrong(153)")
+                                      
+                                     document.write("<br>" + "<br>")
+
+                                     armstrong(153);
+
+                                    
+                                     document.write("<br>" + "<br>")
+
+
+
+                                //9.
+
+
+                                document.write("9.Solution : ")
+                                document.write("<br>" + "<br>")
+
+                                //  Write a function which can return the factorial of a number to another variable
+
+                                      
+
+                                        function fac(number)
+                                        {
+                                                 var i =1;
+                                                 var fac = 1;
+                                                 while(i <=number)
+                                                 {
+                                                      fac = fac * i;
+                                                      i = i + 1;
+                                                 }
+
+                                                 return fac;
+                                        }
+
+                                        var factorial = fac(5)
+
+                                        
+
+                                        document.write("var factorial = fac(5)")
+
+                                        document.write("<br>")
+
+                                        document.write(factorial);
+
+                                        
+                               document.write("<br>" + "<br>")
+
+                                   //10.
+
+
+                                     document.write("10.Solution : ")
+                                     document.write("<br>" + "<br>")
+
+
+                                    //   Write a function to display the number of digits in the given number.
+
+
+                                      function numberOfDigits(number)
+                                      {
+                                                
+                                                 
+                                                  count = 0;
+                                                  var r;
+
+                                                  while(number > 0)
+                                                  {
+                                                        r = number % 10;
+                                                        count = count + 1;
+                                                        console.log(count)
+                                                        number  = parseInt(number /10);
+
+                                                  }
+
+                                                  return count;
+
+                                      }
+
+                                      var digits  = numberOfDigits(23456)
+
+                                      document.write("var digits  = numberOfDigits(23456)");
+
+                                      document.write("<br>" + "<br>")
+
+                                      document.write("The number of digits : " + digits);
+
+                                      document.write("<br>" + "<br>")
+
+
+                                 //11.
+
+                                       document.write("11.Solution : ")
+                                       document.write("<br>" + "<br>")
+
+                                       //  Write a function that returns an array of all even numbers between 1 and 20.
+
+
+                                       function even(a , b)
+                                       {
+
+                                             var arr = []
+                                             var j = 0; //index starts with 0.
+
+                                             for(var i = a; i<= b; i++ )
+                                             {
+
+                                                   if(i % 2 === 0)
+                                                   {
+                                                        arr[j] = i
+                                                        j++
+                                                   }
+                                                   
+                                                    
+                                             }
+
+                                             return arr;
+                                       }
+
+                                         var evenNum =  even(1,20)
+                                         document.write(evenNum);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        
+
+                     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             </script>
+
+
+    </body>
+</html>
