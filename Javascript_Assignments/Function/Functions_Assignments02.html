@@ -1,0 +1,169 @@
+<html>
+    <head>
+        <title>
+            Mutyam ==> Functions02
+        </title>
+
+        <style>
+
+            *{
+                  font-size: large;
+              }
+
+
+        </style>
+    </head>
+
+    <body>
+
+                           <h2> ***  Predefined functions : ****</h2>    
+                           
+                           
+                <p>1. Write a program to alert "Hello! Good morning".</p>
+
+                <p>2. Write a program to print your full name in the console.</p>
+
+                <p>3. Write a program to print the product of 10 and 20 in the console.</p>
+
+                <p>4. Write a program to open a confirm box that asks "Do you want to delete this item?".</p>
+
+                <p>5. Write a program to open a confirm box that asks "Do you want to delete this item?". If the user confirms it, it should alert "Item deleted".</p>
+
+                <p>6. Use a prompt box that asks the user to enter a number and print the number in the console.</p>
+
+                <p>7. Use a prompt box to take a decimal number input from the user and print only the integer part of the number using parseInt().</p>
+
+
+
+                <hr>
+
+
+                <script>
+
+
+                      //1. 
+
+                      document.write("1.Solution : ")
+                      document.write("<br>"  + "<br>")
+
+
+                     // Write a program to alert "Hello! Good morning".
+
+                       alert("Hello! Good Morning")
+
+                       document.write("alert(Hello! Good Morning)")
+
+                       document.write("<br>"  + "<br>")
+
+                     //2.
+                       
+
+                      document.write("2.Solution : ")
+                      document.write("<br>"  + "<br>")
+
+
+                      // Write a program to print your full name in the console.
+
+                      
+                       document.write("console.log(Mutyam Bhargav Reddy)")
+
+                       console.log("Mutyam Bhargav Reddy")
+
+                    //3. 
+
+                      document.write("3.Solution : ")
+                      document.write("<br>"  + "<br>")
+
+
+                      //Write a program to print the product of 10 and 20 in the console.
+
+
+                         document.write("console.log(10*20)")
+
+                         console.log(20*10) // 200
+
+                         document.write("<br>"  + "<br>")
+
+                    //4.
+
+                      document.write("4.Solution : ")
+                      document.write("<br>"  + "<br>")
+
+                      //Write a program to open a confirm box that asks "Do you want to delete this item?".
+
+
+                      document.write("confirm(Do you want to delete this item?)");
+                    
+                       confirm(" Do you want to delete this item ?")
+
+                      document.write("<br>"  + "<br>")
+
+
+                      //5.
+
+                      document.write("5.Solution : ")
+                      document.write("<br>"  + "<br>")
+
+                      // Write a program to open a confirm box that asks "Do you want to delete this item?". 
+                      //If the user confirms it, it should alert "Item deleted".
+
+                     var del  = confirm("Do you want to delete this item ?")
+
+
+                       if(del === true)
+                       {
+                             alert("yes, the item is deleted.")
+                       }
+
+                       document.write(
+                           "var del  = confirm(Do you want to delete this item ?)" + "<br>" +
+                            "if(del === true)" +  "<br>" +
+                            "{  alert(yes, the item is deleted.)  }")
+
+                    document.write("<br>"  + "<br>")
+ 
+
+
+
+                       //6.
+
+                       document.write("6.Solution : ")
+                       document.write("<br>"  + "<br>")
+
+
+                       // Use a prompt box that asks the user to enter a number and print the number in the console.
+
+                          var number  = +prompt("enter a number :");
+
+                          console.log(number)
+
+                          document.write("<br>"  + "<br>")
+
+
+                       //7.
+
+                       document.write("7.Solution : ")
+                       document.write("<br>"  + "<br>")
+
+                       //  Use a prompt box to take a decimal number input from the user and print only the integer part of the number using parseInt().
+
+                            var decNumber = +prompt("enter a decimal number : ")
+
+                            document.write("var decNumber = +prompt(enter a decimal number : )")
+
+                            document.write("<br>")
+
+                            document.write("parseInt(decNumber)");
+
+                            document.write("<br>")
+
+                            document.write(parseInt(decNumber));
+
+                            document.write("<br>"  + "<br>")
+
+
+                </script>
+
+    </body>
+
+</html>
