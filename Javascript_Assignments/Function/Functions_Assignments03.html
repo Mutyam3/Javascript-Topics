@@ -1,0 +1,124 @@
+<html>
+
+<head>
+    <title>
+        Mutyam ==> Functions_Assignments03
+    </title>
+
+    <style>
+        *{
+            font-size: large;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <h2>Quiz on Function expression :</h2>
+
+    <pre>
+                    <code>
+
+
+                        1. Choose the correct code to be inserted in order to invoke the function.
+
+
+                        var fun=function lfc(x){
+                        console.log(x*x);
+                         }
+                        A. thisfun(10)
+                        B. lfc(10)
+                        C. function thisfun(10)
+                        D. None of the above
+
+
+
+                        2. How many arguments does function foo accept?
+
+
+                        const foo = function(a, b){
+                               return a+b;
+                          }
+                        A. 0
+                        B. 1
+                        C. 2
+                        D. 3
+
+                         3. What will be the output of the below code?
+
+
+                         var changeVal = function(p){
+                                return p+2;
+                           }
+                        console.log(changeVal(2));
+
+
+                         A. 4
+                         B. 22
+                         C. Error: changeVal is not a function
+                         D. undefined
+
+                         4. What is the output of this program?
+
+
+                            f91();
+                             var f91 = function () {
+                                      console.log('f91');
+                              };
+                           A. f91
+                           B. Error
+                           C. undefined
+                           D. None of these
+
+
+            <script>
+
+                         var fun = function lfc(x)
+                         {
+                            console.log(x*x);
+                         }
+
+                         fun(10); //100
+
+                         
+                         const foo = function(a,b)
+                         {
+                            return a + b;
+                         }
+
+                         var d = foo(20,15,45)
+                         console.log(d) //35
+
+                       //  or
+
+                       console.log(foo(20,15,45))
+                         //35
+
+                         // even if u pass more arguments this function call accepting only two.
+
+
+                         var changeVal = function(p){
+                                return p+2;
+                           }
+                        console.log(changeVal(2)); //4
+
+
+                            f91(); // get error due to its not accept hoisting as we inizalised function with f91.
+                             // f91 is not a function.
+
+
+                             var f91 = function () {
+                                      console.log('f91');
+                              };
+
+
+            </script>
+
+                    </code>
+                </pre>
+
+
+</body>
+
+</html>
