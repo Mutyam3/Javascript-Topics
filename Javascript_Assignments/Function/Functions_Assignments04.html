@@ -1,0 +1,411 @@
+<html>
+    <head>
+        <title>
+            Mutyam==> Assignment05
+        </title>
+
+        <style>
+            *{
+                font-size: large;
+            }
+        </style>
+    </head>
+
+    <body>
+
+
+             <h2>***  Anonymous Functions  ****</h2>
+
+             <p>1. Write an anonymous function which can add two numbers</p>
+
+             <p>2. Write an anonymous function which can display the greatest of the three numbers passed in arguments.</p>
+
+             <p>3. Write an anonymous function which can display the given arguments in ascending order</p>
+
+             <p>4. Write an anonymous function which can display the factorial of a number</p>
+
+             <p>5. Write an anonymous function which can to display the reverse of a given number</p>
+
+             <p>6. Write an anonymous function which can check a given number is palindrome or not</p>
+
+             <p>7. Write an anonymous function which can check a given number is prime number or not</p>
+
+             <p>8. Write an anonymous function which can check a given number is Armstrong number or not</p>
+
+             <p>9. Write an anonymous function which can return the factorial of a number to another variable</p>
+
+             <p>10. Write an anonymous function to display the number of digits in the given number</p>
+
+             <p>11. Write an anonymous function that returns an array of all even numbers between 1 and 20.</p>
+
+
+
+
+             <hr>
+
+
+           <script>
+
+              //   1. 
+
+              document.write("1.Solution : ")
+              document.write("<br>" + "<br>")
+
+              //Write an anonymous function which can add two numbers.
+     
+
+                    var f =  function(x,y)
+                             {
+                                  var z = x+y
+                                  document.write(z);
+                             }
+
+                    document.write("f(40,50)")
+                    document.write("<br>")
+
+
+                    f(40,50) // 40 + 50 = 90.
+
+              document.write("<br>" + "<br>")
+
+              //2.
+                
+              document.write("2.Solution : ")
+              document.write("<br>" + "<br>")
+
+              // Write an anonymous function which can display the greatest of the three numbers passed in arguments.
+
+
+         var greatest = function(x,y,z)
+                                    {
+                       if(x > y) 
+                       {
+                             if(x > z)
+                             {
+                                 document.write(x + " is a greatest number")
+                             }
+                             else
+                             {
+                                 document.write(z + " is a greatest number")
+                             }
+                       }
+                       else
+                       {
+                           if(y > z)
+                           {
+                                 document.write(y  + " is a greatest number")
+                           }
+                           else
+                           {
+                                 document.write(z + " is a greatest number")
+                           }
+                       }
+                       
+                              }
+
+                       greatest(15,50,8)
+                       // 50
+
+
+                //3.
+                document.write("<br>" + "<br>")
+                document.write("3.Solution : ")
+                document.write("<br>" + "<br>")
+
+                //Write an anonymous function which can display the given arguments in ascending order
+
+                var ascendingOrder = function()
+                                     {
+                                        var temp;
+
+
+                                        for(var j = 0; j<= arguments.length-2; j++)
+                                        {
+
+                                       
+                                         for(var i =0; i <= arguments.length-2; i++)
+                                         {
+                                                       if(arguments[i] > arguments[i+1]) 
+                                                       {
+                                                              temp = arguments[i]
+                                                              arguments[i] = arguments[i+1]
+                                                              arguments[i+1] = temp;
+                                                       }   
+
+                                         }
+                                        }
+
+                                        var arr = []
+                                        j =0
+                                        for(var i = 0; i <= arguments.length-1; i++)
+                                        {
+                                                  arr[j] = arguments[i];
+                                                  j = j + 1;
+
+                                        }
+                                        document.write(arr);
+
+                                     }
+
+                                ascendingOrder(12,50,70,5,8,2,60)
+
+
+                //4.
+
+                document.write("<br>" + "<br>")
+                document.write("4.Solution : ")
+                document.write("<br>" + "<br>")
+
+                // Write an anonymous function which can display the factorial of a number.
+
+                var fac = function(number)
+                               {
+                                   var fac = 1;
+                                   i = 1;
+
+                                   while(i<=number)
+                                   {  
+                                      fac = fac * i
+                                      i = i +1;
+                                   }
+
+                                   document.write(fac)
+                               }
+
+                        fac(5)
+
+                 //5.
+
+                 document.write("<br>" + "<br>")
+                 document.write("5.Solution : ")
+                 document.write("<br>" + "<br>")
+
+                 //Write an anonymous function which can to display the reverse of a given number.
+
+                                  var r;
+
+                 var reverse = function(number)
+                                    {
+                                          var sum = 0;
+                                        while(number !== 0)
+                                        {
+                                            r = number % 10;
+                                            sum = (sum * 10) + r
+                                            number = parseInt(number /10);
+
+                                        }
+
+                                        document.write(sum)
+                                       
+                                    }
+
+                    reverse(25468)
+
+
+
+                //6. 
+
+                 document.write("<br>" + "<br>")
+                 document.write("6.Solution : ")
+                 document.write("<br>" + "<br>")
+
+
+                 //Write an anonymous function which can check a given number is palindrome or not.
+
+                    var r;
+
+                    var palindrome = function(number)
+                                         {
+                                            n = number;
+                                            sum = 0;
+
+                                                  while(number>0)
+                                                  {
+                                                      r = number % 10;
+                                                      sum = (sum * 10) + r 
+                                                      number = parseInt(number / 10);
+                                                  }
+
+                                                  if(n === sum)
+                                                  {
+                                                       document.write("The given number is palindrome.")
+                                                  }
+                                                  else
+                                                  {
+                                                      document.write("The given number is not palindrome.")
+                                                  }
+
+                                         }
+
+                        palindrome(123321)
+
+
+
+                  // 7.
+                   
+                  document.write("<br>" + "<br>")
+                  document.write("7.Solution : ")
+                  document.write("<br>" + "<br>")
+
+                  //Write an anonymous function which can check a given number is prime number or not.
+
+                 
+
+                  var prime_or_not = function(number)
+                                         {
+                                             var i = 1;
+                                             var count = 0;
+                                              
+                                             while(i <= number)
+                                             {
+                                        
+                                                  if(number % i === 0)
+                                                  {
+                                                      count = count + 1;
+                                                  }
+
+                                                  i = i + 1;
+
+                                             }
+
+                                             if(count === 2)
+                                             {
+                                                  document.write("The given number is prime number")
+                                             }
+                                             else
+                                             {
+                                                  document.write("The given number is not prime number.")
+                                             }
+                                         }
+
+                            prime_or_not(3);
+
+
+
+                    // 8. 
+
+                     
+                  document.write("<br>" + "<br>")
+                  document.write("8.Solution : ")
+                  document.write("<br>" + "<br>")
+
+                  // Write an anonymous function which can check a given number is Armstrong number or not.
+
+
+                              var armstrong = function(number)
+                                                      {
+                                                                   var sum = 0
+                                                                   var n = number;
+                                                                   var r;
+
+                                                                   while(number !== 0 )
+                                                                   {
+                                                                            r = number % 10;
+                                                                            sum = sum + (r**3);
+                                                                            number = parseInt(number/10);
+
+                                                                   }
+                                                                   if(n === sum)
+                                                                   {
+                                                                         document.write("The given number is armstrong")
+                                                                   }
+                                                                   else
+                                                                   {
+                                                                           document.write("The given number is not armstrong")
+                                                                   }
+
+
+                                                                   
+                                                      }
+
+                                                      armstrong(153)
+
+                    // 9.
+
+                    document.write("<br>" + "<br>")
+                    document.write("8.Solution : ")
+                    document.write("<br>" + "<br>")
+
+                    //Write an anonymous function which can return the factorial of a number to another variable.
+
+                            var factorial = function(number)
+                                                  {
+                                                       fac = 1;
+                                                       i =1;
+                                                       while(i<= number)
+                                                       {
+                                                              fac = fac * i
+                                                              i = i + 1;
+                                                       }
+                                                       return fac;
+                                                  }
+
+                                    var fac =  factorial(5);
+
+                                    document.write(fac)
+
+
+
+
+
+                      // 10.
+
+                      
+                       document.write("<br>" + "<br>")
+                       document.write("8.Solution : ")
+                       document.write("<br>" + "<br>")
+
+                       //Write an anonymous function to display the number of digits in the given number.
+
+                                           var digits = function(number)
+                                                                {
+                                                                    var r;
+                                                                   var count = 0;
+
+                                                                    while(number !== 0)
+                                                                    {
+                                                                          r = number % 10;
+                                                                          count = count + 1;
+                                                                          number = parseInt(number / 10);
+                                                                    }
+                                                                    return(count);
+                                                                }
+
+                                                     document.write(digits(547812));
+
+
+                        //11.
+
+                        document.write("<br>" + "<br>")
+                        document.write("11.Solution : ")
+                        document.write("<br>" + "<br>")
+
+                        // Write an anonymous function that returns an array of all even numbers between 1 and 20.
+
+                                                     var even = function(a,b)
+                                                                    {
+                                                                        var j = 0;
+                                                                        var arr = [];
+
+                                                                        for(var i = a; i <= b-1 ; i++)
+                                                                        {
+                                                                             if(i % 2 === 0) 
+                                                                             {
+                                                                                    arr[j]  = i;
+                                                                                    j = j + 1;
+                                                                             }
+                                                                        }
+                                                                        return arr;
+                                                                    }
+
+                                                            
+
+                                                           document.write(even(1,20));
+
+       
+
+           </script>
+
+
+    </body>
+</html>
