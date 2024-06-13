@@ -1,0 +1,232 @@
+<html>
+    <head>
+        <title>
+            Mutyam ==> Assignment05
+        </title>
+
+        <style>
+            * {
+                font-size :large;
+            }
+        </style>
+    </head>
+
+    <body>
+
+             <pre>
+                <code>
+
+
+                         ************    Callback Examples    *************
+
+                         
+
+            1. Create a function to add given two numbers and then multiply 10 to the sum using a call back function.
+
+                    
+                           function add(a, b , cb)
+                           {
+                                c = a + b 
+                                cb(c);
+                           }
+
+                           function  mutliply(x)
+                           {
+                                 x * 10
+                           }
+
+                           add(2,3,multiply); // 50
+
+
+               
+             2.  Create a function to find the sum of given three numbers and then find the average using a callback function.
+
+                   function addThree(a,b,c,cb)
+                   {
+                         var  d = a + b + c;
+                           cb(d);
+                   }
+
+                   function average(x)
+                   {
+                            x = x / 3;
+                           console.log(x);
+                   }
+
+                   addThree(1,2,3,average); // 2
+
+
+             3.   Create a function to find the prime numbers between given two numbers and then print them in the console using a callback function. 
+
+
+                    function findPrime(a,b,cb)
+                    {
+                        var arr = [] , var 
+                           for(var i = a; i <= b; i++)
+                           {
+                                   var count = 0
+                                for(var j = 1; j <= i; j++)
+                                {
+                                      if(i % j === 0)
+                                      {
+                                            count = count + j
+                                            arr[a] = count;
+                                            cb(arr[a])
+                                 
+                                      }
+                                    
+                                }
+
+                           }
+                    }
+
+                    function display(x)
+                    {
+                         console.log(x);
+                    }
+
+                    findPrime(1,10,display)
+                    //2
+                      3
+                      5
+                      7
+
+
+
+
+                </code>
+             </pre>
+
+
+             <script>
+
+                        //1. Create a function to add given two numbers and then multiply 10 to the sum using a call back function.
+
+                    
+                           function add(a, b , cb)
+                            {
+                                     c = a + b 
+                                     cb(c)
+                            }
+
+                           function  multiply(x)
+                            {
+                                   x = x * 10
+                                   console.log(x);
+                            }
+
+                           add(2,3,multiply) //50 
+
+
+                        // 2.  Create a function to find the sum of given three numbers and then find the average using a callback function.
+
+                               function addThree(a,b,c,cb)
+                               {
+                                     var  d = a + b + c;
+                                       cb(d);
+                               }
+
+                               function average(x)
+                               {
+                                        x = x / 3;
+                                       console.log(x);
+                               }
+
+                               addThree(1,2,3,average);
+
+
+
+
+                         //3.  Create a function to find the prime numbers between given two numbers and then print them in the console using a callback function.
+
+
+                    function findPrime(a,b,cb)
+                    {
+                      
+                           for(var i = a; i <= b; i++)
+                           {
+                                  var count = 0; 
+                                for(var j = 1; j <= i; j++)
+                                {
+                                    
+                                      if(i % j === 0)
+                                      {
+                                            count = count + 1
+                                
+                                      }
+
+                                }
+
+                                      if(count === 2)
+                                      {
+                                           cb(i);
+                                      }
+                                    
+                                
+
+                           }
+                    }
+
+                    function display(x)
+                    {
+                         console.log(x);
+                    }
+
+                    findPrime(1,10,display)
+
+                   
+                     
+
+
+
+
+
+
+
+             </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+</html>
