@@ -1,0 +1,469 @@
+<html>
+    <head>
+        <title>
+            Mutyam ==> Assignment06
+        </title>
+        <style>
+            *{
+                font-size: large;
+            }
+        </style>
+    </head>
+    <body>
+
+
+                         <h2>Javascript Basic Coding Introduction Practice assignments</h2>
+
+                         <h3>Basic Functions</h3>
+
+
+                         <pre>
+                            <code>
+                         1. Write a function which can return the sum of two numbers.
+                                function add(a,b){
+                                    …………………
+                                }
+                                var sum = add(45,67);
+                                console.log(sum);
+                                //Expected output: 112
+
+                         2. Write a function which can return the greatest of the three numbers passed in arguments.
+                                function compare(a,b,c){
+                                       …………………
+                                 }
+                                 var greatest = compare(45,67,23);
+                                 console.log(greatest);//67
+
+                         3. Write a function which can print the given arguments in ascending order.
+                            
+                                   function sortNums(a,b,c){
+                                       …………………
+                                    }
+                                   var ascending = sortNums(45,7,68);
+                                   console.log(ascending);// 7 45 68 
+
+                         4. Write a function which can return the factorial of a number.
+                            
+                                           function fact(a){
+                                                …………………
+                                            }
+                                           var factorial = fact(4);
+                                           console.log(factorial); 
+
+                         5. Write a function which can to return the reverse of a given number.
+                                          function rev(a){
+                                               …………………
+                                           }
+                                          var reverse = rev(4);
+                                          console.log(reverse);
+
+
+
+                            </code>
+                            </pre>
+
+                        <p>6. Write a function which can check a given number is prime number or not</p>
+
+                        <p>7. Write a function which can check a given number is palindrome or not</p>
+
+                        <p>8. Write a function to return the number of digits in the given number</p>
+
+                        <p>9. Write a function that prints all even numbers between 1 and 20.</p>
+
+                        <p>10. Write a function which can check a given number is armstrong number or not</p>
+                        
+
+                <hr>
+                
+                <script>
+
+                    //1.  Write a function which can return the sum of two numbers.
+
+                       document.write("1.Solution : ")
+                       document.write("<br>" + "<br>")
+
+                              function add(a,b)
+                              {
+                                   return a + b;
+                              }
+
+                              var sum = add(45,67);
+                              document.write(sum); //112
+
+                       document.write("<br>" + "<br>")
+
+                    //2.   Write a function which can return the greatest of the three numbers passed in arguments.
+
+                    document.write("2.Solution : ")
+                    document.write("<br>" + "<br>")
+
+
+                                function  compare(a,b,c)
+                                {
+                                       if(a > b)
+                                       {
+                                           if(a > c) 
+                                           {  
+                                                 return a;
+                              
+                                           }
+                                           else 
+                                           {
+                                               if(c > b)
+                                               {
+                                                   return c;
+                                               }
+                                           }
+
+                                       }
+
+                                       else 
+                                       {
+                                            if(b > c)
+                                            {
+                                                return b;
+                                            }
+                                            else 
+                                            {
+                                                if(c > a)
+                                                {
+                                                   return c;
+                                                }
+                                               
+                                            }
+                                       }
+
+                                   
+                                }
+
+                                  
+                                var greatest = compare(45,67,23);
+                                document.write(greatest) // 67
+
+                    document.write("<br>" + "<br>")
+
+                  // 3.  Write a function which can print the given arguments in ascending order.
+
+
+                    document.write("3.Solution : ")
+                    document.write("<br>" + "<br>")
+
+
+                          
+                              function sortNumbers(a,b,c)
+                              {
+                                    if(a < b)
+                                    {
+                                         if(a < c)
+                                         {
+                                             console.log(a)  
+                                         
+                                             if(b < c)
+                                             {
+                                                console.log(b) 
+                                                console.log(c)  
+                                             }
+                                             else
+                                             {
+                                                console.log(c) 
+                                                console.log(b) 
+                                             }
+                                         }
+                                         else // a > c
+                                         {
+                                            console.log(c) 
+                                            console.log(a) 
+                                            console.log(b) 
+                                         }
+                                    }
+
+                                    else 
+                                    {
+                                         if( b < c)
+                                         {
+                                            console.log(b) 
+                                            
+                                            if(c < a)
+                                            {
+                                                console.log(c) 
+                                                console.log(a) 
+                                            }
+                                              else
+                                              {
+                                                console.log(a) 
+                                                console.log(c) 
+                                                   
+                                              }
+                                         }
+                                         else
+                                         {
+                                            console.log(c) 
+                                            console.log(b) 
+                                            console.log(a) 
+                                         }
+                                    }
+                              }
+
+
+                                sortNumbers(45,7,68); // 7 , 45 , 68 
+
+
+                                //or 
+
+                                function sort(a,b,c)
+                                {
+                                    var temp;
+
+                                for(var j = 0; j <= arguments.length - 2; j++)
+                                {
+
+                                    for(var i = 0 ; i <= arguments.length-2; i++)
+                                    {
+                                        if(arguments[i] > arguments[i + 1])
+                                        {
+                                            temp = arguments[i]
+                                            arguments[i] =  arguments[i+1]
+                                            arguments[i+1] = temp;
+                                        }
+                           
+                                    }
+
+                                }
+
+                                  var arr = [];
+
+                                   for(var i = 0; i<=arguments.length-1; i++)
+                                   {
+                                             arr[i] = arguments[i];
+                                   }
+                                   return arr;
+
+                                }
+
+                                              var asc = sort(45,7,68)
+                                              document.write(asc);
+
+                        document.write("<br>" + "<br>")
+
+
+                                    
+                        // 4.  Write a function which can return the factorial of a number.
+
+                        document.write("4.Solution : ")
+                        document.write("<br>" + "<br>")
+
+
+                                      function fact(a)
+                                      {
+                                           fac = 1;
+                                           i = 1;
+                                           while(i <= a)
+                                           {
+                                                 fac = fac * i;
+                                                 i = i + 1;
+                                           }
+                                           return fac;
+                                      }
+
+                                      var factorial = fact(4)
+                                      document.write(factorial)
+
+                         document.write("<br>" + "<br>")
+
+
+
+                         // 5.   Write a function which can to return the reverse of a given number.
+
+                         document.write("5.Solution : ")
+                         document.write("<br>" + "<br>")
+
+
+                         function rev (a) 
+                         {
+                              var r;
+                              var sum = 0;
+                               while(a !== 0)
+                               {
+                                     r = a % 10;
+                                     sum = (sum*10 ) + r;
+                                     a = parseInt(a /10);
+                                     
+                               }
+
+                            return sum;
+                            
+
+                         }
+
+                         var reverse = rev(456)
+                         document.write(reverse);
+                         document.write("<br>" + "<br>")
+
+
+                          //6.  Write a function which can check a given number is prime number or not.
+
+                         document.write("6.Solution : ")
+                         document.write("<br>" + "<br>")
+
+                                 
+                          function prime(a)
+                          {
+                                      var count = 0;
+
+                                      for(var i = 1; i<=a; i++)
+                                      {
+                                             if(a % i === 0)
+                                             {
+                                                 count = count + 1;
+                                             }
+
+                                      }
+                                      if(count === 2)
+                                      {
+                                            return "Yes the given number is prime number." 
+                                      }
+                                      else
+                                      {
+                                            return "No the given number is not prime number."
+                                      }
+
+                          }
+
+                          var checkPrime = prime(5)
+                          document.write(checkPrime);
+
+                          document.write("<br>" + "<br>")
+
+                          //7. Write a function which can check a given number is palindrome or not
+
+
+                          document.write("7.Solution : ")
+                          document.write("<br>" + "<br>")
+
+
+
+                               function palindrome(number)
+                               {
+                                        var n = number;
+                                        var r;
+                                        var sum = 0
+
+                                        while(number>0)
+                                        {
+                                             r = number % 10;
+                                             sum = (sum * 10) + r;
+                                             number = parseInt(number /10);
+                                        }
+                                        if(sum === n)
+                                        {
+                                            return "yes, the given number is palindrome."
+                                        }
+                                        else
+                                        {
+                                            return "No, the given number is not a palindrome."
+                                        }
+                               }
+
+                               var pal = palindrome(123321)
+                               document.write(pal);
+
+                               document.write("<br>" + "<br>")
+
+
+                        // 8. Write a function to return the number of digits in the given number
+
+
+                          document.write("8.Solution : ")
+                          document.write("<br>" + "<br>")
+
+
+                            function digits(number) 
+                            {
+                                  var r;
+                                  var count = 0;
+
+                                  while(number > 0)
+                                  {
+                                       r = number % 10;
+                                       count = count + 1;
+                                       number = parseInt(number/10);
+                                  }
+                                  return count;
+                            }
+
+                            var dig = digits(147852963)
+                            document.write(dig); // 9
+
+                            document.write("<br>" + "<br>")
+
+
+                            //9.  Write a function that prints all even numbers between 1 and 20. 
+
+
+                            document.write("9.Solution : ")
+                            document.write("<br>" + "<br>")
+
+
+                          var e =  function even(a,b)
+                            {
+                                var arr = [] ; var x = 0;
+                                 for(var i = a; i <= b; i++)
+                                 {      
+                                        if(i % 2 === 0)
+                                        {
+                                             arr[x]  =  i ;
+                                             x++;
+                                        }
+                                        
+                                        
+                                 }
+
+                                 return arr;
+                            }
+
+                           
+                            document.write(e(1,20));
+
+                            document.write("<br>" + "<br>")
+
+
+                            // 10. Write a function which can check a given number is armstrong number or not.
+
+                            document.write("10.Solution : ")
+                            document.write("<br>" + "<br>")
+
+                    var arm = function armstrong(number)
+                            {
+                                var n = number;
+                                var r;
+                                var sum =0;
+
+                                 while(number > 0)
+                                 { 
+                                    r = number % 10;
+                                    sum = sum + (r**3);
+                                    number = parseInt(number /10);
+                                      
+                                 }
+
+                                 if(n === sum)
+                                 {
+                                       return ("yes , the given number is armstrong number")
+                                 }
+                                 else 
+                                 {
+                                        return ("No, the given number is not armstrong number")
+                                 }
+
+                            
+                            }
+
+                            document.write(arm(153));
+
+                            document.write("<br>" + "<br>") 
+
+
+                </script>
+ 
+    </body>
+</html>
