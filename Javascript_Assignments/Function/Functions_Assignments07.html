@@ -1,0 +1,483 @@
+<html>
+    <head>
+        <title>
+            Mutyam ==> Assignment06
+        </title>
+
+        <style>
+            *{
+                 font-size: large;
+            }
+        </style>
+    </head>
+
+    <body>
+
+             <h2>Basic Functions</h2>
+
+        <p>1. Cube of any number using the function</p>
+
+        <p>2. Find diameter, circumference and area of a circle using functions.</p>
+
+        <p>3. Maximum and minimum between two numbers using functions.</p>
+
+        <p>4. Check whether a number is even or odd using functions.</p>
+
+        <p>5. Check whether a number is prime, Armstrong or perfect number using functions.</p>
+
+        <p>6. Find all prime numbers between the given interval using functions.</p>
+
+        <p>7. Print all strong numbers between the given interval using functions.</p>
+
+        <p>8. Armstrong numbers between the given interval using functions.</p>
+
+        <p>9. Print all perfect numbers between the given interval using functions</p>
+
+        <hr>
+
+
+        <script>
+
+              //1. Cube of any number using the function.
+
+              document.write("1.Solution :")
+              document.write("<br>" + "<br>")
+
+
+                function cube(number)
+                {
+                     return number ** 3;
+                }
+
+                var c = cube(3)
+                document.write(c) // 9
+
+                document.write("<br>" + "<br>")
+
+
+                //2. Find diameter, circumference and area of a circle using functions.
+
+                document.write("1.Solution :")
+                document.write("<br>" + "<br>")
+
+                   function display(result)
+                    {
+                        document.write(result);
+                    }
+
+
+                    function  diameterOfCircle(radius ,cb)
+                    {
+                           return cb((2 * radius)) + " units"
+                    }
+
+
+
+                    function cirumferenceOfCircle(x)
+                    {
+                          document.write( ( Math.PI * x) )
+                    }
+
+                    function areaOfCircle(d)
+                    {
+                        document.write(((Math.PI) * (d**2)) / 4)
+                    }
+
+               
+
+                     diameterOfCircle(2, cirumferenceOfCircle);
+                     document.write("<br>")
+
+
+                     diameterOfCircle(4, display);
+                     document.write("<br>")
+
+                     areaOfCircle(12);
+
+
+                    document.write("<br>" + "<br>")
+
+
+                // 3. Maximum and minimum between two numbers using functions.
+
+                    
+                document.write("3.1.Solution :")
+                document.write("<br>" + "<br>")
+
+
+                     function max(a,b, cb)
+                     {
+                        if(a > b)
+                        {
+                            return cb( a + " is maximum")
+                        }
+                        else
+                        {
+                            return  cb(b + " is maximum")
+                        }
+
+                     }
+
+                     function display(x)
+                     {
+                         document.write(x);
+                     }
+
+                     max(25,65,display);
+
+
+
+
+                document.write("<br>" + "<br>")
+
+                document.write("3.2.Solution :")
+                document.write("<br>" + "<br>")
+
+                
+
+                function min(a,b, cb)
+                     {
+                        if(a < b)
+                        {
+                            return cb( a + " is minimum")
+                        }
+                        else
+                        {
+                            return  cb(b + " is minimum")
+                        }
+
+                     }
+
+                     
+                     min(25,65,display);
+
+                     document.write("<br>" + "<br>")
+
+
+                //4. Check whether a number is even or odd using functions.
+
+                document.write("4.Solution :")
+                document.write("<br>" + "<br>")
+
+
+                       function evenorodd(number ,cb)
+                       {
+                              if(number % 2 === 0)
+                              {
+                                     return cb("yes the given number is even")
+                              }
+                              else 
+                              {
+                                    return cb("No, the given number is odd")
+                              }
+                       }
+
+                       evenorodd(2, display);
+
+                       document.write("<br>" + "<br>")
+
+
+                 // 5. Check whether a number is prime, Armstrong or perfect number using functions.
+
+                 document.write("5.1.Solution :")
+                 document.write("<br>" + "<br>")
+
+
+                         function prime(number,cb)
+                         {
+                                 var count = 0;
+
+                                 for(var i = 1; i <= number; i++)
+                                 {
+                                    if(number % i === 0)
+                                    {
+                                        count = count + 1;
+                                    }
+                                        
+                                 }
+
+                                 if(count === 2)
+                                 {
+                                         return cb("Yes the given number is prime")
+                                 }
+                                 else
+                                 {
+                                        return cb("No the given number is not prime")
+                                 }
+
+                                 
+                         }
+
+                       
+
+                            prime(3,display)
+
+                            document.write("<br>" + "<br>")
+
+                           document.write("5.2.Solution :")
+                           document.write("<br>" + "<br>")
+
+
+                    var arm = function armstrong(number , cb)
+                        {
+
+                                 var r;
+                                 var  n = number
+                                 var sum =0;
+
+                                  while(number > 0)
+                                  {
+                                         r = number % 10;
+                                         sum = sum + (r**3);
+                                         number = parseInt(number / 10);
+                         
+                                  }
+
+                                  if(n === sum)
+                                  {
+                                       return cb("Yes , the given number is armstrong number.")
+                                  }
+                                  else
+                                  {
+                                       return cb("No, the given number is not an armstrong number")
+                                  }
+                        }
+
+                         arm(153, display);
+
+                         document.write("<br>" + "<br>")
+
+                         document.write("5.3.Solution :")
+                         document.write("<br>" + "<br>")
+
+                         function perfectNumber(number, cb)
+                         {
+                                   n = number ;
+                                   count =0
+                                  for(var i = 1; i<=number ; i++ )
+                                  {
+                                         if(number % i === 0)
+                                         {
+                                              count  = count + i 
+                                         }
+                                         
+                                  }
+                                  if((count - number) === n)
+                                         {
+                                               return cb("yes the given number is perfect number.")  
+                                         }
+                                         else 
+                                        {
+                                               return cb("No, the given number is not a perfect number.")
+                                        }
+
+                         }
+
+                            perfectNumber(8128, display);
+
+
+                    
+
+                  //6 .Find all prime numbers between the given interval using functions. 
+
+
+                  document.write("<br>" + "<br>")
+
+                  document.write("6.Solution :")
+                  document.write("<br>" + "<br>")
+
+                        function primeNumbers(a,b,cb)
+                        {
+                            var x = 0
+                            var arr = []
+                                for(var i = a ; i <= b; i++)
+                                {
+                                     var count = 0
+
+                                     for(var j = 1 ; j<=b ; j++)
+                                     {
+                                             if(i % j === 0)
+                                             {
+                                                 count = count + 1;
+                                             }
+                                     }
+                                     if(count === 2)
+                                     {
+                                            arr[x] = i
+                                            x++ 
+                                           
+                                     }
+                                }
+
+                                return cb(arr); 
+                        }
+
+                        primeNumbers(1,10,display);
+
+                    // 7. 
+
+                    document.write("<br>" + "<br>")
+
+                    document.write("7.Solution :")
+                    document.write("<br>" + "<br>")
+
+                           
+                             function fact(n)
+                             {
+                                  fac = 1;
+                                  i = 1
+                                  while(i <= n)
+                                  {
+                                        fac  = fac * i;
+                                        i = i + 1;
+                                  }
+                                  return fac;
+
+                             }
+
+                             function strong(number)
+                             {
+                                   num = number;
+                                   sum = 0;
+                                   var r ;
+
+                                   while(number > 0)
+                                   {
+                                        r = number % 10;
+                                        sum = sum + fact(r);
+                                        number = parseInt(number / 10);
+                                   }
+
+                                          if(sum == num)
+                                          {
+                                                return true;
+                                          }
+                             }
+
+
+                             function strongNumbers(a,b,cb)
+                             {
+                                      for(var i = a; i<= b; i++)
+                                      {
+                                           if(strong(i))
+                                           {
+                                                cb(i)
+                                           }
+                                            
+                                      }
+
+                                      return 0;
+                             }
+
+                             strongNumbers(1,145,dis); // 1,2 and 145
+
+
+            //8. Armstrong numbers between the given interval using functions.
+                  
+                        
+                    document.write("<br>" + "<br>")
+                    document.write("7.Solution :")
+                    document.write("<br>" + "<br>")
+
+                        
+                                   function arms(num)
+                                   {
+                                          number = num;
+                                          var r;
+                                          sum = 0;
+
+                                          while(num > 0)
+                                          {
+                                              r = num % 10;
+                                              sum = sum + (r ** 3);
+                                              num = parseInt(num / 10);
+
+                
+                                          }
+                                          console.log(sum)
+
+                                          if(sum === number)
+                                          {
+                                               
+                                               return true; 
+                                          }
+
+                                   }
+
+                                              
+
+                                   function armstrongNum(a,b,cb)
+                                   {
+                                          for(var i = a; i<=b; i++)
+                                          {
+                                                 if(arms(i)) 
+                                                 {
+                                                     cb(i);
+                                                 }
+                                          }
+                                   }
+
+
+                                   armstrongNum(1,153,dis); // 1 and 153
+
+
+
+                // 9. Print all perfect numbers between the given interval using functions.
+
+
+                    document.write("<br>" + "<br>")
+                    document.write("8.Solution :")
+                    document.write("<br>" + "<br>")
+
+
+
+                                       function  perf(num)
+                                       {
+                                               number = num;
+                                               sum = 0;
+
+                                              for(var i = 1; i <= num; i++)
+                                              {
+                                                     if(num % i === 0)
+                                                     {
+                                                            sum = sum + i;  
+                                                     }
+
+                                                     
+                                              }
+
+                                              if((sum - number) === number)
+                                              {
+                                                    return true;
+                                              }
+                                       }
+
+
+
+                                               function perfectnums(a,b,cb)
+                                               {
+                                                    for(var i = a; i <= b; i++) 
+                                                    {
+                                                         if(perf(i))
+                                                         {
+                                                            cb(i);
+                                                         }
+                                                         
+                                                    }
+                                               }
+
+                                               perfectnums(1,100,dis) // 6 and 28
+
+
+                                                function dis(res)
+                                                {
+                                                      document.write(res ," ")
+                                                      
+                                                }
+
+
+        </script>
+
+
+    </body>
+</html>
