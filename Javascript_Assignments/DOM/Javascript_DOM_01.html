@@ -1,0 +1,190 @@
+<html>
+    <head>
+        <title>
+            Mutyam ==> DOM1
+        </title>
+
+        <style>
+            *{
+                font-size: large;
+            }
+        </style>
+    </head>
+    <body>
+
+                <pre>
+                    <code>
+                          **** Working with Document Object *****
+
+                          1. Given an h1 element:
+
+                          h1  Hello World /h1
+
+                          Print the text inside the h1 element in the console.
+                          Print the data type of the text inside the h1.
+                          Print the text inside the h1 in uppercase in the console.
+                          Change the text of the h1 to "Welcome to Edupoly". 
+
+                          2. Print the texts inside the h1 and h2 elements in the console.
+
+                          h1 class="a">Hello /h1
+                          h2 class="a">Edupoly /h2>
+                          p class="b">Training /p>
+
+                          3. Store the texts of each li element in an array.
+
+                           ul
+                              li> Apple  /li
+                              li> Mango  /li>
+                              li> Orange /li>
+                           /ul>
+
+                          4.Print the text inside the first paragraph element in the console.
+
+                            h1>  Hello    /h1
+                            p>  Edupoly   /p
+                            p>  Training  /p
+                            p> Something  /p
+
+                       
+                    </code>
+                </pre>
+
+                <hr>
+
+
+                <h1 class="a">Hello</h1>
+                <h2 class="a">Edupoly</h2>
+                <p class="b">Training</p>
+
+            <div id = "div1">
+                <h1>Hello</h1>
+                <p>Edupoly</p>
+                <p>Training</p>
+                <p>Something</p>
+            </div>
+
+             
+
+
+
+
+                  <script>
+
+
+                       // 1. Solution : 
+
+                       document.write("1.Solution : ") 
+
+                        //Given an h1 element: 
+
+                      var x =  document.createElement("h1");
+                               x.innerHTML = "Hello world" 
+
+                         document.body.appendChild(x)
+
+
+                         // a] print the text inside the h1 element in the console.
+                           
+                            console.log(x.innerHTML);
+
+                        // b] print the datatype of the text inside the h1.
+
+                             var type   =  x.innerHTML
+                             console.log(typeof type);
+
+                        // c] print the text inside the h1 in uppercase in the console.
+       
+                             var upper = x.innerHTML.toUpperCase();
+                             console.log(upper);
+
+                        // d]  change the text of the h1 to "Welcome to Edupoly"
+
+                                 x.innerHTML = "Welcome to Mutyam's world!"
+
+                                 console.log(x); 
+
+                        
+
+                      //2.Solution : 
+
+                      document.write("2.Solution : ") 
+                      document.write("<br>")
+
+                          // print the texts inside the h1 and h2 elements in the console. 
+
+                        var p =  document.getElementsByClassName("a")
+                                    
+                        console.log( p[0].innerHTML)
+                        console.log( p[1].innerHTML) 
+
+                        document.write("look into the console")
+
+                        
+
+                        document.write("<br>" + "<br>")
+
+                      // 3.Solution : 
+
+                       document.write("3.Solution :")
+
+                       //Store the texts of each li element in an array.
+
+                            var x = document.createElement("ul");
+
+                                    x.setAttribute("id", "l1");
+                            
+                                 document.body.appendChild(x);
+
+                           var list = ["Apple", "Mango", "Orange"]
+
+                                list.forEach(function(a)
+                                               {
+                                                  var x = document.createElement("li");
+                                                       x.innerHTML = a; 
+                                                    document.getElementById("l1").appendChild(x)
+
+                                               }
+                                             ); 
+
+                                             var arr = []
+                                             i = 0;
+                               
+                                             document.querySelectorAll("li").forEach(function(a)
+                                                                             {
+                                                                                 arr[i] = a.innerHTML
+                                                                                 i++
+                                                                             }
+                                                                             );
+
+                                                    console.log(arr); 
+
+
+                            // 4.Solution :
+
+                            document.write("4.Solution :")
+
+                            //Print the text inside the first paragraph element in console. 
+
+                                    
+                                     var x   =  document.getElementById("div1");
+
+                                                     
+                                                      console.log(x)
+
+                                               x.querySelectorAll("p").forEach(function(a , index)
+                                               {      
+                                                      if( index === 0)
+                                                      {
+                                                        p = a.innerHTML;
+                                                      }
+                                                     
+                                                     
+                                               });
+
+                                               console.log(p);
+
+                  </script>
+
+    </body>
+</html>
