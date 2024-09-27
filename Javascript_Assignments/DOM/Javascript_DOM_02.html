@@ -1,0 +1,210 @@
+<html>
+    <head>
+        <title>
+            Mutyam ==> DOM02
+        </title>
+        <style>
+            table,th,td
+            {
+                  border: 2px solid black;
+            }
+        </style>
+    </head>
+
+    <body>
+
+         <h2>DOM Assignment</h2>
+
+         <img src="../Images/Dom_Assignments.png" width="800px">
+
+         <img src="../Images/Dom_Assignments02.png" width="800px">
+
+
+         <script>
+
+              //1.Create one h1 element and put some text into it. 
+
+                   var h =  document.createElement("h1");
+                           
+                           h.innerHTML = "Hello DOM World!"
+
+                     document.body.appendChild(h);
+
+              // 2. Create one h1 element, put some text into it and apply red font color to it. 
+
+                      var r = document.createElement("h1");
+
+                            r.innerHTML = "Welcome to Mutyam's World"
+                            r.style.color = "red";
+
+                        document.body.appendChild(r);
+
+              // 3. Take an array of names and create a list from it 
+
+                        var names = ["ramesh", "suresh", "praveen", "gopi","sunil"]
+
+
+                              var u =  document.createElement("ul");
+                                        u.setAttribute("id", "myul");
+                                    document.body.appendChild(u);
+
+
+                                names.forEach(function(el)
+                                {
+                                    var l = document.createElement("li");
+                                            l.innerHTML = el;
+                                        document.getElementById("myul").appendChild(l);
+                                        
+                                }
+                                    
+                                );
+
+                //4. Take an array of numbers and create a list from it.
+
+                            var numbers = [11,12,13,14,15,16,17]
+
+                                     var u = document.createElement("ul");
+                                             u.setAttribute("id", "myul2");
+
+                                          document.body.appendChild(u);
+
+                                 numbers.forEach(function(el)
+                                                    {
+                                                        var l = document.createElement("li");
+                                                                l.innerHTML = el;
+                                                            document.getElementById("myul2").appendChild(l);
+                                                    }
+                                             );
+
+                 //5. Take an array of objects and create a table from it. 
+
+
+                               var obj = [
+                                              {
+                                                  name : "praveen",
+                                                  age : 36,
+                                                  gender : "male",
+                                                  salary : 10000,
+                                                  city : "hyd"
+
+                                              },
+                                              {
+                                                 name : "srikanth",
+                                                 age : 32,
+                                                 gender : "male",
+                                                 salary : 20000,
+                                                 city : "bangaluru"
+                                              },
+                                              {
+                                                 name : "pradeep",
+                                                 age : 21,
+                                                 gender : "male",
+                                                 salary : 25000,
+                                                 city : "hyd"
+                                              },
+                                              {
+                                                name : "mounika",
+                                                age : 20,
+                                                gender : "female",
+                                                salary : 30000,
+                                                city : "nalagonda"
+                                              },
+                                              {
+                                                name : "nikhil",
+                                                age : 22,
+                                                gender : "male",
+                                                salary : 2000,
+                                                city : "guntur"
+                                              },
+                                              {
+                                                name : "riya",
+                                                age : 14,
+                                                gender : "female" ,
+                                                salary : 40000,
+                                                city : "indore"
+                                              }
+                                         ];
+
+                                        var tab =  document.createElement("table");
+
+                                                 tab.style.width = "500px";
+
+                                        var the = document.createElement("thead"); 
+                                                      
+
+                                                     var headNames = ["Name", "Age" , "Gender", "Salary", "City"]
+
+                                                     headNames.forEach(function(el)
+                                                                         {
+                                                                               th = document.createElement("th");
+                                                                                     th.innerHTML = el; 
+                                                                                     the.appendChild(th);
+
+                                                                                    
+                                                                         }
+                                                                      );
+                                                       
+
+                                                    document.body.appendChild(tab);
+                                                             tab.appendChild(the);
+
+                                              var tb = document.createElement("tbody");
+                                                        tb.setAttribute("id" ,"mybody");
+
+                                                    tab.appendChild(tb);
+
+                                                obj.forEach(function(el) 
+                                                             {
+                                                                var tr =  document.createElement("tr");
+                                                                var td1 =   document.createElement("td");
+                                                                            td1.innerHTML = el.name;
+                                                                 var td2 = document.createElement("td");
+                                                                             td2.innerHTML = el.age; 
+                                                                 var td3 = document.createElement("td");
+                                                                            td3.innerHTML = el.gender;
+                                                                 var td4 = document.createElement("td");
+                                                                            td4.innerHTML = el.salary;
+                                                                 var td5 = document.createElement("td");
+                                                                            td5.innerHTML = el.city;
+                                                                            
+                                                                            tr.appendChild(td1);
+                                                                            tr.appendChild(td2);
+                                                                            tr.appendChild(td3);
+                                                                            tr.appendChild(td4);
+                                                                            tr.appendChild(td5);
+
+                                                                  document.getElementById("mybody").appendChild(tr);
+                                                                            
+                                                             }
+                                                           );
+
+                                                           document.write("<br>" + "<br>");
+
+
+                                        // 6. Take an array of image urls and display the images in browser.
+
+                                                             var im = ["https://images.pexels.com/photos/1851164/pexels-photo-1851164.jpeg",
+                                                                       "https://images.pexels.com/photos/3608263/pexels-photo-3608263.jpeg",
+                                                                       "https://images.pexels.com/photos/2313396/pexels-photo-2313396.jpeg"
+                                                                      ];
+
+                                                                     var d =  document.createElement("div");
+                                                                                d.setAttribute("id", "mydiv");
+                                                                        document.body.appendChild(d);
+
+
+                                                                 im.forEach(function(el)
+                                                                              {
+                                                                                 var ima = document.createElement("img");
+                                                                                      ima.src = el;
+                                                                                      ima.style.width = "300px";
+                                                                                      ima.style.height = "500px"
+                                                                                      
+                                                                                 document.getElementById("mydiv").appendChild(ima);
+                                                                              }
+                                                                            );
+
+         </script>
+        
+    </body>
+</html>
