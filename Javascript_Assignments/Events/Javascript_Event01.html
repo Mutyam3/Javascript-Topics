@@ -1,0 +1,175 @@
+<html>
+    <head>
+        <title>
+            Mutyam ==> Event01
+        </title>
+        <style>
+            *{
+                font-size: large;
+            }
+
+            #colorDiv
+            {
+                width : 120px;
+                height : 100px;
+                border : 2px solid black;
+            }
+
+            #d1
+            {
+                   border: 2px solid black;
+                   padding:20px;
+                   width: 250px;
+            }
+
+            #d3
+            { 
+                  border : 2px solid black;
+                  width : 120px;
+                  height : 100px;
+            }
+
+           
+        </style>
+    </head>
+    <body>
+
+
+                        <pre>
+                            <code>
+                             **   Assignment01 on Events :   **
+                                   Add text using events 
+                            </code>
+                        </pre>
+
+                        <script>
+                             
+                                 x = document.createElement("h1")
+
+                         function  addText()
+                                         {
+                                            x.innerHTML = "Welcome to Different World"
+                                            document.getElementById("d1").appendChild(x);
+                                         }
+
+                        function colorChange(color)
+                        {
+                            document.getElementById("colorDiv").style.backgroundColor = color;
+                        }
+
+                       
+                       
+            
+                        function bgToggle() 
+                        {      if(document.getElementById("btn").innerHTML === "white")
+                                  {
+                                    var x = document.getElementById("btn")
+                                    x.style.backgroundColor = "green";
+                                    x.innerHTML = "green";
+                                  }
+                                  else 
+                                  {
+                                    var x = document.getElementById("btn")
+                                    x.style.backgroundColor = "white";
+                                    x.innerHTML = "white";
+
+                                  }
+                                    
+                        }
+
+                         
+                        </script>
+
+
+                        <p>Solution 1 : Insert text to h1</p>
+                        <button onclick = "addText()">Add Text</button>
+
+                        <div id = "d1">
+
+                        </div>
+                        <!-- click   ==> Event 
+                        onclick ==> Event Listener
+                        addText() ==> event handler 
+                         -->
+
+                         <p>Solution 2 : Color Change Button Click</p>
+                         
+                         <div id="colorDiv">
+
+                         </div>
+
+                         <button onclick="colorChange('red')">Red</button>
+                         <button onclick="colorChange('blue')">Blue</button>
+                         <button onclick="colorChange('green')">Green</button>
+                         <button onclick="colorChange('')">Reset</button>
+
+                         
+                         <p>Solution 3 : Button bg Toggle</p>
+
+                          <button onclick = "bgToggle()" id = "btn">white</button>
+
+                          
+                        <p>Solution 4 : color rotation on click </p>
+
+                           <div onclick = "diffColors()" id = "d3"></div>
+
+                        <p>Solution 5 : button toggle boolean value  ==> toggle button to show true/false  </p>
+
+                            <button onclick="tg()" id="btn2">Toggle</button>
+                            <span id="textTrue">true</span>
+
+
+
+           <script>
+                       var colors = ["red", "green" , "blue", "black", "orange", "yellow"];
+                             
+                                  var i = 0;
+                                  
+                                  document.getElementById("d3").style.backgroundColor = colors[i]; // red
+                               
+                                  function diffColors()
+                                            {  
+                                                   if(i < colors.length-1) // 0 | 1 | 2 | 3 | 4 | 5  ==> 5  last condition false so goes to else block
+                                                   {
+                                                    i++;     // 1 | 2 | 3 | 4 | 5
+                                                    document.getElementById("d3").style.backgroundColor = colors[i];
+                                                     
+                                                   }
+                                                   else 
+                                                   {
+                                                       i = 0;
+                                                       document.getElementById("d3").style.backgroundColor = colors[i];
+
+                                                   }
+                                                    
+                                                    
+                                            }
+
+
+                    var b = document.getElementById("btn2")
+                            b.style.backgroundColor = "orange"
+                    var r = document.getElementById("textTrue")
+                            
+
+
+                     function tg()
+                     {
+                          if(r.innerHTML === "true")
+                          {
+
+                                document.getElementById("textTrue").innerHTML = "false" 
+                                       
+                          }
+                          else 
+                          {
+                                document.getElementById("textTrue").innerHTML = "true" 
+                               
+                          }
+                     }
+
+
+           </script>
+
+
+    </body>
+</html>
