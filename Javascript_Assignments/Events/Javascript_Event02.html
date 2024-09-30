@@ -1,0 +1,204 @@
+<html>
+    <head>
+        <title>
+            Mutyam ==> Event02
+        </title>
+        <style>
+               *{
+                   font-size: large;
+               }
+
+               #div1
+               {
+                    width : 120px;
+                    height : 100px;
+                    border: 2px solid black;
+               }
+
+               #div2, #div3, #div4{
+                       width : 200px;
+                       height : 150px;
+                       border : 2px solid black;
+                       padding : 10px;
+                       box-sizing: border-box;
+                       
+               }
+
+              #dislikeBtn , #likeBtn
+               {
+                        padding : 10px;
+                        border-radius: 10px;
+                        border :0;
+                        
+               }
+
+               #likeBtn 
+               {
+                   background-color: rgb(0, 255, 47);
+               }
+
+               #dislikeBtn
+               {
+                   background-color: rgb(255, 0, 0);
+               }
+
+              
+
+               
+        </style>
+    </head>
+    <body>
+
+        <pre>
+            <code>
+                Event Assignmnets 
+            </code>
+        </pre>
+
+        <p>Solution 1 : toggle button </p>
+
+        <button onclick = "toggleBtn()" id="btn01">On</button>
+
+
+        <p>Solution 2 : toggle button div </p>
+
+        <div id = "div1">
+
+                <span id="text01">I'm Nothing</span>
+
+        </div>
+
+        <button onclick = "togglediv()" id="btn02">True/False</button>
+
+
+
+        <p>Solution 3 : likes and dislikes counter</p>
+
+        
+              <div id = "div2">
+
+                <button onclick="like()" id = "likeBtn">Like</button>
+                 <span id = "s1" > 0 </span> <br><br>
+
+                <button onclick="dislike()" id = "dislikeBtn">Dislike</button>
+                <span id = "s2" > 0 </span>
+
+              </div>
+
+        <p>Solution 4 : Change div backgroundColor using buttons </p>
+
+                 
+               <div id="div3">
+
+               </div>
+               <button onclick="changeBg('crimson')">On</button>
+               <button onclick="changeBg('')">Off</button>
+
+
+          <p>Solution 5 : Change div background toogle button</p>
+
+                      <div id = "div4">
+
+                      </div>
+
+                      <button onclick="changeDiv()">Toggle</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script>
+
+                        function toggleBtn()
+                        {
+                            var check = document.getElementById("btn01").innerHTML
+                             if( check === "On")
+                             {
+                                   document.getElementById("btn01").innerHTML = "Off"
+                             }
+                             else 
+                             {
+                                  document.getElementById("btn01").innerHTML = "On"
+                             }
+
+                        }
+
+                         var s =  document.getElementById("text01")
+                         var j 
+                                  
+                        function togglediv()
+                        {
+                                 if(s.innerHTML === "I'm Nothing")
+                                 {
+                                     j = document.getElementById("text01")
+                                         j.innerHTML = "true"
+                                 }
+                                 else 
+                                 {
+                                    if(j.innerHTML === "true")
+                                    {
+                                          document.getElementById("text01").innerHTML = "false"
+                                    }
+                                    else 
+                                    {
+                                        document.getElementById("text01").innerHTML = "true"
+                                    }
+
+                                    
+                                 }
+                                  
+                        }
+
+                        var likeCount = 0;
+                        
+
+                        function like()
+                        { 
+                           likeCount ++;
+                           document.getElementById("s1").innerHTML = likeCount; 
+                          
+
+                        }
+                        
+                        var disLikeCount = 0;
+
+                        function dislike()
+                        {
+                            disLikeCount++;
+                            document.getElementById("s2").innerHTML = disLikeCount;
+                        }
+
+                        function changeBg(a)
+                        {
+                              document.getElementById("div3").style.backgroundColor = a
+                        }
+
+                        function changeDiv()
+                        {
+                          var x = document.getElementById("div4").style.backgroundColor
+                            if(x === "")
+                            {
+                                document.getElementById("div4").style.backgroundColor = "orange"
+                            }
+                            else 
+                            {
+                                document.getElementById("div4").style.backgroundColor = ""
+                            }
+                            
+                        }
+
+              
+        </script>
+
+    </body>
+</html>
