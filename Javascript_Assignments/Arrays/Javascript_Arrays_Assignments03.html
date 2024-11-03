@@ -1,0 +1,602 @@
+<html>
+    <head>
+        <title>Mutyam==>Arrays_Assignment03</title>
+    </head>
+
+
+    <body>
+
+
+        <h2>Working with Linear Data Structures Arrays</h2>
+
+        <p>1. print only the perfect squares in an array</p>
+
+        <p>2. Print only the 2 digit numbers from an array</p>
+
+        <p>3. Print only multiples of 5 from an array</p>
+
+        <p>4. Print only multiples of 2 AND 3 from an array</p>
+
+        <p>5. Print only multiples of 3 OR 5 from an array</p>
+
+        <p>6. Increment 5% for all the salaries in a given array</p>
+
+        <p>7. For every basic salary present in the array, add 40% HRA, 92% DA, 10% Tax and display the final output</p>
+
+        <p>8. For every salary, deduct 10% tax for salaries less than 50000 and deduct 12% tax for salaries more than 50000</p>
+
+        <p>9. Print only those odd numbers in a given array which are divisible by 3.</p>
+
+        <p>10. Insert first 10 odd numbers in an empty array(for and while).</p>
+
+        <p>11. Print the elements present in the second half of the array.</p>
+
+        <p>12. Print the greatest of all 2-digit numbers present in an array.</p>
+
+        <p>13. Write a program to remove elements from an array which are not in the ascending order Ex: Original array: [12,34,11,56,37,98,23,67,109,45] Output : [12,34,56,98,109]</p>
+
+        <p>14. Write a program to sort the array based on the number of occurrences of elements Ex: original array: [1,2,5,6,2,1,6,1,2,6,2,1,2]; After the logic: [5,6,6,6,1,1,1,1,2,2,2,2,2]; //5 occurred one time,6 three times,1 occurred 4 times, 2 occurred 5 times</p>
+
+<hr>
+
+<script>
+
+
+           //1.Solution :
+
+           // print only the perfect squares in an array
+
+            //  4 / 1 = 4
+            //  4 / 2 =2
+            //  4 / 3 = 1.5..
+            //  4 / 4 = 1
+             
+            //  i --- 4 / i
+            //  -------------------
+
+            //  9 / 1 = 1
+            //  9 / 2 = 3...
+            //  9 / 3 = 3
+            //  9 / 4 = 2...
+            //  9 / 5 = 4....
+
+            document.write("1.Solution : ")
+            document.write("<br>")
+            document.write("<br>")
+
+            number = +prompt("enter a number to find whether it's a perfect square or not")
+
+            document.write("enter a number : " + number)
+            document.write("<br>")
+            document.write("<br>")
+            var count = 0;
+            
+
+            for(var i = 0; i<=number ; i++)
+            {
+                   if(number / i  === i)
+                   {
+                       count = count + 1;
+                       var  num = i
+                   }
+
+            }
+
+            if(count === 1)
+            {
+                      document.write("output : " +  num + "  yes, it's a perfect square" ,  )
+            }
+            else
+            {
+                    document.write("output : " + num + " No,it's not a perfect square")
+            }
+
+            document.write("<hr>")
+
+
+           
+
+            //2.Solution :
+
+            // Print only the 2 digit numbers from an array
+
+            document.write("2.Solution : ")
+            document.write("<br>")
+            document.write("<br>")
+
+            var arr = [234, 20, 87,9, 58, 65,900,250]
+
+            
+
+            document.write("var arr = [234, 20, 87, 9, 58, 65,900,250]")
+
+            document.write("<br>")
+            document.write("<br>")
+
+            for(var i = 0; i <= arr.length-1; i++)
+            {
+
+                  if(arr[i] > 9 && arr[i] <= 99)
+                  {
+                       document.write(arr[i]);
+                       document.write("<br>");
+                  }
+            }
+
+            document.write("<hr>")
+
+            //3.Solution :
+
+            //  Print only multiples of 5 from an array
+
+            document.write("3.Solution : ")
+            document.write("<br>")
+            document.write("<br>")
+
+            var arr = [25, 50, 42, 90, 80, 60, 45, 75, 89, 64, 76]
+
+            document.write("var arr = [25, 50, 42, 90, 80, 60, 45, 75, 89, 64, 76]")
+            document.write("<br>")
+            document.write("<br>")
+
+            for(var i = 0; i<= arr.length-1; i++)
+            {
+                   if(arr[i] % 5 === 0)
+                   {
+                         document.write(arr[i]);
+                         document.write("<br>")
+                   }
+            }
+
+            document.write("<hr>")
+
+            //4 .Solution :
+
+            //Print only multiples of 2 AND 3 from an array
+
+
+            document.write("4.Solution : ")
+            document.write("<br>")
+            document.write("<br>")
+
+            var arr = [2 , 15, 18, 9, 6, 24, 12,14]
+            
+             document.write("var arr = [2 , 15, 18, 9, 6, 24, 12,14]")
+             document.write("<br>")
+             document.write("<br>")
+
+             for(var i = 0; i<=arr.length-1 ; i++)
+             {
+                   if(arr[i] % 2 ===0 && arr[i] % 3 === 0)
+                   {
+                        document.write(arr[i])
+                        document.write("<br>")
+                   }
+             }
+
+             document.write("<hr>")
+
+
+             //5.Solution :
+
+             //Print only multiples of 3 OR 5 from an array
+
+              document.write("5.Solution : ")
+              document.write("<br>")
+              document.write("<br>")
+
+              var arr = [2 , 15, 18, 9, 6, 24, 12, 14, 30 ,60 ,90]
+
+              document.write("var arr = [2 , 15, 18, 9, 6, 24, 12, 14, 30 ,60 ,90]")
+              document.write("<br>")
+              document.write("<br>")
+
+              for(var i =0; i<=arr.length-1; i++)
+              {
+                   if(arr[i] % 3 === 0  && arr[i] % 5 === 0)
+                   {
+                         document.write(arr[i])
+                         document.write("<br>")
+                   }
+              }
+
+               document.write("<hr>")
+
+              //6.Solution :
+
+             // Increment 5% for all the salaries in a given array
+
+                document.write("6.Solution : ")
+                document.write("<br>")
+                document.write("<br>")
+
+                var arr = ['3200','2500','4500','8500', '4567', 5789, 3546, 8794]
+
+                document.write(" var arr = ['3200','2500','4500','8500', '4567', 5789, 3546, 8794]")
+                document.write("<br>")
+                document.write("<br>")
+
+
+
+                for(var i = 0; i<= arr.length-1; i++)
+                {
+                    var sum =  arr[i] * (5 / 100);
+                        arr[i] = parseInt(arr[i])+ sum;
+                        document.write(arr[i]);
+                        document.write("<br>");
+                }
+
+                document.write("<br>")
+                document.write("<br>")
+                document.write(arr)
+
+                document.write("<hr>")
+
+
+                //7. Solution: 
+
+                // For every basic salary present in the array, add 40% HRA, 92% DA, 10% Tax and display the final output.
+
+                document.write("7.Solution : ")
+                document.write("<br>")
+                document.write("<br>")
+
+                var hra = '40%';
+                var da = '92%'
+                var tax = '10%'
+
+                 hra = parseInt(hra)/100
+                 da = parseInt(da)/100
+                 tax = parseInt(tax)/100
+
+
+                var arr =  [45000, 80000, 70000, 90000, 55000, 64000, 8500,4578]
+
+                document.write("var arr =  [45000, 80000, 70000, 90000, 55000, 64000, 8500,4578]")
+                document.write("<br>")
+                document.write("<br>")
+
+
+                 for(var i = 0; i<=arr.length-1; i++)
+                 {
+
+                       hra1 = arr[i] * hra
+                       da1 = arr[i] * da
+                       tax1 = arr[i] * tax
+                       arr[i] = arr[i]  + hra1 + da1 + tax1;
+                       document.write(arr[i])
+                       document.write("<br>")
+  
+                 }
+
+                 document.write("<br>")
+                 document.write(arr)
+                 document.write("<hr>")
+
+                 
+
+                 //8.Solution :
+
+                 document.write("8.Solution : ")
+                 document.write("<br>")
+                 document.write("<br>")
+
+                 var arr = [60000, 57800, 75240, 124570, 20000, 16500, 17500, 5640]
+
+                 var tax1 = '10%'
+                     tax1 = parseInt(tax1)/100
+                 var tax2 = '12%'
+                     tax2 = parseInt(tax2)/100
+
+
+
+
+                 document.write("var arr = [60000, 57800, 75240, 80000, 20000,16500,17500, 5640]")
+                 document.write("<br>")
+                 document.write("<br>")
+
+                 for(var i = 0; i<=arr.length-1; i++)
+                 {
+                        if(arr[i] < 50000)
+                        {
+                           var t1 =  arr[i] * tax1
+                           arr[i] = arr[i] - t1;
+                           document.write(arr[i]);
+                           document.write("<br>");
+                        }
+                        else
+                        {
+                             if(arr[i] > 50000)
+                             {
+                                 t2 = arr[i] * tax2
+                                 arr[i] =  arr[i] - t2;
+                                 document.write(arr[i]);
+                                 document.write("<br>");
+                             }
+                        }
+                 }
+
+                 document.write("<br>")
+                 document.write(arr)
+                 document.write("<hr>")
+
+
+                 //9.Solution :
+
+                 // Print only those odd numbers in a given array which are divisible by 3.
+
+                    document.write("9.Solution : ")
+                    document.write("<br>")
+                    document.write("<br>")
+
+                    var arr = [6,8, 9, 10, 15, 17, 18, 20 , 27,21]
+
+                    for(var i = 0; i <= arr.length-1; i++)
+                    {
+                           
+                        if( arr[i] % 2 !== 0)
+                        {
+                              if(arr[i] % 3 === 0) 
+                              {
+                                document.write(arr[i])
+                                document.write("<br>")
+                                
+                              }
+                        }
+
+                    }
+
+
+                    document.write("<hr>")
+
+                    //10. Solution :
+
+                    //Insert first 10 odd numbers in an empty array(for and while).
+
+                     document.write("10.Solution :")
+                     document.write("<br>")
+                     document.write("<br>")
+
+                     var arr = []
+
+                     var j = 0 ;
+
+                     for(var i = 0; i <= 10 ; i++)
+                     {
+
+                             if( i % 2 !== 0)
+                             { 
+   
+                                    arr[j]  = i;
+                                    document.write(arr[j]);
+                                    document.write("<br>")
+                                    j = j + 1
+
+                             } 
+                    }
+                     
+                     document.write("<br>")
+                     document.write(arr);
+                     document.write("<hr>")
+
+ 
+
+
+            // 11. Solution :
+
+            //Print the elements present in the second half of the array.
+
+                     document.write("11.Solution :")
+                     document.write("<br>")
+                     document.write("<br>")
+
+
+                     var arr = [12,15, 18,20,22,25,26,28,30,35]
+
+
+                     for(var i = parseInt(arr.length/2) ; i <= arr.length-1; i++ )
+                     
+                     {
+                          document.write(arr[i]);
+                          document.write("<br>")
+
+                     }
+
+                     document.write("<hr>")
+
+
+            //  12.Solution :
+
+            //Print the greatest of all 2-digit numbers present in an array.
+
+                    document.write("12.Solution : ")
+                    document.write("<br>")
+                    document.write("<br>")
+
+                    var arr = [234, 52, 86, 252, 692, 789, 9 , 25 , 60, 85]
+
+                    var array = []
+                    var j = 0;
+                    for(var i =0; i<= arr.length-1; i++)
+                    {
+
+                           if(arr[i] > 9 && arr[i] <= 99)
+                           {   
+                                    array[j] = arr[i];
+                                    j++;
+
+                           }            
+                                  
+                    }
+
+                    document.write(array)
+                    document.write("<br>")
+                    document.write("<br>")
+
+
+                    for(var i= 0; i<=array.length-1;i++)
+                    {
+                        if(i === 0)
+                        {
+                            var max = array[i]
+                        }
+                        else
+                        {
+                            if(max < array[i])
+                            {
+                                 max = array[i];
+                            }
+                        }
+
+                    }
+             
+                    document.write("The greatest of 2 digit number form an array is : " + max );
+
+                    document.write("<hr>")
+
+
+                //  13.Solution :
+
+                //  Write a program to remove elements from an array which are not in the ascending order Ex: Original array: [12,34,11,56,37,98,23,67,109,45] Output : [12,34,56,98,109]
+
+                
+                 //  
+
+
+
+                     
+
+
+                    
+
+
+
+                   
+
+
+
+
+
+
+           
+
+
+
+
+
+
+             
+             
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+</html>
