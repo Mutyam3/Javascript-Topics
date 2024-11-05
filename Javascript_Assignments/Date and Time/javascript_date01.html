@@ -1,0 +1,189 @@
+<html>
+    <head>
+        <title>
+            Mutyam ==> Date and Timer Functions
+        </title>
+        <style>
+
+        </style>
+    </head>
+    <body>
+
+
+       <pre>
+        <code>
+                    *****  Date and Timer  ***** 
+        </code>
+       </pre>
+
+        <p>1. Enter the date of birth and calculate the age in years </p>
+
+                    <input type="date" name="dateofbirth" id="dob" onblur="abc(event)">
+
+                     <h1 id="db"></h1>
+                    <script>
+
+                     document.getElementById('db').style.display = 'none'
+                     function abc(ev) 
+                      {
+                               var db = (new Date(ev.target.value)).getTime()
+                               var cd = (new Date()).getTime()
+                               
+                               var dateofbirth = (cd-db) / (1000*60*60*24*365)
+                               console.log(dateofbirth);
+                              var x = document.getElementById('db')
+                                    x.innerHTML = ("Your age is  :  " + dateofbirth);
+                                    x.style.display = "block"
+                               
+                               
+                                   
+                      }
+
+                    </script>
+          <hr>
+
+          <pre>
+            <code>
+            2.  Companies and organisations have automated check-in and check-out systems for registering attendance.
+                When employees enter the office, they check in through a system to record their entry to the office.
+                The time at which they enter the office is known as CHECK IN time.
+                But the employee may go out for several small breaks within a day.
+                Every time they go out, they must check out to register their exit.
+                The time at which they go out is known as CHECK OUT time
+                Again when they come back to the office after the breaks, they need to check in.
+                The duration between a CHECK IN time and a CHECK OUT times is known as IN TIME.
+                These IN times are recorded and added up at the end of the day. 
+                The total time tell us for how much time the employee was present in the office.
+
+                         a. Given below is a system to record the check-in and check-out times of an employee.
+                            Given are two buttons, IN and OUT. 
+                            When someone clicks on the IN button, it records the time he/she checks in at and displays it below.
+                            Similarly, on clicking the OUT button,it records the check out time and displays it below.
+                            Create a program to display the time log of an employee as shown below. 
+
+
+                            
+            </code>
+         </pre>
+
+                        <button onclick = "checkin()">IN</button>
+                        <button onclick = "checkout()" >OUT</button>
+                        <button onclick = "total()">TOTAL</button>
+
+                        <h2 id="totaltime">Total Time Worked :</h2>
+
+                        <ul id="log">
+                            <h2>Time Log:</h2>
+                        </ul>
+                   <script>
+
+                        //  var currentTime
+                        //  var loginTime
+                        //  var timeOfCT
+                        //  var timeOfOT
+                        //   function In()
+                        //   {
+                        //           loginTime = new Date()
+                        //           console.log(loginTime);
+                        //           timeOfCT = loginTime.getTime()
+                        //           console.log(timeOfCT)
+                                  
+                        //   }
+
+                        //   var total = 0;
+                        //   function Out()
+                        //   {
+                        //          logoutTime = new Date()
+                        //          console.log(logoutTime);
+                        //          timeOfOT = logoutTime.getTime()
+                        //          console.log(timeOfOT)
+
+                        //          total =  total +(timeOfOT - timeOfCT);
+                        //   }
+
+                        //   function Total()
+                        //   {
+                              
+                        //        var  mainTime = new Date(total * 1000)
+                        //         var tp =  mainTime.getUTCSeconds();
+
+                        //         console.log(tp)
+                                      
+                        //   }
+
+
+                        var times = []
+                        var totalTime = 0;
+
+                        function checkin()
+                        {
+                             var checkin = new Date();
+                              times.push(Date.now());
+                              console.log(times); 
+                              var newli =  document.createElement('li')
+                                            newli.innerHTML = "IN : " + checkin
+                               document.getElementById('log').appendChild(newli)  
+                            
+                        }
+
+                        function checkout()
+                        {
+                            var out = new Date()
+                            times.push(Date.now());
+                            
+                               var newli =  document.createElement('li')
+                                            newli.innerHTML = "OUT : " + out
+                               document.getElementById('log').appendChild(newli)  
+                            
+                             console.log(times)
+                            
+                        }
+
+                        function total()
+                        {
+                            totalTime = 0;
+                            for(let i = 0; i <= times.length-1; i = i + 2)
+                            {
+                                 totalTime = totalTime + (times[i+1] - times[i])
+                            }
+                            document.getElementById('totaltime').innerHTML =  "Total Time worked : " + (totalTime/ 1000)  + 'seconds'
+                            
+                        }
+
+
+                   </script>
+
+                 <p>
+                    3.Stop Watch :
+                 </p>
+
+                      <h1 id="sw"></h1>
+
+                      <button onclick="stop()">Stop</button>
+                      <button onclick="reset()">Reset</button>
+
+                      <script>
+
+                           function stop()
+                           {
+                               
+                           }
+
+                        //    setInterval(function()
+                        //         {
+                        //             var d = new Date(0,0,0,0,0,0)
+                        //             var clock = document.getElementById('sw')
+                        //                    clock.innerHTML =  d.getMinutes() + " : "+ d.getSeconds() + " : " + d.getMilliseconds()
+
+
+                        //         }, 100
+                        //      )
+
+                      </script>
+
+                     
+                  
+
+
+    </body>
+</html>
